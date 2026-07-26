@@ -1,6 +1,0 @@
-RESEARCH CORE 1D.2 GMAT RUN ORDER
-
-Preferred: run scripts/RUN_GRAVITY_MULTICASE_1D2.script once.
-The mission propagates 6 cases x 4 gravity models in registered order.
-Fallback only if the master does not interpret: run the 24 individual scripts.
-Expected untouched ephemerides: 24. Do not rerun after successful creation.

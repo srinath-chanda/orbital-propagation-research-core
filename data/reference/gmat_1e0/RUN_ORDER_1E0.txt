@@ -1,6 +1,0 @@
-RESEARCH CORE 1E.0 GMAT RUN ORDER
-
-1. Run scripts/RUN_DRAG_ACCELERATION_1E0.script once in GMAT R2026a.
-2. Expect four CSV files in output, one for each ballistic scenario.
-3. Do not rerun after successful creation; return to PowerShell for validation.
-4. Use the four individual scripts only if the master script will not interpret.

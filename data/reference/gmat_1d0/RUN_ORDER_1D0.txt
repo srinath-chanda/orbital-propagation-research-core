@@ -1,6 +1,0 @@
-RESEARCH CORE 1D.0 GMAT RUN ORDER
-
-1. Verify EOP and import JGM2 using START_HERE_1D_0.txt.
-2. Open scripts/RUN_GRAVITY_LADDER_1D0.script in GMAT R2026a.
-3. Run once; one CSV with 25 shared states is expected.
-4. Return to PowerShell and run the Python validation command.
