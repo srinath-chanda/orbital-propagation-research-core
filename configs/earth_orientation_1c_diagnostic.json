@@ -1,0 +1,49 @@
+{
+  "schema_version": "1C.0",
+  "experiment_id": "EXP-EARTH-ORIENTATION-1C-001",
+  "title": "Earth-orientation residual attribution against the closed GMAT 1B matrix",
+  "matrix_specification": "configs/gmat_1b_multicase_matrix.json",
+  "baseline_model": "iau1976_1980",
+  "models": [
+    {
+      "model_id": "j2000_fixed",
+      "role": "ablation_static_axis",
+      "eligible_candidate": false
+    },
+    {
+      "model_id": "iau1976_precession",
+      "role": "ablation_precession_without_nutation",
+      "eligible_candidate": false
+    },
+    {
+      "model_id": "iau1976_1980",
+      "role": "closed_1b_validation_baseline",
+      "eligible_candidate": false
+    },
+    {
+      "model_id": "iau2000a",
+      "role": "exploratory_modern_orientation_candidate",
+      "eligible_candidate": true
+    },
+    {
+      "model_id": "iau2006_2000a",
+      "role": "exploratory_modern_orientation_candidate",
+      "eligible_candidate": true
+    }
+  ],
+  "decision_rule": {
+    "status": "preregistered_before_full_matrix_diagnostic",
+    "maximum_median_position_ratio": 0.8,
+    "maximum_worst_position_ratio": 1.0,
+    "maximum_median_velocity_ratio": 0.8,
+    "maximum_worst_velocity_ratio": 1.0,
+    "candidate_must_pass_all_existing_gates": true,
+    "selected_candidate_requires_independent_validation": true
+  },
+  "scientific_cautions": [
+    "The same closed GMAT evidence is used for diagnostic selection, so it cannot independently validate a replacement model.",
+    "Fixed-axis and precession-only models are ablations, not replacement candidates.",
+    "Polar motion, observed EOP corrections, and subdaily terms are deferred.",
+    "The closed 1B claim remains attached to IAU-1976/1980 unless a new gate passes."
+  ]
+}

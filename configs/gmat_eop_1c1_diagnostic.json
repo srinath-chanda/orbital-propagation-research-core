@@ -1,0 +1,48 @@
+{
+  "schema_version": "1C.1",
+  "experiment_id": "EXP-GMAT-EOP-1C1-001",
+  "title": "Exact GMAT R2026a EOP and polar-motion residual attribution",
+  "matrix_specification": "configs/gmat_1b_multicase_matrix.json",
+  "eop_file": "data/reference/gmat_r2026a/eopc04_08.62-now",
+  "eop_provenance": "data/reference/gmat_r2026a/PROVENANCE.json",
+  "eop_expected_sha256": "52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3",
+  "baseline_model": "iau1976_1980",
+  "models": [
+    {
+      "model_id": "iau1976_1980",
+      "role": "closed_1b_baseline_without_polar_motion",
+      "eligible_candidate": false
+    },
+    {
+      "model_id": "gmat_r2026a_eop_x_only",
+      "role": "polar_motion_x_ablation",
+      "eligible_candidate": false
+    },
+    {
+      "model_id": "gmat_r2026a_eop_y_only",
+      "role": "polar_motion_y_ablation",
+      "eligible_candidate": false
+    },
+    {
+      "model_id": "gmat_r2026a_eop_full",
+      "role": "exact_tagged_eop_candidate",
+      "eligible_candidate": true
+    }
+  ],
+  "decision_rule": {
+    "status": "preregistered_before_full_matrix_diagnostic",
+    "maximum_median_position_ratio": 0.2,
+    "maximum_worst_position_ratio": 0.25,
+    "maximum_median_velocity_ratio": 0.2,
+    "maximum_worst_velocity_ratio": 0.25,
+    "candidate_must_pass_all_existing_gates": true,
+    "selected_candidate_requires_independent_validation": true
+  },
+  "scientific_cautions": [
+    "The existing closed GMAT matrix is reused for residual attribution, so it cannot independently validate a selected replacement.",
+    "The tagged GMAT R2026a EOP file is frozen and checksum-gated for exact reproducibility.",
+    "The October case intentionally reproduces GMAT endpoint clamping after the file's final 2026-09-14 row.",
+    "X-only and y-only models are attribution ablations, not replacement candidates.",
+    "A selected full-EOP candidate must pass a new independent GMAT matrix before adoption."
+  ]
+}

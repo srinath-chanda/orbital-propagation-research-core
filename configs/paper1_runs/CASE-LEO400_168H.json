@@ -1,0 +1,276 @@
+{
+  "schema_version": "1A.0",
+  "experiment": {
+    "experiment_id": "EXP-PAPER1-LEO400-168H",
+    "case_id": "CASE-LEO400",
+    "title": "LEO 400 km propagation-model comparison \u2014 Paper 1 168 h production run",
+    "description": "Frozen Paper 1 production run from matrix EXP-PAPER1-PRODUCTION-001; duration 168 hours and output spacing 60 seconds.",
+    "author": "Srinath Chanda",
+    "research_question_ids": [
+      "RQ-1",
+      "RQ-2",
+      "RQ-3"
+    ],
+    "hypothesis_ids": [
+      "H-1",
+      "H-2",
+      "H-3",
+      "H-4",
+      "H-5"
+    ],
+    "reproducible_run": true
+  },
+  "initial_state": {
+    "source_type": "classical_elements",
+    "epoch_utc": "2026-01-01T00:00:00Z",
+    "frame": "ECI_CONTROLLED",
+    "element_type": "osculating",
+    "anomaly_type": "true_anomaly",
+    "semi_major_axis_km": 6778.1363,
+    "eccentricity": 0.001,
+    "inclination_deg": 51.6,
+    "raan_deg": 20.0,
+    "argument_of_perigee_deg": 30.0,
+    "true_anomaly_deg": 0.0,
+    "notes": "A small non-zero eccentricity avoids the classical-element singularity of an exactly circular orbit.",
+    "frame_definition": "Earth-centred inertial Cartesian frame defined by the controlled benchmark orbital-element axes; not yet a full GCRS, TEME, or ITRS realisation."
+  },
+  "earth_model": {
+    "name": "Research Earth constants",
+    "gravitational_parameter_km3_s2": 398600.4418,
+    "equatorial_radius_km": 6378.1363,
+    "j2": 0.00108262668,
+    "earth_rotation_rate_rad_s": 7.292115e-05,
+    "constants_reference": "Frozen Research Core Paper 1 benchmark values recorded explicitly in this configuration; bibliographic source resolution remains a manuscript-QA item."
+  },
+  "propagation": {
+    "default_duration_hours": 168,
+    "batch_durations_hours": [
+      6,
+      24,
+      72,
+      168
+    ],
+    "output_step_seconds": 60,
+    "models": [
+      "analytical_two_body",
+      "numerical_two_body",
+      "numerical_j2",
+      "numerical_j2_drag"
+    ],
+    "comparison_reference_model": "analytical_two_body",
+    "stop_below_altitude_km": 80,
+    "save_state_at_initial_epoch": true
+  },
+  "integrator": {
+    "method": "DOP853",
+    "relative_tolerance": 1e-11,
+    "absolute_tolerance": 1e-13,
+    "maximum_step_seconds": 60.0,
+    "settings_status": "paper1_frozen_after_production_convergence"
+  },
+  "drag": {
+    "enabled": true,
+    "purpose": "illustrative_sensitivity_study",
+    "model": "exponential_custom",
+    "mass_kg": 500.0,
+    "cross_sectional_area_m2": 4.0,
+    "drag_coefficient": 2.2,
+    "co_rotating_atmosphere": true,
+    "reference_altitude_km": 400.0,
+    "reference_density_kg_m3": 3e-12,
+    "scale_height_km": 60.0,
+    "parameter_status": "illustrative_only_replace_and_cite_before_paper_runs",
+    "notes": "Single-scale-height exponential atmosphere with constant mass, area, and drag coefficient. Not a real-date atmosphere forecast.",
+    "sensitivity": {
+      "enabled": false,
+      "method": "one_at_a_time_multipliers",
+      "multipliers": {
+        "mass_kg": [
+          0.5,
+          2.0
+        ],
+        "cross_sectional_area_m2": [
+          0.5,
+          2.0
+        ],
+        "drag_coefficient": [
+          0.5,
+          2.0
+        ],
+        "reference_density_kg_m3": [
+          0.5,
+          2.0
+        ],
+        "scale_height_km": [
+          0.75,
+          1.25
+        ]
+      }
+    }
+  },
+  "ground_stations": [
+    {
+      "station_id": "GS-BREMEN-001",
+      "name": "Bremen",
+      "latitude_deg": 53.0793,
+      "longitude_deg": 8.8017,
+      "altitude_m": 12.0,
+      "minimum_elevation_deg": 10.0
+    }
+  ],
+  "pass_analysis": {
+    "enabled": false,
+    "coarse_step_seconds": 20,
+    "refinement_tolerance_seconds": 0.5,
+    "calculate_closest_range": true,
+    "match_passes_within_seconds": 600,
+    "station_ids": [
+      "GS-BREMEN-001"
+    ],
+    "refinement_method": "pchip_brentq",
+    "save_visibility_history": true
+  },
+  "comparison": {
+    "calculate_cartesian_position_difference": true,
+    "calculate_cartesian_velocity_difference": true,
+    "calculate_rtn_position_difference": true,
+    "calculate_rtn_velocity_difference": true,
+    "calculate_orbital_element_difference": true,
+    "calculate_ground_track_separation": true,
+    "calculate_pass_difference": true,
+    "statistics": [
+      "initial",
+      "final",
+      "mean",
+      "mean_absolute",
+      "rms",
+      "median",
+      "standard_deviation",
+      "maximum",
+      "percentile_95",
+      "time_of_maximum"
+    ]
+  },
+  "convergence": {
+    "enabled": false,
+    "reference_method": "DOP853",
+    "relative_tolerances": [
+      1e-07,
+      1e-09,
+      1e-11
+    ],
+    "absolute_tolerances": [
+      1e-09,
+      1e-11,
+      1e-13
+    ],
+    "maximum_steps_seconds": [
+      120,
+      60,
+      30,
+      10
+    ],
+    "reference_relative_tolerance": 1e-12,
+    "reference_absolute_tolerance": 1e-14,
+    "reference_maximum_step_seconds": 5,
+    "duration_hours": 24,
+    "output_step_seconds": 60,
+    "runtime_repetitions": 3,
+    "method": "DOP853",
+    "selection_status": "provisional_pareto_balanced_recommendation"
+  },
+  "external_validation": {
+    "enabled": false,
+    "state_reference_file": null,
+    "state_reference_metadata_file": null,
+    "pass_reference_file": null,
+    "pass_reference_metadata_file": null,
+    "accepted_tools": [
+      "GMAT",
+      "STK",
+      "Orekit"
+    ]
+  },
+  "validation": {
+    "threshold_status": "provisional_until_external_validation",
+    "two_body_maximum_position_difference_m": 1.0,
+    "two_body_maximum_velocity_difference_mm_s": 1.0,
+    "two_body_maximum_relative_energy_drift": 1e-09,
+    "two_body_maximum_relative_angular_momentum_drift": 1e-09,
+    "j2_raan_rate_maximum_relative_difference": 0.05,
+    "fail_run_on_validation_failure": false,
+    "j2_maximum_relative_total_energy_drift": 1e-09,
+    "j2_maximum_relative_angular_momentum_z_drift": 1e-09,
+    "j2_raan_validation_minimum_duration_hours": 6.0,
+    "drag_zero_density_maximum_position_difference_m": 0.001,
+    "drag_maximum_initial_to_central_acceleration_ratio": 0.0001,
+    "drag_minimum_energy_loss_km2_s2": 1e-08,
+    "drag_minimum_semi_major_axis_reduction_vs_j2_m": 0.001,
+    "drag_direction_cosine_maximum": -0.999999
+  },
+  "outputs": {
+    "results_root": "results",
+    "save_resolved_configuration": true,
+    "save_initial_state": true,
+    "save_states_csv": true,
+    "save_elements_csv": true,
+    "save_rtn_errors_csv": true,
+    "save_passes_csv": true,
+    "save_runtime_csv": true,
+    "save_validation_status": true,
+    "save_run_log": true,
+    "save_png": true,
+    "save_pdf": true,
+    "open_figures_automatically": false,
+    "open_report_automatically": false,
+    "save_html_report": true,
+    "save_run_manifest": true,
+    "save_final_validation_summary": true
+  },
+  "documentation": {
+    "write_model_assumptions": true,
+    "write_known_limitations": true,
+    "write_validation_status": true,
+    "write_future_work": true
+  },
+  "scientific_cautions": [
+    "All directly compared numerical models start from the same Cartesian state.",
+    "Vectors from different reference frames must not be subtracted directly.",
+    "The controlled inertial frame z-axis is assumed aligned with Earth mean rotation axis for J2 and atmospheric co-rotation.",
+    "The analytical RAAN rate is a first-order secular approximation while numerical elements are osculating.",
+    "The exponential atmosphere, density, scale height, constant drag coefficient, constant projected area, and constant mass are illustrative sensitivity assumptions only.",
+    "Drag results are model-sensitivity results, not real satellite decay forecasts.",
+    "Validation thresholds remain provisional until external GMAT, STK, or Orekit comparison.",
+    "This configuration is a research benchmark and is not flight-qualified."
+  ],
+  "ground_track_analysis": {
+    "enabled": false,
+    "earth_fixed_frame": "NOT_IMPLEMENTED_FOR_ECI_CONTROLLED",
+    "earth_ellipsoid": "WGS84",
+    "surface_distance_model": "spherical_central_angle",
+    "surface_radius_km": 6378.137,
+    "date_line_split_threshold_deg": 180.0,
+    "map_background_file": "../../data/maps/world_texture.png",
+    "notes": "Ground tracks are enabled for fixed-TLE GCRS cases in Research Core 1A.5."
+  },
+  "production": {
+    "matrix_id": "EXP-PAPER1-PRODUCTION-001",
+    "baseline_closure_id": "PAPER1-BASELINE-CLOSURE-001",
+    "case_id": "CASE-LEO400",
+    "duration_hours": 168,
+    "primary_models": [
+      "analytical_two_body",
+      "numerical_two_body",
+      "numerical_j2",
+      "numerical_j2_drag"
+    ],
+    "executed_models": [
+      "analytical_two_body",
+      "numerical_two_body",
+      "numerical_j2",
+      "numerical_j2_drag"
+    ],
+    "paper_role": "primary controlled low-altitude model and drag comparison"
+  }
+}

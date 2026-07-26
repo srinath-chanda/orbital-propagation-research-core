@@ -1,0 +1,38 @@
+{
+  "schema_version": "1C.3",
+  "closure_id": "CLOSURE-GMAT-EOP-1C3-001",
+  "matrix_id": "EXP-GMAT-EOP-1C2-INDEPENDENT-001",
+  "status": "validated_baseline_adopted",
+  "validated_model": "gmat_r2026a_eop_full",
+  "legacy_reproducibility_model": "iau1976_1980",
+  "adoption_decision": "adopt_gmat_r2026a_eop_full_as_validated_baseline",
+  "official_result_directory": "results/EXP-GMAT-EOP-1C2-INDEPENDENT-001/2026-07-19_191123_017338Z",
+  "official_summary": "results/EXP-GMAT-EOP-1C2-INDEPENDENT-001/2026-07-19_191123_017338Z/gmat_eop_1c2_matrix_summary.json",
+  "official_summary_sha256": "3e1e6deedf70bcdae9d2065abc4f1c4f8b53a8da9d3433e7a7a2fb11ab68485a",
+  "official_run_manifest": "results/EXP-GMAT-EOP-1C2-INDEPENDENT-001/2026-07-19_191123_017338Z/RUN_MANIFEST.json",
+  "official_run_manifest_sha256": "0ab540533b1adfda638e200ac86bd58aabe6efba12b210b3980fb5efd6654fdd",
+  "source_results_package_name": "RESEARCH_CORE_1C2_GMAT_RESULTS.zip",
+  "source_results_package_sha256": "d8bdb51021ea94b2baf891d44417627fcedf3133c0a7474d49c79573277f13d0",
+  "eop_source": "data/reference/gmat_r2026a/eopc04_08.62-now",
+  "eop_source_sha256": "52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3",
+  "required_case_count": 6,
+  "required_raw_ephemeris_count": 12,
+  "required_check_count": 84,
+  "observed_maximum_candidate_position_difference_m": 0.0050470124020897894,
+  "observed_maximum_candidate_velocity_difference_mm_s": 0.00548306823838491,
+  "requirements": {
+    "all_cases_passed": true,
+    "no_failed_or_incomplete_cases": true,
+    "thresholds_preregistered": true,
+    "thresholds_not_relaxed": true,
+    "all_case_checks_passed": true,
+    "all_raw_sources_checksum_valid": true,
+    "all_result_manifests_checksum_valid": true
+  },
+  "scope": [
+    "Controlled agreement with configured GMAT R2026a JGM2 degree-2/order-0 propagation.",
+    "Frozen GMAT R2026a EOP realization, not a continuously updated EOP product.",
+    "Not measured-orbit truth, operational readiness, or flight qualification.",
+    "Higher-degree gravity and additional forces require separate validation gates."
+  ]
+}

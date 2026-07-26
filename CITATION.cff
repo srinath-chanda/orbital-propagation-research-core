@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or its research results, cite this repository and the manuscript preprint."
+title: "Orbital Propagation Research Core"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Chanda
+    given-names: Srinath
+repository-code: "https://github.com/srinath-chanda/orbital-propagation-research-core"
+abstract: >-
+  A reproducible Python framework for comparing analytical two-body,
+  numerical two-body, J2, simplified-drag, and fixed-TLE SGP4 propagation in
+  low Earth orbit, with recorded GMAT validation evidence.
+keywords:
+  - orbital propagation
+  - low Earth orbit
+  - J2 perturbation
+  - SGP4
+  - GMAT validation
