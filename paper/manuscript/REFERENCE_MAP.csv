@@ -1,0 +1,13 @@
+reference_number,formatted_reference,status
+1,"Vallado, D. A., Crawford, P., Hujsak, R., and Kelso, T. S., “Revisiting Spacetrack Report #3,” AIAA 2006-6753, 2006. doi: 10.2514/6.2006-6753.",verified
+2,"Petit, G., and Luzum, B., eds., IERS Conventions (2010), IERS Technical Note 36, 2010.",verified
+3,"Hughes, S. P., Qureshi, R. H., Cooley, S. D., and Parker, J. J., “Verification and Validation of the General Mission Analysis Tool (GMAT),” AIAA 2014-4151, 2014. doi: 10.2514/6.2014-4151.",verified
+4,"Virtanen, P., et al., “SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python,” Nature Methods, Vol. 17, 2020, pp. 261–272. doi: 10.1038/s41592-019-0686-2.",verified
+5,"Vallado, D. A., Fundamentals of Astrodynamics and Applications, 4th ed., Microcosm Press, 2013.",verified
+6,"Picone, J. M., Hedin, A. E., Drob, D. P., and Aikin, A. C., “NRLMSISE-00 Empirical Model of the Atmosphere: Statistical Comparisons and Scientific Issues,” Journal of Geophysical Research: Space Physics, Vol. 107, No. A12, 2002, p. 1468. doi: 10.1029/2002JA009430.",verified
+7,"Lemoine, F. G., et al., The Development of the Joint NASA GSFC and the National Imagery and Mapping Agency (NIMA) Geopotential Model EGM96, NASA/TP-1998-206861, 1998. https://ntrs.nasa.gov/citations/19980218814.",verified
+8,"National Geospatial-Intelligence Agency, Department of Defense World Geodetic System 1984: Its Definition and Relationships with Local Geodetic Systems, NGA.STND.0036_1.0.0_WGS84, Version 1.0.0, 2014.",verified
+9,"Astropy Collaboration, Price-Whelan, A. M., Lim, P. L., et al., “The Astropy Project: Sustaining and Growing a Community-oriented Open-source Project and the Latest Major Release (v5.0) of the Core Package,” The Astrophysical Journal, Vol. 935, No. 2, 2022, p. 167. doi: 10.3847/1538-4357/ac7c74.",verified
+10,"Rhodes, B., python-sgp4, Version 2.27, 2026. https://github.com/brandon-rhodes/python-sgp4 (accessed 26 July 2026).",verified
+11,"Kelso, T. S., “A New Way to Obtain GP Data (aka TLEs),” CelesTrak, https://celestrak.org/NORAD/documentation/gp-data-formats.php; archived ISS TLE, NORAD 25544, retrieved 18 July 2026.",verified
+12,"Montenbruck, O., and Gill, E., Satellite Orbits: Models, Methods and Applications, Springer, Berlin, 2000. doi: 10.1007/978-3-642-58351-3.",verified
