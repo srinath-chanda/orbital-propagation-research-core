@@ -57,8 +57,20 @@ class NumericalGravityTests(unittest.TestCase):
             eop_dataset=self.eop,
             **self.kwargs,
         )
-        np.testing.assert_allclose(harmonic.positions_km, validated.positions_km, rtol=0.0, atol=1e-14)
-        np.testing.assert_allclose(harmonic.velocities_km_s, validated.velocities_km_s, rtol=0.0, atol=2e-15)
+        # Equivalent force-model paths can differ by a few floating-point
+        # rounding units across supported Python and SciPy builds.
+        np.testing.assert_allclose(
+            harmonic.positions_km,
+            validated.positions_km,
+            rtol=0.0,
+            atol=5e-12,
+        )
+        np.testing.assert_allclose(
+            harmonic.velocities_km_s,
+            validated.velocities_km_s,
+            rtol=0.0,
+            atol=1e-14,
+        )
 
     def test_degree_twenty_history_is_finite_and_starts_exactly(self):
         times = np.asarray([0.0, 10.0, 30.0])
