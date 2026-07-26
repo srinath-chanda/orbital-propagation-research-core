@@ -1,4 +1,0 @@
-case_id,source_type,epoch_utc,semi_major_axis_km,eccentricity,inclination_deg,raan_deg,argument_of_perigee_deg,true_anomaly_deg,norad_catalog_id
-LEO400,cartesian_from_registered_elements,2026-01-01T00:00:00Z,6778.1363,0.001,51.6,20,30,0,
-SSO700,cartesian_from_registered_elements,2026-01-01T00:00:00Z,7078.1363,0.001,98.18796410124214,20,30,0,
-ISS-TLE,fixed_tle,2026-07-18T02:08:01.938048Z,,,,,,,25544
