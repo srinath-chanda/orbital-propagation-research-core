@@ -1,0 +1,47 @@
+{
+  "schema_version": "1E.0",
+  "experiment_id": "EXP-GMAT-DRAG-1E0-ACCELERATION-001",
+  "status": "scripts_prepared_gmat_execution_pending",
+  "prerequisite_closure_id": "CLOSURE-GMAT-GRAVITY-1D2-001",
+  "configuration": "configs/gmat_drag_1e0_acceleration.json",
+  "configuration_sha256": "0f8e66d08a59e38967e62f28ba2f7662004208c4f1cf1c3c45803dd13f2c7d93",
+  "gravity_file": "data/reference/gmat_r2026a/JGM2.cof",
+  "gravity_file_sha256": "bf182b1208e33be3716c8292a3947c1f87d4041ad6663a0c9ae621f65cafc20d",
+  "eop_file": "data/reference/gmat_r2026a/eopc04_08.62-now",
+  "eop_file_sha256": "52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3",
+  "atmosphere_file": "data/reference/gmat_r2026a/EarthExponentialAtmosphereData.txt",
+  "atmosphere_file_sha256": "75762f679f82e089a4a6eadaa1251c797a2151aab5311b36b2ae96cffefda85e",
+  "master_script": "data/reference/gmat_1e0/scripts/RUN_DRAG_ACCELERATION_1E0.script",
+  "master_script_sha256": "393fa0635d4af3d79d81d2b57daaa0eb59a0bd3165510419659bd6c318b1a8ed",
+  "scenario_count": 4,
+  "sample_count_per_scenario": 25,
+  "expected_output_count": 4,
+  "archived_previous_output_count": 0,
+  "runs": [
+    {
+      "scenario_id": "NOMINAL",
+      "script": "data/reference/gmat_1e0/scripts/NOMINAL_DRAG_ACCELERATION_1E0.script",
+      "script_sha256": "b2763c1ddd40f6200ebd2488870f352b12ac9cfef67f09469807751ff5c132ee",
+      "output": "data/reference/gmat_1e0/output/NOMINAL_DRAG_ACCELERATION_1E0.csv"
+    },
+    {
+      "scenario_id": "AREA_X2",
+      "script": "data/reference/gmat_1e0/scripts/AREA_X2_DRAG_ACCELERATION_1E0.script",
+      "script_sha256": "e6836d654e6ad1b5b54c0b19dcd4d8fd473ba700db2c05aa30f3d4306b8e60bb",
+      "output": "data/reference/gmat_1e0/output/AREA_X2_DRAG_ACCELERATION_1E0.csv"
+    },
+    {
+      "scenario_id": "MASS_HALF",
+      "script": "data/reference/gmat_1e0/scripts/MASS_HALF_DRAG_ACCELERATION_1E0.script",
+      "script_sha256": "ad20c6d87a3f3ebe22f1ac6afa5754655ba97054cf0364c69bd2d6a3c8994755",
+      "output": "data/reference/gmat_1e0/output/MASS_HALF_DRAG_ACCELERATION_1E0.csv"
+    },
+    {
+      "scenario_id": "CD_HALF",
+      "script": "data/reference/gmat_1e0/scripts/CD_HALF_DRAG_ACCELERATION_1E0.script",
+      "script_sha256": "85ce87e024ee6132479db24eb14b37119f0b2bf0be5d720bc5636db40f057ded",
+      "output": "data/reference/gmat_1e0/output/CD_HALF_DRAG_ACCELERATION_1E0.csv"
+    }
+  ],
+  "public_release_note": "Generated GMAT file paths were normalized to repository-relative paths. Scientific configurations and raw outputs are unchanged."
+}
