@@ -1,0 +1,118 @@
+{
+  "schema_version": "1B.0",
+  "matrix_id": "EXP-GMAT-1B-MULTICASE-001",
+  "title": "Preregistered Research Core 1B GMAT multi-case validation matrix",
+  "baseline_configuration": "configs/case_leo400_gmat_matched.json",
+  "reference_root": "data/reference/gmat_1b",
+  "tool": "GMAT",
+  "tool_version": "R2026a",
+  "output_step_seconds": 60.0,
+  "design": "one_factor_at_a_time_with_baseline_control",
+  "threshold_policy": {
+    "status": "preregistered_before_gmat_execution",
+    "initial_position_difference_m": 0.001,
+    "initial_velocity_difference_mm_s": 0.001,
+    "two_body_maximum_position_difference_m": 0.1,
+    "two_body_maximum_velocity_difference_mm_s": 0.1,
+    "j2_duration_tiers": [
+      {
+        "maximum_duration_hours": 6.0,
+        "maximum_position_difference_m": 5.0,
+        "maximum_velocity_difference_mm_s": 5.0
+      },
+      {
+        "maximum_duration_hours": 24.0,
+        "maximum_position_difference_m": 20.0,
+        "maximum_velocity_difference_mm_s": 20.0
+      },
+      {
+        "maximum_duration_hours": 72.0,
+        "maximum_position_difference_m": 100.0,
+        "maximum_velocity_difference_mm_s": 50.0
+      }
+    ],
+    "rule": "Thresholds must not be changed after any new GMAT output is inspected."
+  },
+  "cases": [
+    {
+      "case_id": "B01_CONTROL_400KM_I51P6_JAN_24H",
+      "factor": "baseline_control",
+      "epoch_utc": "2026-01-01T00:00:00Z",
+      "altitude_km": 400.0,
+      "inclination_deg": 51.6,
+      "duration_hours": 24.0
+    },
+    {
+      "case_id": "B02_ALTITUDE_700KM_I51P6_JAN_24H",
+      "factor": "altitude",
+      "epoch_utc": "2026-01-01T00:00:00Z",
+      "altitude_km": 700.0,
+      "inclination_deg": 51.6,
+      "duration_hours": 24.0
+    },
+    {
+      "case_id": "B03_ALTITUDE_1000KM_I51P6_JAN_24H",
+      "factor": "altitude",
+      "epoch_utc": "2026-01-01T00:00:00Z",
+      "altitude_km": 1000.0,
+      "inclination_deg": 51.6,
+      "duration_hours": 24.0
+    },
+    {
+      "case_id": "B04_INCLINATION_5DEG_400KM_JAN_24H",
+      "factor": "inclination",
+      "epoch_utc": "2026-01-01T00:00:00Z",
+      "altitude_km": 400.0,
+      "inclination_deg": 5.0,
+      "duration_hours": 24.0
+    },
+    {
+      "case_id": "B05_INCLINATION_98DEG_400KM_JAN_24H",
+      "factor": "inclination",
+      "epoch_utc": "2026-01-01T00:00:00Z",
+      "altitude_km": 400.0,
+      "inclination_deg": 98.0,
+      "duration_hours": 24.0
+    },
+    {
+      "case_id": "B06_EPOCH_APR_400KM_I51P6_24H",
+      "factor": "epoch",
+      "epoch_utc": "2026-04-01T00:00:00Z",
+      "altitude_km": 400.0,
+      "inclination_deg": 51.6,
+      "duration_hours": 24.0
+    },
+    {
+      "case_id": "B07_EPOCH_JUL_400KM_I51P6_24H",
+      "factor": "epoch",
+      "epoch_utc": "2026-07-01T00:00:00Z",
+      "altitude_km": 400.0,
+      "inclination_deg": 51.6,
+      "duration_hours": 24.0
+    },
+    {
+      "case_id": "B08_EPOCH_OCT_400KM_I51P6_24H",
+      "factor": "epoch",
+      "epoch_utc": "2026-10-01T00:00:00Z",
+      "altitude_km": 400.0,
+      "inclination_deg": 51.6,
+      "duration_hours": 24.0
+    },
+    {
+      "case_id": "B09_DURATION_6H_400KM_I51P6_JAN",
+      "factor": "duration",
+      "epoch_utc": "2026-01-01T00:00:00Z",
+      "altitude_km": 400.0,
+      "inclination_deg": 51.6,
+      "duration_hours": 6.0
+    },
+    {
+      "case_id": "B10_DURATION_72H_400KM_I51P6_JAN",
+      "factor": "duration",
+      "epoch_utc": "2026-01-01T00:00:00Z",
+      "altitude_km": 400.0,
+      "inclination_deg": 51.6,
+      "duration_hours": 72.0
+    }
+  ]
+}

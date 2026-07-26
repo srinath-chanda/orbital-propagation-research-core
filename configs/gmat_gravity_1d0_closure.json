@@ -1,0 +1,20 @@
+{
+  "schema_version": "1D.0-closure",
+  "closure_id": "CLOSURE-GMAT-GRAVITY-1D0-001",
+  "experiment_id": "EXP-GMAT-GRAVITY-1D0-001",
+  "configuration": "configs/gmat_gravity_1d0_ladder.json",
+  "raw_report": "data/reference/gmat_1d0/output/GMAT_GRAVITY_LADDER_1D0.csv",
+  "raw_report_sha256": "fa5c0fca6e00407aeeec73044f8c0972cc0b3189c2b3f7fe68f0f846311b604f",
+  "gravity_file": "data/reference/gmat_r2026a/JGM2.cof",
+  "gravity_file_sha256": "bf182b1208e33be3716c8292a3947c1f87d4041ad6663a0c9ae621f65cafc20d",
+  "official_result_directory": "results/EXP-GMAT-GRAVITY-1D0-001/2026-07-19_202029_369249Z",
+  "official_summary_sha256": "8d7adc242e82c55af78062fd7ca32d8c216e5998dbb180e7a46b7415ec42c19d",
+  "requirements": {
+    "status": "passed_with_warnings",
+    "decision": "advance_to_1d1_short_arc_validation",
+    "sample_count": 25,
+    "model_count": 6,
+    "all_models_passed": true,
+    "all_adjacent_gravity_levels_distinct": true
+  }
+}
