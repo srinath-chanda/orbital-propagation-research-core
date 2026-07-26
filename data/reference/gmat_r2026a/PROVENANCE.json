@@ -1,0 +1,28 @@
+{
+  "artifact": "GMAT R2026a Earth-orientation parameter file",
+  "file_name": "eopc04_08.62-now",
+  "source_repository": "https://github.com/nasa/GMAT",
+  "source_tag": "R2026a",
+  "source_commit": "08c2a2aae0b5fed077b2e7b4fda992ff54386c60",
+  "source_file_url": "https://github.com/nasa/GMAT/blob/R2026a/application/data/planetary_coeff/eopc04_08.62-now",
+  "raw_source_url": "https://raw.githubusercontent.com/nasa/GMAT/refs/tags/R2026a/application/data/planetary_coeff/eopc04_08.62-now",
+  "retrieved_utc_date": "2026-07-19",
+  "sha256": "52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3",
+  "size_bytes": 3687646,
+  "data_row_count": 23633,
+  "first_mjd_utc": 37665,
+  "last_mjd_utc": 61297,
+  "last_utc_date": "2026-09-14",
+  "gmat_source_conformance": {
+    "startup_file": "https://github.com/nasa/GMAT/blob/R2026a/application/bin/gmat_startup_file.txt",
+    "body_fixed_axes": "https://github.com/nasa/GMAT/blob/R2026a/src/base/coordsystem/BodyFixedAxes.cpp",
+    "axis_system": "https://github.com/nasa/GMAT/blob/R2026a/src/base/coordsystem/AxisSystem.cpp",
+    "eop_parser": "https://github.com/nasa/GMAT/blob/R2026a/src/gmatutil/util/EopFile.cpp",
+    "rotation_order": "PM * ST * NUT * PREC",
+    "polar_motion_interpolation": "linear x/y on adjacent UTC rows",
+    "ut1_utc_interpolation": "linear on TAI grid with leap-second continuity correction",
+    "lod_interpolation": "left source row",
+    "outside_coverage": "nearest endpoint clamping"
+  },
+  "integrity_note": "Do not replace this file with newer EOP data when reproducing the saved GMAT R2026a matrix."
+}

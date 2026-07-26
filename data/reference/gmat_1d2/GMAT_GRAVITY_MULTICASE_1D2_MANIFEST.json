@@ -1,0 +1,263 @@
+{
+  "schema_version": "1D.2",
+  "experiment_id": "EXP-GMAT-GRAVITY-1D2-MULTICASE-001",
+  "status": "scripts_prepared_gmat_execution_pending",
+  "prerequisite_closure_id": "CLOSURE-GMAT-GRAVITY-1D1-001",
+  "configuration": "configs/gmat_gravity_1d2_multicase.json",
+  "configuration_sha256": "9039b84c9216a55a996396908a18ecc21bf353eb24dfa9e274d4ffc7c6546ee0",
+  "gravity_file": "data/reference/gmat_r2026a/JGM2.cof",
+  "gravity_file_sha256": "bf182b1208e33be3716c8292a3947c1f87d4041ad6663a0c9ae621f65cafc20d",
+  "eop_file": "data/reference/gmat_r2026a/eopc04_08.62-now",
+  "eop_file_sha256": "52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3",
+  "master_script": "data/reference/gmat_1d2/scripts/RUN_GRAVITY_MULTICASE_1D2.script",
+  "master_script_sha256": "6c94538a199e4eccaf2f243086d6fe14655073263e5df23879d9b5ce5d09a5fb",
+  "output_step_seconds": 60.0,
+  "case_count": 6,
+  "model_count": 4,
+  "expected_output_count": 24,
+  "expected_check_count": 96,
+  "archived_previous_output_count": 0,
+  "runs": [
+    {
+      "case_id": "D01_LOW_350KM_I1_FEB_6H",
+      "model_id": "G20",
+      "degree": 2,
+      "order": 0,
+      "duration_hours": 6.0,
+      "script": "data/reference/gmat_1d2/scripts/D01_LOW_350KM_I1_FEB_6H_G20.script",
+      "script_sha256": "8aeb6c3274277b036a79b92104a727ebc0b69d235a19e3893aa46cf3a123a7fc",
+      "output": "data/reference/gmat_1d2/output/D01_LOW_350KM_I1_FEB_6H_G20.e"
+    },
+    {
+      "case_id": "D01_LOW_350KM_I1_FEB_6H",
+      "model_id": "G44",
+      "degree": 4,
+      "order": 4,
+      "duration_hours": 6.0,
+      "script": "data/reference/gmat_1d2/scripts/D01_LOW_350KM_I1_FEB_6H_G44.script",
+      "script_sha256": "c3537bb23e35f194bc7d52d33b6efe8b3bd7cfaa57c41689e7f12b1b0b45941a",
+      "output": "data/reference/gmat_1d2/output/D01_LOW_350KM_I1_FEB_6H_G44.e"
+    },
+    {
+      "case_id": "D01_LOW_350KM_I1_FEB_6H",
+      "model_id": "G88",
+      "degree": 8,
+      "order": 8,
+      "duration_hours": 6.0,
+      "script": "data/reference/gmat_1d2/scripts/D01_LOW_350KM_I1_FEB_6H_G88.script",
+      "script_sha256": "7dfeafb1db3acc0fe63334b3f25fc0ae13c321f6ba0d815d954367906e7c3465",
+      "output": "data/reference/gmat_1d2/output/D01_LOW_350KM_I1_FEB_6H_G88.e"
+    },
+    {
+      "case_id": "D01_LOW_350KM_I1_FEB_6H",
+      "model_id": "G2020",
+      "degree": 20,
+      "order": 20,
+      "duration_hours": 6.0,
+      "script": "data/reference/gmat_1d2/scripts/D01_LOW_350KM_I1_FEB_6H_G2020.script",
+      "script_sha256": "920d63082fb5115f57c60971570061e3759ce61d259212cad6a64c0e1da1467d",
+      "output": "data/reference/gmat_1d2/output/D01_LOW_350KM_I1_FEB_6H_G2020.e"
+    },
+    {
+      "case_id": "D02_MID_500KM_I28P5_MAR_12H",
+      "model_id": "G20",
+      "degree": 2,
+      "order": 0,
+      "duration_hours": 12.0,
+      "script": "data/reference/gmat_1d2/scripts/D02_MID_500KM_I28P5_MAR_12H_G20.script",
+      "script_sha256": "1c5b265fc9519c6f6fc80df2b98d1d483c8967e5a87be36ead15588cc4a16cda",
+      "output": "data/reference/gmat_1d2/output/D02_MID_500KM_I28P5_MAR_12H_G20.e"
+    },
+    {
+      "case_id": "D02_MID_500KM_I28P5_MAR_12H",
+      "model_id": "G44",
+      "degree": 4,
+      "order": 4,
+      "duration_hours": 12.0,
+      "script": "data/reference/gmat_1d2/scripts/D02_MID_500KM_I28P5_MAR_12H_G44.script",
+      "script_sha256": "2174f7373a38b605402f543dc68a17e0046961ff0417100cc3ce7524a3bbae36",
+      "output": "data/reference/gmat_1d2/output/D02_MID_500KM_I28P5_MAR_12H_G44.e"
+    },
+    {
+      "case_id": "D02_MID_500KM_I28P5_MAR_12H",
+      "model_id": "G88",
+      "degree": 8,
+      "order": 8,
+      "duration_hours": 12.0,
+      "script": "data/reference/gmat_1d2/scripts/D02_MID_500KM_I28P5_MAR_12H_G88.script",
+      "script_sha256": "43f6fcba0e59b0b0f2fb7dd83b76ae87864e385cf8e58bcc39164ad5d36c1edf",
+      "output": "data/reference/gmat_1d2/output/D02_MID_500KM_I28P5_MAR_12H_G88.e"
+    },
+    {
+      "case_id": "D02_MID_500KM_I28P5_MAR_12H",
+      "model_id": "G2020",
+      "degree": 20,
+      "order": 20,
+      "duration_hours": 12.0,
+      "script": "data/reference/gmat_1d2/scripts/D02_MID_500KM_I28P5_MAR_12H_G2020.script",
+      "script_sha256": "c81494f556f7d308bbac8bc9618f8714b01672c49480c9cc16cf2d1cc56c508b",
+      "output": "data/reference/gmat_1d2/output/D02_MID_500KM_I28P5_MAR_12H_G2020.e"
+    },
+    {
+      "case_id": "D03_CRITICAL_700KM_I63P4_MAY_24H",
+      "model_id": "G20",
+      "degree": 2,
+      "order": 0,
+      "duration_hours": 24.0,
+      "script": "data/reference/gmat_1d2/scripts/D03_CRITICAL_700KM_I63P4_MAY_24H_G20.script",
+      "script_sha256": "b32ce7f97eed01a2d27c8e0dde006ffc70c5c4256303d0a2c6aa5631550dcb38",
+      "output": "data/reference/gmat_1d2/output/D03_CRITICAL_700KM_I63P4_MAY_24H_G20.e"
+    },
+    {
+      "case_id": "D03_CRITICAL_700KM_I63P4_MAY_24H",
+      "model_id": "G44",
+      "degree": 4,
+      "order": 4,
+      "duration_hours": 24.0,
+      "script": "data/reference/gmat_1d2/scripts/D03_CRITICAL_700KM_I63P4_MAY_24H_G44.script",
+      "script_sha256": "632962e25c08c15760fb2767b1eba5b730edacd01f100521b1ecb59366544a40",
+      "output": "data/reference/gmat_1d2/output/D03_CRITICAL_700KM_I63P4_MAY_24H_G44.e"
+    },
+    {
+      "case_id": "D03_CRITICAL_700KM_I63P4_MAY_24H",
+      "model_id": "G88",
+      "degree": 8,
+      "order": 8,
+      "duration_hours": 24.0,
+      "script": "data/reference/gmat_1d2/scripts/D03_CRITICAL_700KM_I63P4_MAY_24H_G88.script",
+      "script_sha256": "58d9700bf0a419addbc15c5abdc0cf203f7a9ba3eaf0d2cf99223f22a49f1a32",
+      "output": "data/reference/gmat_1d2/output/D03_CRITICAL_700KM_I63P4_MAY_24H_G88.e"
+    },
+    {
+      "case_id": "D03_CRITICAL_700KM_I63P4_MAY_24H",
+      "model_id": "G2020",
+      "degree": 20,
+      "order": 20,
+      "duration_hours": 24.0,
+      "script": "data/reference/gmat_1d2/scripts/D03_CRITICAL_700KM_I63P4_MAY_24H_G2020.script",
+      "script_sha256": "6365c02d78602bb1e07cd0679798648a75d3e66b67cee79f953751c9a0df02a2",
+      "output": "data/reference/gmat_1d2/output/D03_CRITICAL_700KM_I63P4_MAY_24H_G2020.e"
+    },
+    {
+      "case_id": "D04_SSO_900KM_I97P6_JUN_36H",
+      "model_id": "G20",
+      "degree": 2,
+      "order": 0,
+      "duration_hours": 36.0,
+      "script": "data/reference/gmat_1d2/scripts/D04_SSO_900KM_I97P6_JUN_36H_G20.script",
+      "script_sha256": "cb3759eee66dccdf9457cc7080492dbb67cfea16d8fd79ebc7b6a7d596b80f1d",
+      "output": "data/reference/gmat_1d2/output/D04_SSO_900KM_I97P6_JUN_36H_G20.e"
+    },
+    {
+      "case_id": "D04_SSO_900KM_I97P6_JUN_36H",
+      "model_id": "G44",
+      "degree": 4,
+      "order": 4,
+      "duration_hours": 36.0,
+      "script": "data/reference/gmat_1d2/scripts/D04_SSO_900KM_I97P6_JUN_36H_G44.script",
+      "script_sha256": "3ed8856240f014dba2012b6560cc4702992916d3e264e93681d606b2cfd50f9b",
+      "output": "data/reference/gmat_1d2/output/D04_SSO_900KM_I97P6_JUN_36H_G44.e"
+    },
+    {
+      "case_id": "D04_SSO_900KM_I97P6_JUN_36H",
+      "model_id": "G88",
+      "degree": 8,
+      "order": 8,
+      "duration_hours": 36.0,
+      "script": "data/reference/gmat_1d2/scripts/D04_SSO_900KM_I97P6_JUN_36H_G88.script",
+      "script_sha256": "ec6f8f8d2ef57f174d6231e01113055ac5bbf7ad69ec8a31f8d53d81e0e20f6a",
+      "output": "data/reference/gmat_1d2/output/D04_SSO_900KM_I97P6_JUN_36H_G88.e"
+    },
+    {
+      "case_id": "D04_SSO_900KM_I97P6_JUN_36H",
+      "model_id": "G2020",
+      "degree": 20,
+      "order": 20,
+      "duration_hours": 36.0,
+      "script": "data/reference/gmat_1d2/scripts/D04_SSO_900KM_I97P6_JUN_36H_G2020.script",
+      "script_sha256": "acd539aa82f454f60fd7348ec48776150d5a0c8a2cc598f24c325fa5279f1219",
+      "output": "data/reference/gmat_1d2/output/D04_SSO_900KM_I97P6_JUN_36H_G2020.e"
+    },
+    {
+      "case_id": "D05_RETRO_1200KM_I120_AUG_48H",
+      "model_id": "G20",
+      "degree": 2,
+      "order": 0,
+      "duration_hours": 48.0,
+      "script": "data/reference/gmat_1d2/scripts/D05_RETRO_1200KM_I120_AUG_48H_G20.script",
+      "script_sha256": "4d20fdc068efbab062b9912e90e226642d9c1de218a3034bad650aa83ecf67d7",
+      "output": "data/reference/gmat_1d2/output/D05_RETRO_1200KM_I120_AUG_48H_G20.e"
+    },
+    {
+      "case_id": "D05_RETRO_1200KM_I120_AUG_48H",
+      "model_id": "G44",
+      "degree": 4,
+      "order": 4,
+      "duration_hours": 48.0,
+      "script": "data/reference/gmat_1d2/scripts/D05_RETRO_1200KM_I120_AUG_48H_G44.script",
+      "script_sha256": "8a910f162e0134e875c9e675e591c39bbb63c44b8d32717730df8dc006f5e9f9",
+      "output": "data/reference/gmat_1d2/output/D05_RETRO_1200KM_I120_AUG_48H_G44.e"
+    },
+    {
+      "case_id": "D05_RETRO_1200KM_I120_AUG_48H",
+      "model_id": "G88",
+      "degree": 8,
+      "order": 8,
+      "duration_hours": 48.0,
+      "script": "data/reference/gmat_1d2/scripts/D05_RETRO_1200KM_I120_AUG_48H_G88.script",
+      "script_sha256": "950531fe125e94bc42efb81db5e2609136b862b327a6fc420fa8984abfa2143c",
+      "output": "data/reference/gmat_1d2/output/D05_RETRO_1200KM_I120_AUG_48H_G88.e"
+    },
+    {
+      "case_id": "D05_RETRO_1200KM_I120_AUG_48H",
+      "model_id": "G2020",
+      "degree": 20,
+      "order": 20,
+      "duration_hours": 48.0,
+      "script": "data/reference/gmat_1d2/scripts/D05_RETRO_1200KM_I120_AUG_48H_G2020.script",
+      "script_sha256": "e999877b03fa331dd372eb16fcd924e62ee86a6bca3ac4f47e09df623d221cf0",
+      "output": "data/reference/gmat_1d2/output/D05_RETRO_1200KM_I120_AUG_48H_G2020.e"
+    },
+    {
+      "case_id": "D06_LONG_550KM_I45_SEP_72H",
+      "model_id": "G20",
+      "degree": 2,
+      "order": 0,
+      "duration_hours": 72.0,
+      "script": "data/reference/gmat_1d2/scripts/D06_LONG_550KM_I45_SEP_72H_G20.script",
+      "script_sha256": "41b7555f46dd5b0941b86bf5f7e0754f3c1562cf0436016037a34909d38f9714",
+      "output": "data/reference/gmat_1d2/output/D06_LONG_550KM_I45_SEP_72H_G20.e"
+    },
+    {
+      "case_id": "D06_LONG_550KM_I45_SEP_72H",
+      "model_id": "G44",
+      "degree": 4,
+      "order": 4,
+      "duration_hours": 72.0,
+      "script": "data/reference/gmat_1d2/scripts/D06_LONG_550KM_I45_SEP_72H_G44.script",
+      "script_sha256": "29be7831db2c29eac672e31e707fee99f45b342ff68d43a76ea2d566b885da78",
+      "output": "data/reference/gmat_1d2/output/D06_LONG_550KM_I45_SEP_72H_G44.e"
+    },
+    {
+      "case_id": "D06_LONG_550KM_I45_SEP_72H",
+      "model_id": "G88",
+      "degree": 8,
+      "order": 8,
+      "duration_hours": 72.0,
+      "script": "data/reference/gmat_1d2/scripts/D06_LONG_550KM_I45_SEP_72H_G88.script",
+      "script_sha256": "965acd5ec642023b0f10656ec06770b057e31b052717da3ffd79485bc7d296e8",
+      "output": "data/reference/gmat_1d2/output/D06_LONG_550KM_I45_SEP_72H_G88.e"
+    },
+    {
+      "case_id": "D06_LONG_550KM_I45_SEP_72H",
+      "model_id": "G2020",
+      "degree": 20,
+      "order": 20,
+      "duration_hours": 72.0,
+      "script": "data/reference/gmat_1d2/scripts/D06_LONG_550KM_I45_SEP_72H_G2020.script",
+      "script_sha256": "ca108d8953cab9c66179d01b542d733c968afdf33de5fdea997155904424906d",
+      "output": "data/reference/gmat_1d2/output/D06_LONG_550KM_I45_SEP_72H_G2020.e"
+    }
+  ],
+  "public_release_note": "Generated GMAT file paths were normalized to repository-relative paths. Scientific configurations and raw outputs are unchanged."
+}

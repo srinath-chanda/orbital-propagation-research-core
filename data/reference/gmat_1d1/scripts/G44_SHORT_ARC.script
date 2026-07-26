@@ -1,0 +1,57 @@
+% Research Core 1D.1 fallback individual short arc
+
+% G44: degree 4, order 4
+Create Spacecraft G44Sat;
+G44Sat.DateFormat = UTCGregorian;
+G44Sat.Epoch = '01 Jan 2026 00:00:00.000';
+G44Sat.CoordinateSystem = EarthMJ2000Eq;
+G44Sat.DisplayStateType = Cartesian;
+G44Sat.X = 4791.244801771758830;
+G44Sat.Y = 3981.843847094183275;
+G44Sat.Z = 2653.334545050801353;
+G44Sat.VX = -5.018943360359614;
+G44Sat.VY = 2.567534615772381;
+G44Sat.VZ = 5.209846002826843;
+G44Sat.DryMass = 500;
+G44Sat.Cd = 2.2;
+G44Sat.Cr = 1.0;
+G44Sat.DragArea = 4;
+G44Sat.SRPArea = 4;
+
+Create ForceModel G44FM;
+G44FM.CentralBody = Earth;
+G44FM.PrimaryBodies = {Earth};
+G44FM.Drag = None;
+G44FM.SRP = Off;
+G44FM.RelativisticCorrection = Off;
+G44FM.ErrorControl = RSSStep;
+G44FM.GravityField.Earth.Degree = 4;
+G44FM.GravityField.Earth.Order = 4;
+G44FM.GravityField.Earth.PotentialFile = './data/reference/gmat_r2026a/JGM2.cof';
+G44FM.GravityField.Earth.TideModel = 'None';
+
+Create Propagator G44Prop;
+G44Prop.FM = G44FM;
+G44Prop.Type = PrinceDormand78;
+G44Prop.InitialStepSize = 10;
+G44Prop.Accuracy = 1e-13;
+G44Prop.MinStep = 1e-6;
+G44Prop.MaxStep = 10;
+G44Prop.MaxStepAttempts = 50;
+G44Prop.StopIfAccuracyIsViolated = true;
+
+Create EphemerisFile G44Eph;
+G44Eph.Spacecraft = G44Sat;
+G44Eph.Filename = './data/reference/gmat_1d1/output/G44_SHORT_ARC.e';
+G44Eph.FileFormat = STK-TimePosVel;
+G44Eph.EpochFormat = UTCGregorian;
+G44Eph.InitialEpoch = InitialSpacecraftEpoch;
+G44Eph.FinalEpoch = FinalSpacecraftEpoch;
+G44Eph.StepSize = 10;
+G44Eph.Interpolator = Lagrange;
+G44Eph.InterpolationOrder = 7;
+G44Eph.CoordinateSystem = EarthMJ2000Eq;
+G44Eph.WriteEphemeris = true;
+
+BeginMissionSequence;
+Propagate G44Prop(G44Sat) {G44Sat.ElapsedSecs = 1800};

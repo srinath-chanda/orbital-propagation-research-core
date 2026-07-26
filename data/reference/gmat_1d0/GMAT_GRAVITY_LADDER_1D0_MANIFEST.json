@@ -1,0 +1,55 @@
+{
+  "schema_version": "1D.0",
+  "experiment_id": "EXP-GMAT-GRAVITY-1D0-001",
+  "status": "scripts_prepared_gmat_execution_pending",
+  "configuration": "configs/gmat_gravity_1d0_ladder.json",
+  "configuration_sha256": "b774a5f6a2d406c404bbdf04f5f0b173953e037f2cdf2f6cfd06ffaf50920678",
+  "baseline_configuration": "configs/case_leo400_gmat_matched.json",
+  "gravity_file": "data/reference/gmat_r2026a/JGM2.cof",
+  "gravity_file_sha256": "bf182b1208e33be3716c8292a3947c1f87d4041ad6663a0c9ae621f65cafc20d",
+  "master_script": "data/reference/gmat_1d0/scripts/RUN_GRAVITY_LADDER_1D0.script",
+  "master_script_sha256": "67616b281f7dbce3495d852e7ba5b92e1be26be1416e8be509f90de2e02d5970",
+  "output_report": "data/reference/gmat_1d0/output/GMAT_GRAVITY_LADDER_1D0.csv",
+  "sample_count": 25,
+  "model_count": 6,
+  "ladder": [
+    {
+      "alias": "G00",
+      "label": "point_mass",
+      "degree": 0,
+      "order": 0
+    },
+    {
+      "alias": "G20",
+      "label": "j2_baseline",
+      "degree": 2,
+      "order": 0
+    },
+    {
+      "alias": "G40",
+      "label": "zonal_through_degree_4",
+      "degree": 4,
+      "order": 0
+    },
+    {
+      "alias": "G44",
+      "label": "degree_and_order_4",
+      "degree": 4,
+      "order": 4
+    },
+    {
+      "alias": "G88",
+      "label": "degree_and_order_8",
+      "degree": 8,
+      "order": 8
+    },
+    {
+      "alias": "G2020",
+      "label": "degree_and_order_20",
+      "degree": 20,
+      "order": 20
+    }
+  ],
+  "archived_previous_output_count": 0,
+  "public_release_note": "Generated GMAT file paths were normalized to repository-relative paths. Scientific configurations and raw outputs are unchanged."
+}

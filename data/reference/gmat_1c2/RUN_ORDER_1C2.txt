@@ -1,0 +1,15 @@
+RESEARCH CORE 1C.2 INDEPENDENT GMAT RUN ORDER
+
+Preferred: open scripts/RUN_ALL_CASES_1C2.script in GMAT R2026a and run once.
+Fallback: run each TWO_BODY script followed by its matching J2 script.
+
+01. C01_LOW_350KM_I1_FEB_6H: TWO_BODY, then J2
+02. C02_MID_500KM_I28P5_MAR_12H: TWO_BODY, then J2
+03. C03_CRITICAL_700KM_I63P4_MAY_24H: TWO_BODY, then J2
+04. C04_SSO_900KM_I97P6_JUN_36H: TWO_BODY, then J2
+05. C05_RETRO_1200KM_I120_AUG_48H: TWO_BODY, then J2
+06. C06_LONG_550KM_I45_SEP_72H: TWO_BODY, then J2
+
+Expected ephemeris files: 12
+Do not edit cases, thresholds, the EOP file, or outputs.
+Retain all outputs even if a later Python gate fails.

@@ -1,0 +1,56 @@
+{
+  "schema_version": "1D.1",
+  "experiment_id": "EXP-GMAT-GRAVITY-1D1-SHORT-ARC-001",
+  "status": "scripts_prepared_gmat_execution_pending",
+  "prerequisite_closure_id": "CLOSURE-GMAT-GRAVITY-1D0-001",
+  "configuration": "configs/gmat_gravity_1d1_short_arc.json",
+  "configuration_sha256": "2d65754fa217858f49a0caae4282b933980711fcb9ddf5a349a286aec7d591b7",
+  "gravity_file": "data/reference/gmat_r2026a/JGM2.cof",
+  "gravity_file_sha256": "bf182b1208e33be3716c8292a3947c1f87d4041ad6663a0c9ae621f65cafc20d",
+  "master_script": "data/reference/gmat_1d1/scripts/RUN_GRAVITY_SHORT_ARCS_1D1.script",
+  "master_script_sha256": "49594c2704df4cf3a43bc277dbb9b9ffd08b767cb2e19950cd174bd7ef12ed40",
+  "duration_seconds": 1800.0,
+  "output_step_seconds": 10.0,
+  "model_count": 4,
+  "expected_output_count": 4,
+  "archived_previous_output_count": 0,
+  "models": [
+    {
+      "model_id": "G20",
+      "label": "j2_validated_control",
+      "degree": 2,
+      "order": 0,
+      "script": "data/reference/gmat_1d1/scripts/G20_SHORT_ARC.script",
+      "script_sha256": "f6d223f75b69f648a85c76d12f649f5872b0011122cb9ec944d77afded4b34f5",
+      "output": "data/reference/gmat_1d1/output/G20_SHORT_ARC.e"
+    },
+    {
+      "model_id": "G44",
+      "label": "degree_and_order_4",
+      "degree": 4,
+      "order": 4,
+      "script": "data/reference/gmat_1d1/scripts/G44_SHORT_ARC.script",
+      "script_sha256": "5c7ab229bb83f3c4f20e8339495e8340d0aba64fc118c72c5af036c4c8031d08",
+      "output": "data/reference/gmat_1d1/output/G44_SHORT_ARC.e"
+    },
+    {
+      "model_id": "G88",
+      "label": "degree_and_order_8",
+      "degree": 8,
+      "order": 8,
+      "script": "data/reference/gmat_1d1/scripts/G88_SHORT_ARC.script",
+      "script_sha256": "d1c482d1086c0d7f741aba3b938ce519704984e2f11578d9fafe306751890108",
+      "output": "data/reference/gmat_1d1/output/G88_SHORT_ARC.e"
+    },
+    {
+      "model_id": "G2020",
+      "label": "degree_and_order_20",
+      "degree": 20,
+      "order": 20,
+      "script": "data/reference/gmat_1d1/scripts/G2020_SHORT_ARC.script",
+      "script_sha256": "9d1baa3729c91a669d531d8e5a18def5be1139d973e68860da98a0e20b593555",
+      "output": "data/reference/gmat_1d1/output/G2020_SHORT_ARC.e"
+    }
+  ],
+  "public_release_note": "Generated GMAT file paths were normalized to repository-relative paths. Scientific configurations and raw outputs are unchanged."
+}

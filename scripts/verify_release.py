@@ -37,15 +37,18 @@ REQUIRED_PATHS = (
 )
 
 FORBIDDEN_DIRECTORY_NAMES = {
-    ".git",
-    ".mypy_cache",
-    ".pytest_cache",
     ".venv",
-    "__pycache__",
     "build",
     "dist",
     "htmlcov",
     "venv",
+}
+
+IGNORED_RUNTIME_DIRECTORY_NAMES = {
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+    "__pycache__",
 }
 
 TEXT_SUFFIXES = {
@@ -86,8 +89,22 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def is_runtime_generated(path: Path) -> bool:
+    relative = path.relative_to(ROOT)
+    directories = relative.parts[:-1]
+    return any(
+        directory in IGNORED_RUNTIME_DIRECTORY_NAMES
+        or directory.endswith(".egg-info")
+        for directory in directories
+    )
+
+
 def repository_files() -> list[Path]:
-    return sorted(path for path in ROOT.rglob("*") if path.is_file())
+    return sorted(
+        path
+        for path in ROOT.rglob("*")
+        if path.is_file() and not is_runtime_generated(path)
+    )
 
 
 def check_required(errors: list[str]) -> None:

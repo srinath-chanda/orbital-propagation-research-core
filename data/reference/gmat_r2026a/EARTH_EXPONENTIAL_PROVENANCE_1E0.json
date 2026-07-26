@@ -1,0 +1,12 @@
+{
+  "schema_version": "1E.0",
+  "source_release": "NASA GMAT R2026a",
+  "source_tag": "R2026a",
+  "source_repository_path": "application/data/atmosphere/earth/EarthExponentialAtmosphereData.txt",
+  "implementation_source_path": "src/base/solarsys/ExponentialAtmosphere.cpp",
+  "row_count": 28,
+  "columns": ["reference_height_km", "reference_density_kg_m3", "scale_height_km"],
+  "interpolation": "piecewise exponential without smoothing",
+  "altitude_definition": "GMAT geodetic height using Earth radius 6378.1363 km and flattening 0.00335270",
+  "scientific_scope": "Deterministic software-model validation table; not a real-date thermospheric forecast."
+}

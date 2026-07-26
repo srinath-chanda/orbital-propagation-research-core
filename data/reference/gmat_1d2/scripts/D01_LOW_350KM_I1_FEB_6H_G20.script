@@ -1,0 +1,57 @@
+% Research Core 1D.2 fallback individual full-arc case/model
+
+% D01_LOW_350KM_I1_FEB_6H / G20 degree 2, order 0
+Create Spacecraft D01G20Sat;
+D01G20Sat.DateFormat = UTCGregorian;
+D01G20Sat.Epoch = '11 Feb 2026 03:17:00.000';
+D01G20Sat.CoordinateSystem = EarthMJ2000Eq;
+D01G20Sat.DisplayStateType = Cartesian;
+D01G20Sat.X = -6738.026452274639269;
+D01G20Sat.Y = -117.788239929651468;
+D01G20Sat.Z = 20.423332232526711;
+D01G20Sat.VX = 0.114529584323189;
+D01G20Sat.VY = -7.682495189076065;
+D01G20Sat.VZ = -0.132016136404040;
+D01G20Sat.DryMass = 500;
+D01G20Sat.Cd = 2.2;
+D01G20Sat.Cr = 1.0;
+D01G20Sat.DragArea = 4;
+D01G20Sat.SRPArea = 4;
+
+Create ForceModel D01G20FM;
+D01G20FM.CentralBody = Earth;
+D01G20FM.PrimaryBodies = {Earth};
+D01G20FM.Drag = None;
+D01G20FM.SRP = Off;
+D01G20FM.RelativisticCorrection = Off;
+D01G20FM.ErrorControl = RSSStep;
+D01G20FM.GravityField.Earth.Degree = 2;
+D01G20FM.GravityField.Earth.Order = 0;
+D01G20FM.GravityField.Earth.PotentialFile = './data/reference/gmat_r2026a/JGM2.cof';
+D01G20FM.GravityField.Earth.TideModel = 'None';
+
+Create Propagator D01G20Prop;
+D01G20Prop.FM = D01G20FM;
+D01G20Prop.Type = PrinceDormand78;
+D01G20Prop.InitialStepSize = 60;
+D01G20Prop.Accuracy = 1e-13;
+D01G20Prop.MinStep = 1e-6;
+D01G20Prop.MaxStep = 60;
+D01G20Prop.MaxStepAttempts = 50;
+D01G20Prop.StopIfAccuracyIsViolated = true;
+
+Create EphemerisFile D01G20Eph;
+D01G20Eph.Spacecraft = D01G20Sat;
+D01G20Eph.Filename = './data/reference/gmat_1d2/output/D01_LOW_350KM_I1_FEB_6H_G20.e';
+D01G20Eph.FileFormat = STK-TimePosVel;
+D01G20Eph.EpochFormat = UTCGregorian;
+D01G20Eph.InitialEpoch = InitialSpacecraftEpoch;
+D01G20Eph.FinalEpoch = FinalSpacecraftEpoch;
+D01G20Eph.StepSize = 60;
+D01G20Eph.Interpolator = Lagrange;
+D01G20Eph.InterpolationOrder = 7;
+D01G20Eph.CoordinateSystem = EarthMJ2000Eq;
+D01G20Eph.WriteEphemeris = true;
+
+BeginMissionSequence;
+Propagate D01G20Prop(D01G20Sat) {D01G20Sat.ElapsedSecs = 21600};

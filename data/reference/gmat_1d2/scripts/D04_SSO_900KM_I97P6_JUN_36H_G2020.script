@@ -1,0 +1,57 @@
+% Research Core 1D.2 fallback individual full-arc case/model
+
+% D04_SSO_900KM_I97P6_JUN_36H / G2020 degree 20, order 20
+Create Spacecraft D04G2020Sat;
+D04G2020Sat.DateFormat = UTCGregorian;
+D04G2020Sat.Epoch = '17 Jun 2026 06:30:00.000';
+D04G2020Sat.CoordinateSystem = EarthMJ2000Eq;
+D04G2020Sat.DisplayStateType = Cartesian;
+D04G2020Sat.X = 2160.599293531969124;
+D04G2020Sat.Y = -2762.276994340656529;
+D04G2020Sat.Z = -6344.269080876216321;
+D04G2020Sat.VX = -5.447052732731525;
+D04G2020Sat.VY = 3.666955350907003;
+D04G2020Sat.VZ = -3.477070609289579;
+D04G2020Sat.DryMass = 500;
+D04G2020Sat.Cd = 2.2;
+D04G2020Sat.Cr = 1.0;
+D04G2020Sat.DragArea = 4;
+D04G2020Sat.SRPArea = 4;
+
+Create ForceModel D04G2020FM;
+D04G2020FM.CentralBody = Earth;
+D04G2020FM.PrimaryBodies = {Earth};
+D04G2020FM.Drag = None;
+D04G2020FM.SRP = Off;
+D04G2020FM.RelativisticCorrection = Off;
+D04G2020FM.ErrorControl = RSSStep;
+D04G2020FM.GravityField.Earth.Degree = 20;
+D04G2020FM.GravityField.Earth.Order = 20;
+D04G2020FM.GravityField.Earth.PotentialFile = './data/reference/gmat_r2026a/JGM2.cof';
+D04G2020FM.GravityField.Earth.TideModel = 'None';
+
+Create Propagator D04G2020Prop;
+D04G2020Prop.FM = D04G2020FM;
+D04G2020Prop.Type = PrinceDormand78;
+D04G2020Prop.InitialStepSize = 60;
+D04G2020Prop.Accuracy = 1e-13;
+D04G2020Prop.MinStep = 1e-6;
+D04G2020Prop.MaxStep = 60;
+D04G2020Prop.MaxStepAttempts = 50;
+D04G2020Prop.StopIfAccuracyIsViolated = true;
+
+Create EphemerisFile D04G2020Eph;
+D04G2020Eph.Spacecraft = D04G2020Sat;
+D04G2020Eph.Filename = './data/reference/gmat_1d2/output/D04_SSO_900KM_I97P6_JUN_36H_G2020.e';
+D04G2020Eph.FileFormat = STK-TimePosVel;
+D04G2020Eph.EpochFormat = UTCGregorian;
+D04G2020Eph.InitialEpoch = InitialSpacecraftEpoch;
+D04G2020Eph.FinalEpoch = FinalSpacecraftEpoch;
+D04G2020Eph.StepSize = 60;
+D04G2020Eph.Interpolator = Lagrange;
+D04G2020Eph.InterpolationOrder = 7;
+D04G2020Eph.CoordinateSystem = EarthMJ2000Eq;
+D04G2020Eph.WriteEphemeris = true;
+
+BeginMissionSequence;
+Propagate D04G2020Prop(D04G2020Sat) {D04G2020Sat.ElapsedSecs = 129600};
