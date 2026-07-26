@@ -1,0 +1,3 @@
+data/reference/**/*.e -text
+data/reference/**/*.csv -text
+data/reference/**/*.cof -text
