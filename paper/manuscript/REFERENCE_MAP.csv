@@ -11,3 +11,4 @@ reference_number,formatted_reference,status
 10,"Rhodes, B., python-sgp4, Version 2.27, 2026. https://github.com/brandon-rhodes/python-sgp4 (accessed 26 July 2026).",verified
 11,"Kelso, T. S., “A New Way to Obtain GP Data (aka TLEs),” CelesTrak, https://celestrak.org/NORAD/documentation/gp-data-formats.php; archived ISS TLE, NORAD 25544, retrieved 18 July 2026.",verified
 12,"Montenbruck, O., and Gill, E., Satellite Orbits: Models, Methods and Applications, Springer, Berlin, 2000. doi: 10.1007/978-3-642-58351-3.",verified
+13,"Chanda, S., Orbital Propagation Research Core, Version 0.1.0, Zenodo, 2026. doi: 10.5281/zenodo.21611669.",verified

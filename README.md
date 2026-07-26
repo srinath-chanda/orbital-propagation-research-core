@@ -15,6 +15,17 @@ Validation of Low-Earth-Orbit Propagation Models.”** It compares:
 The Paper 1 baseline is frozen. No additional force-model development is part
 of this release.
 
+## Archived release
+
+Version `v0.1.0` is the frozen software release supporting Paper 1.
+
+- GitHub release:
+  [v0.1.0](https://github.com/srinath-chanda/orbital-propagation-research-core/releases/tag/v0.1.0)
+- Version DOI:
+  [10.5281/zenodo.21611669](https://doi.org/10.5281/zenodo.21611669)
+- Concept DOI for all versions:
+  [10.5281/zenodo.21611668](https://doi.org/10.5281/zenodo.21611668)
+
 ## Recorded Paper 1 baseline
 
 | Item | Recorded result |
@@ -137,8 +148,7 @@ The current author preprint is
 Citation metadata is provided in [CITATION.cff](CITATION.cff).
 
 The manuscript is not represented here as accepted or published. Repository
-and archive identifiers should be added to the manuscript only after they are
-publicly accessible.
+and archive identifiers in the preprint refer to the frozen `v0.1.0` release.
 
 ## License and external material
 

@@ -2,7 +2,13 @@
 
 ## Version 0.1.0
 
-Initial public research release candidate for Paper 1.
+Initial public research release for Paper 1.
+
+Archived release:
+
+- GitHub tag: `v0.1.0`
+- Version DOI: https://doi.org/10.5281/zenodo.21611669
+- Concept DOI: https://doi.org/10.5281/zenodo.21611668
 
 Included:
 

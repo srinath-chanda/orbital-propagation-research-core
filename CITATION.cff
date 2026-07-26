@@ -1,12 +1,15 @@
 cff-version: 1.2.0
-message: "If you use this software or its research results, cite this repository and the manuscript preprint."
+message: "If you use this software or its research results, cite the archived v0.1.0 release and the manuscript preprint."
 title: "Orbital Propagation Research Core"
 type: software
 version: 0.1.0
+date-released: 2026-07-26
+doi: 10.5281/zenodo.21611669
 authors:
   - family-names: Chanda
     given-names: Srinath
 repository-code: "https://github.com/srinath-chanda/orbital-propagation-research-core"
+url: "https://doi.org/10.5281/zenodo.21611669"
 abstract: >-
   A reproducible Python framework for comparing analytical two-body,
   numerical two-body, J2, simplified-drag, and fixed-TLE SGP4 propagation in

@@ -20,8 +20,11 @@ The author declares no conflict of interest.
 
 The repository release contains the source, registered configurations, selected
 validation evidence, publication figures and tables, and SHA-256 manifest.
-Insert the final public repository URL, release tag, and archive DOI in the
-submitted manuscript only after each identifier is active.
+
+GitHub release:
+https://github.com/srinath-chanda/orbital-propagation-research-core/releases/tag/v0.1.0
+
+Archived version DOI: https://doi.org/10.5281/zenodo.21611669
 
 ## Artificial-intelligence assistance
 
