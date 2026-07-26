@@ -1,0 +1,244 @@
+{
+  "research_core_version": "1C.2",
+  "case_id": "C05_RETRO_1200KM_I120_AUG_48H",
+  "status": "passed_with_warnings",
+  "models": {
+    "two_body": {
+      "reference_model": "gmat_two_body",
+      "comparison_model": "numerical_two_body",
+      "frame": "EarthMJ2000Eq",
+      "position_difference_m": {
+        "initial": 4.547473508864641e-10,
+        "final": 3.91363276627344e-05,
+        "mean": 0.0010801745292497,
+        "mean_absolute": 0.0010801745292497,
+        "rms": 0.0019222880863180903,
+        "median": 2.074767342618118e-05,
+        "standard_deviation": 0.0015900988878559267,
+        "maximum_absolute": 0.0035280696066143746,
+        "percentile_95_absolute": 0.0035064163543747336,
+        "time_of_maximum_seconds": 7380.0
+      },
+      "velocity_difference_mm_s": {
+        "initial": 4.847302891456678e-10,
+        "final": 3.764744256896141e-05,
+        "mean": 0.0010342692714779018,
+        "mean_absolute": 0.0010342692714779018,
+        "rms": 0.0018411444650728581,
+        "median": 1.984428023980682e-05,
+        "standard_deviation": 0.0015231874524644009,
+        "maximum_absolute": 0.003446051038347236,
+        "percentile_95_absolute": 0.003412885437085626,
+        "time_of_maximum_seconds": 7380.0
+      }
+    },
+    "closed_baseline": {
+      "reference_model": "gmat_j2",
+      "comparison_model": "numerical_j2_iau1976_1980",
+      "frame": "EarthMJ2000Eq",
+      "position_difference_m": {
+        "initial": 4.547473508864641e-10,
+        "final": 3.085602644160532,
+        "mean": 1.9419646871274665,
+        "mean_absolute": 1.9419646871274665,
+        "rms": 2.1287557752268547,
+        "median": 1.6549719946154828,
+        "standard_deviation": 0.8719944406426043,
+        "maximum_absolute": 3.2276044135275535,
+        "percentile_95_absolute": 3.1526295632175034,
+        "time_of_maximum_seconds": 123900.0
+      },
+      "velocity_difference_mm_s": {
+        "initial": 4.847302891456678e-10,
+        "final": 3.0126718476599543,
+        "mean": 1.8553995121396518,
+        "mean_absolute": 1.8553995121396518,
+        "rms": 2.034318721898486,
+        "median": 1.56366601457543,
+        "standard_deviation": 0.8342333682001892,
+        "maximum_absolute": 3.135325642492129,
+        "percentile_95_absolute": 3.005675962094191,
+        "time_of_maximum_seconds": 118860.0
+      }
+    },
+    "full_eop_candidate": {
+      "reference_model": "gmat_j2",
+      "comparison_model": "numerical_j2_gmat_r2026a_eop_full",
+      "frame": "EarthMJ2000Eq",
+      "position_difference_m": {
+        "initial": 4.547473508864641e-10,
+        "final": 0.0028025590463473175,
+        "mean": 0.0015570154485796699,
+        "mean_absolute": 0.0015570154485796699,
+        "rms": 0.0018429457707529692,
+        "median": 0.0014282910394626607,
+        "standard_deviation": 0.0009859776908330657,
+        "maximum_absolute": 0.004297054167318452,
+        "percentile_95_absolute": 0.0033556660821202604,
+        "time_of_maximum_seconds": 136380.0
+      },
+      "velocity_difference_mm_s": {
+        "initial": 4.847302891456678e-10,
+        "final": 0.0027062194045451124,
+        "mean": 0.0014884640662191052,
+        "mean_absolute": 0.0014884640662191052,
+        "rms": 0.001762606269556806,
+        "median": 0.0013633259949524747,
+        "standard_deviation": 0.0009440633374172774,
+        "maximum_absolute": 0.0040716840897499955,
+        "percentile_95_absolute": 0.00321043972138254,
+        "time_of_maximum_seconds": 145140.0
+      }
+    }
+  },
+  "checks": [
+    {
+      "validation_id": "1C2-001",
+      "name": "Two-body initial position",
+      "measured_value": 4.547473508864641e-10,
+      "criterion": "<= 0.001 m",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-002",
+      "name": "Two-body initial velocity",
+      "measured_value": 4.847302891456678e-10,
+      "criterion": "<= 0.001 mm/s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-003",
+      "name": "J2 initial position",
+      "measured_value": 4.547473508864641e-10,
+      "criterion": "<= 0.001 m",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-004",
+      "name": "J2 initial velocity",
+      "measured_value": 4.847302891456678e-10,
+      "criterion": "<= 0.001 mm/s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-005",
+      "name": "Output duration",
+      "measured_value": 172800.0,
+      "criterion": "abs(final-172800.0) <= 1e-6 s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-006",
+      "name": "Output step",
+      "measured_value": 0.0,
+      "criterion": "<= 1e-6 s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-007",
+      "name": "Two-body raw epoch grid",
+      "measured_value": 2.9339571483433247e-07,
+      "criterion": "<= 1e-6 s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-008",
+      "name": "J2 raw epoch grid",
+      "measured_value": 6.286136340349913e-07,
+      "criterion": "<= 1e-6 s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-009",
+      "name": "Two-body maximum position",
+      "measured_value": 0.0035280696066143746,
+      "criterion": "<= 0.1 m",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-010",
+      "name": "Two-body maximum velocity",
+      "measured_value": 0.003446051038347236,
+      "criterion": "<= 0.1 mm/s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-011",
+      "name": "Full-EOP candidate maximum position",
+      "measured_value": 0.004297054167318452,
+      "criterion": "<= 0.3 m",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-012",
+      "name": "Full-EOP candidate maximum velocity",
+      "measured_value": 0.0040716840897499955,
+      "criterion": "<= 0.3 mm/s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-013",
+      "name": "Frozen EOP checksum",
+      "measured_value": "52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3",
+      "criterion": "== 52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-014",
+      "name": "EOP interval remains inside tagged coverage",
+      "measured_value": "interpolated_between_source_rows;interpolated_between_source_rows",
+      "criterion": "neither endpoint is clamped",
+      "status": "passed"
+    }
+  ],
+  "failed_check_count": 0,
+  "time_grid": {
+    "two_body": {
+      "maximum_absolute_raw_time_residual_seconds": 2.9339571483433247e-07,
+      "final_raw_time_residual_seconds": 0.0,
+      "synchronization_tolerance_seconds": 1e-06,
+      "configured_step_seconds": 60.0,
+      "configured_duration_seconds": 172800.0
+    },
+    "j2": {
+      "maximum_absolute_raw_time_residual_seconds": 6.286136340349913e-07,
+      "final_raw_time_residual_seconds": -6.286136340349913e-07,
+      "synchronization_tolerance_seconds": 1e-06,
+      "configured_step_seconds": 60.0,
+      "configured_duration_seconds": 172800.0
+    }
+  },
+  "eop": {
+    "source_sha256": "52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3",
+    "start_sample": {
+      "mjd_utc": 61256.78611111111,
+      "x_arcsec": 0.24058900277777803,
+      "y_arcsec": 0.3783929388888873,
+      "ut1_utc_seconds": 0.073463050555556,
+      "lod_seconds": -0.0002743,
+      "coverage_status": "interpolated_between_source_rows",
+      "uncertainty_status": "placeholder_uncertainty_in_tagged_file",
+      "left_source_mjd": 61256.0,
+      "right_source_mjd": 61257.0
+    },
+    "end_sample": {
+      "mjd_utc": 61258.78611111111,
+      "x_arcsec": 0.24122942777777823,
+      "y_arcsec": 0.37579934999999837,
+      "ut1_utc_seconds": 0.07466924555555654,
+      "lod_seconds": -0.0006481,
+      "coverage_status": "interpolated_between_source_rows",
+      "uncertainty_status": "placeholder_uncertainty_in_tagged_file",
+      "left_source_mjd": 61258.0,
+      "right_source_mjd": 61259.0
+    }
+  },
+  "source_files": {
+    "configuration": "data/reference/gmat_1c2/cases/C05_RETRO_1200KM_I120_AUG_48H.json",
+    "configuration_sha256": "8bf9869386a0773d134bb43c5a55b9001a276de8d1108439b2c353a929f0d928",
+    "gmat_two_body": "data/reference/gmat_1c2/output/C05_RETRO_1200KM_I120_AUG_48H_TWO_BODY.e",
+    "gmat_two_body_sha256": "7f51405839ba6be53065aaa72d200baedea3590a65e14a991bb9d87401b5a872",
+    "gmat_j2": "data/reference/gmat_1c2/output/C05_RETRO_1200KM_I120_AUG_48H_J2.e",
+    "gmat_j2_sha256": "f79b3eac5d85806ab25ad81fe015fecc3c20b4c1d87fdd8e5461005d8383c8ed"
+  }
+}

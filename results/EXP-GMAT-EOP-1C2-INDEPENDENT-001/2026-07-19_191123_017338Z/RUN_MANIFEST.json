@@ -1,0 +1,389 @@
+{
+  "files": [
+    {
+      "path": "cases/C01_LOW_350KM_I1_FEB_6H/case_validation_summary.json",
+      "sha256": "14603c6960aeb315595c13f96bab70fe8b35c4a62d774c797ca7f9c8367d3780",
+      "size_bytes": 8527
+    },
+    {
+      "path": "cases/C01_LOW_350KM_I1_FEB_6H/gmat_j2_states.csv",
+      "sha256": "a249245b3038a0b74dd30ac1def84912a6c3d2e5bbfa36a6b47f9ad24f3c72c6",
+      "size_bytes": 79785
+    },
+    {
+      "path": "cases/C01_LOW_350KM_I1_FEB_6H/gmat_two_body_states.csv",
+      "sha256": "3a61964ead5d2217b86d5ffa874b2e158f5517c38ab6211e0a0fdb2a44ef468b",
+      "size_bytes": 81965
+    },
+    {
+      "path": "cases/C01_LOW_350KM_I1_FEB_6H/python_closed_baseline_states.csv",
+      "sha256": "37ca7cede9647f7872144df5bc3e14cee96fcc19cc1a730a230e01cac5c5d57e",
+      "size_bytes": 87095
+    },
+    {
+      "path": "cases/C01_LOW_350KM_I1_FEB_6H/python_full_eop_candidate_states.csv",
+      "sha256": "b81b7b2654760b409b056c79874b1300b72e2ba42b53b36058df8a3660b34a1e",
+      "size_bytes": 90002
+    },
+    {
+      "path": "cases/C01_LOW_350KM_I1_FEB_6H/python_two_body_states.csv",
+      "sha256": "09dccb199371bca215c96446698523ee67369c6505488a4fb3e88f5758fad5d7",
+      "size_bytes": 84606
+    },
+    {
+      "path": "cases/C01_LOW_350KM_I1_FEB_6H/python_vs_gmat_closed_baseline_cartesian.csv",
+      "sha256": "78b6cc28ffb2c87c183ad1d174dfe1670f7afc72d2c080f525af41cb3f2f7749",
+      "size_bytes": 89254
+    },
+    {
+      "path": "cases/C01_LOW_350KM_I1_FEB_6H/python_vs_gmat_closed_baseline_rtn.csv",
+      "sha256": "0405c1017e784b6934529ef3077be6de0e0c2ea8bc78da04e6639b4a22e6987c",
+      "size_bytes": 75324
+    },
+    {
+      "path": "cases/C01_LOW_350KM_I1_FEB_6H/python_vs_gmat_full_eop_candidate_cartesian.csv",
+      "sha256": "a8974b64fc4220e0211f0f1a6630fdce010fee7f2b18434a39cdc2a4e5d227b9",
+      "size_bytes": 96018
+    },
+    {
+      "path": "cases/C01_LOW_350KM_I1_FEB_6H/python_vs_gmat_full_eop_candidate_rtn.csv",
+      "sha256": "7e63c66c1274507f83c1d51e520dd063040128d9b833436fca65fa9da206c3e7",
+      "size_bytes": 80205
+    },
+    {
+      "path": "cases/C01_LOW_350KM_I1_FEB_6H/python_vs_gmat_two_body_cartesian.csv",
+      "sha256": "f1d1a9f431c5c8951eddf3f76c43b8ed2c5342acd21e0ab8f052c9d78c5ca391",
+      "size_bytes": 93248
+    },
+    {
+      "path": "cases/C01_LOW_350KM_I1_FEB_6H/python_vs_gmat_two_body_rtn.csv",
+      "sha256": "df317a9d3ec876d165e4af726dac52f8d3bbfa2742444c635a9fbd292c71b1a5",
+      "size_bytes": 77481
+    },
+    {
+      "path": "cases/C02_MID_500KM_I28P5_MAR_12H/case_validation_summary.json",
+      "sha256": "973f13c4abcb32ddeaad31289c51343fd9821a45139231a0aa6175f430edfa7c",
+      "size_bytes": 8523
+    },
+    {
+      "path": "cases/C02_MID_500KM_I28P5_MAR_12H/gmat_j2_states.csv",
+      "sha256": "f21b3668fe833f9cf240a4574d2bbb4f577827dc1d95f18ba43395bb3964c57d",
+      "size_bytes": 158407
+    },
+    {
+      "path": "cases/C02_MID_500KM_I28P5_MAR_12H/gmat_two_body_states.csv",
+      "sha256": "34bc22817be3cae81d26901a11096d01cc5acccf688adc4a1baaf79b0ff63a54",
+      "size_bytes": 162716
+    },
+    {
+      "path": "cases/C02_MID_500KM_I28P5_MAR_12H/python_closed_baseline_states.csv",
+      "sha256": "86a33ec0c85d4681881c085cd07fc42c479d24f09c264fb419b00f4b86d6b7d6",
+      "size_bytes": 173159
+    },
+    {
+      "path": "cases/C02_MID_500KM_I28P5_MAR_12H/python_full_eop_candidate_states.csv",
+      "sha256": "2af0a9113bd433ae77c076790c600784a0db269ea559be7b355716e7d52202b5",
+      "size_bytes": 178992
+    },
+    {
+      "path": "cases/C02_MID_500KM_I28P5_MAR_12H/python_two_body_states.csv",
+      "sha256": "b4e695d2148b3cb6178c7eb9c7380eddef1641867f7e1aa917d54fe72c471fd0",
+      "size_bytes": 168136
+    },
+    {
+      "path": "cases/C02_MID_500KM_I28P5_MAR_12H/python_vs_gmat_closed_baseline_cartesian.csv",
+      "sha256": "1ffb620531e661081b7334da2c6479bb328293bc1f0f08cbec575a502ac8ee0c",
+      "size_bytes": 169110
+    },
+    {
+      "path": "cases/C02_MID_500KM_I28P5_MAR_12H/python_vs_gmat_closed_baseline_rtn.csv",
+      "sha256": "8602785f2cd73ac012c5dec18ede5b1c2b47afcf6b2d59c195f7893a6c01420e",
+      "size_bytes": 144279
+    },
+    {
+      "path": "cases/C02_MID_500KM_I28P5_MAR_12H/python_vs_gmat_full_eop_candidate_cartesian.csv",
+      "sha256": "e815df458d73e8e1f8bd0348e70eb397c6177dbb14d5a061f68f72a6eb608617",
+      "size_bytes": 191931
+    },
+    {
+      "path": "cases/C02_MID_500KM_I28P5_MAR_12H/python_vs_gmat_full_eop_candidate_rtn.csv",
+      "sha256": "cdb3193df8aae5798ab85b1fe93e2b4f79f07a345d1eaf523da20972a74d1518",
+      "size_bytes": 160285
+    },
+    {
+      "path": "cases/C02_MID_500KM_I28P5_MAR_12H/python_vs_gmat_two_body_cartesian.csv",
+      "sha256": "c558cf38331d8698308731e8642b7fafa7d9470e562a77201b0e049a5b696479",
+      "size_bytes": 186644
+    },
+    {
+      "path": "cases/C02_MID_500KM_I28P5_MAR_12H/python_vs_gmat_two_body_rtn.csv",
+      "sha256": "43349f78bc5ad0d01e11ff3129922a125f81145ce56127248649595bf55e3857",
+      "size_bytes": 154601
+    },
+    {
+      "path": "cases/C03_CRITICAL_700KM_I63P4_MAY_24H/case_validation_summary.json",
+      "sha256": "d117dcf9aceaca0cc0b964b0f4b77f9e17e58f17f330f5d891c05b2c78378bea",
+      "size_bytes": 8530
+    },
+    {
+      "path": "cases/C03_CRITICAL_700KM_I63P4_MAY_24H/gmat_j2_states.csv",
+      "sha256": "aacbc5b0b2ada7be2d40d1706d0b7e45336efba287e80fbc7bb0076753f3cced",
+      "size_bytes": 316572
+    },
+    {
+      "path": "cases/C03_CRITICAL_700KM_I63P4_MAY_24H/gmat_two_body_states.csv",
+      "sha256": "208c6142a71e23395e7ef0e16d7587c397bc9eca29aa8355d1105049d00b9ae0",
+      "size_bytes": 325198
+    },
+    {
+      "path": "cases/C03_CRITICAL_700KM_I63P4_MAY_24H/python_closed_baseline_states.csv",
+      "sha256": "caceb81d1eed7aa9d43418f76b79ef05192885c859a2fa60e338c98b81e3ef28",
+      "size_bytes": 345558
+    },
+    {
+      "path": "cases/C03_CRITICAL_700KM_I63P4_MAY_24H/python_full_eop_candidate_states.csv",
+      "sha256": "a9dfe32b6be15ee8540118005c9d7526ac716cad1db48765337ad5496cc94b66",
+      "size_bytes": 357064
+    },
+    {
+      "path": "cases/C03_CRITICAL_700KM_I63P4_MAY_24H/python_two_body_states.csv",
+      "sha256": "1ac5bc6cae35884dd52475d8f5e6b171e879078aa8d05d31d5fc78ec1aa5d6fd",
+      "size_bytes": 335364
+    },
+    {
+      "path": "cases/C03_CRITICAL_700KM_I63P4_MAY_24H/python_vs_gmat_closed_baseline_cartesian.csv",
+      "sha256": "c8276f5707d4863ae645c00daf4d20d7571e82380288823665310fec5c6ef128",
+      "size_bytes": 340652
+    },
+    {
+      "path": "cases/C03_CRITICAL_700KM_I63P4_MAY_24H/python_vs_gmat_closed_baseline_rtn.csv",
+      "sha256": "57d7ed770812924ff665ab7c956b30508bd4a101bec2d325eddfe289d9c25d07",
+      "size_bytes": 289451
+    },
+    {
+      "path": "cases/C03_CRITICAL_700KM_I63P4_MAY_24H/python_vs_gmat_full_eop_candidate_cartesian.csv",
+      "sha256": "bc7209dbe160988f5f7ddbf1dbaaa65df0421209661e799cc581fdb39ae1fb6e",
+      "size_bytes": 380049
+    },
+    {
+      "path": "cases/C03_CRITICAL_700KM_I63P4_MAY_24H/python_vs_gmat_full_eop_candidate_rtn.csv",
+      "sha256": "03ae62eb4b92b001d772b53d935749846415b691f8d1e33a651e3fbba0ec8b1e",
+      "size_bytes": 319547
+    },
+    {
+      "path": "cases/C03_CRITICAL_700KM_I63P4_MAY_24H/python_vs_gmat_two_body_cartesian.csv",
+      "sha256": "f8fe00139943d15e7507b7c448a35f99feae2e9a2927cfff64fc28fbb2c67516",
+      "size_bytes": 367181
+    },
+    {
+      "path": "cases/C03_CRITICAL_700KM_I63P4_MAY_24H/python_vs_gmat_two_body_rtn.csv",
+      "sha256": "91022b16b3296a90161efb6f81e11f073fad03ef9c05464f978129a69db4e01f",
+      "size_bytes": 307305
+    },
+    {
+      "path": "cases/C04_SSO_900KM_I97P6_JUN_36H/case_validation_summary.json",
+      "sha256": "bf52a7d88dc7b3cb2976352aa57dab4eb0af12ae125c933f0db7b0886fc371e1",
+      "size_bytes": 8530
+    },
+    {
+      "path": "cases/C04_SSO_900KM_I97P6_JUN_36H/gmat_j2_states.csv",
+      "sha256": "d205c23c926158c6ddfb80325dbdbdbe92bec0b01e0e1ec542db92d7c2a6b8a1",
+      "size_bytes": 475250
+    },
+    {
+      "path": "cases/C04_SSO_900KM_I97P6_JUN_36H/gmat_two_body_states.csv",
+      "sha256": "989336b45f8a7be62b28dfefe24592201bb6c3076f8f25463ca2c4510837f219",
+      "size_bytes": 488104
+    },
+    {
+      "path": "cases/C04_SSO_900KM_I97P6_JUN_36H/python_closed_baseline_states.csv",
+      "sha256": "55203189bd7f03e183ea65e2c26bb743ba18444dd22173f912ebe8c61dbaa493",
+      "size_bytes": 518846
+    },
+    {
+      "path": "cases/C04_SSO_900KM_I97P6_JUN_36H/python_full_eop_candidate_states.csv",
+      "sha256": "eeda2bb75bbd60e65386d34b58d90373b359d1a59f82f2c324293743f7e83567",
+      "size_bytes": 536156
+    },
+    {
+      "path": "cases/C04_SSO_900KM_I97P6_JUN_36H/python_two_body_states.csv",
+      "sha256": "0ac5aff3781ace1667907fdc820b6de50a354e8a33335812d50cf03b18c83ea4",
+      "size_bytes": 503784
+    },
+    {
+      "path": "cases/C04_SSO_900KM_I97P6_JUN_36H/python_vs_gmat_closed_baseline_cartesian.csv",
+      "sha256": "4ce1bf41a1cde6084e972948470a801b2b972a7f8cfb98d29d8ce00125130a29",
+      "size_bytes": 501080
+    },
+    {
+      "path": "cases/C04_SSO_900KM_I97P6_JUN_36H/python_vs_gmat_closed_baseline_rtn.csv",
+      "sha256": "7a5cc90d2e1e00a94e762685f04dc2f575120d7b7b90fb67a59412824cd4704e",
+      "size_bytes": 431385
+    },
+    {
+      "path": "cases/C04_SSO_900KM_I97P6_JUN_36H/python_vs_gmat_full_eop_candidate_cartesian.csv",
+      "sha256": "ec2951e3070fea69915929f582bfb496bc68755c7da7ea7b0af31527dc508a7d",
+      "size_bytes": 575527
+    },
+    {
+      "path": "cases/C04_SSO_900KM_I97P6_JUN_36H/python_vs_gmat_full_eop_candidate_rtn.csv",
+      "sha256": "ed2d23ce5e91632cc2794e87f83a5ba583adb4be2d6275c0fad40c8ae5178ce1",
+      "size_bytes": 480546
+    },
+    {
+      "path": "cases/C04_SSO_900KM_I97P6_JUN_36H/python_vs_gmat_two_body_cartesian.csv",
+      "sha256": "4597fe15d9149b85b92d2470bd5a71c505219831fdaaf6bbedffa671c64858b0",
+      "size_bytes": 559227
+    },
+    {
+      "path": "cases/C04_SSO_900KM_I97P6_JUN_36H/python_vs_gmat_two_body_rtn.csv",
+      "sha256": "602064c0463f986c2d630b137be059260945dab7549ebf8bbfb36485ecdbc7ca",
+      "size_bytes": 463197
+    },
+    {
+      "path": "cases/C05_RETRO_1200KM_I120_AUG_48H/case_validation_summary.json",
+      "sha256": "97a02eee6ce2f7cf5347282f15cbe8f66356fa1961a1f48b742753d48506ab61",
+      "size_bytes": 8538
+    },
+    {
+      "path": "cases/C05_RETRO_1200KM_I120_AUG_48H/gmat_j2_states.csv",
+      "sha256": "95bdc3c1a6e3b41051cf43a004306873433270c3ea2bb0c8dda12cec7f176b5b",
+      "size_bytes": 634169
+    },
+    {
+      "path": "cases/C05_RETRO_1200KM_I120_AUG_48H/gmat_two_body_states.csv",
+      "sha256": "c5da29376dae96769c63226667450ddfed81d46b6fdf2821e9b21d707e920a05",
+      "size_bytes": 651439
+    },
+    {
+      "path": "cases/C05_RETRO_1200KM_I120_AUG_48H/python_closed_baseline_states.csv",
+      "sha256": "9e8d9268579cb8b368be701238133a68b9e684a884342484425b6cee718b611c",
+      "size_bytes": 691823
+    },
+    {
+      "path": "cases/C05_RETRO_1200KM_I120_AUG_48H/python_full_eop_candidate_states.csv",
+      "sha256": "de2b2cfc48fcdf4562559a74ed813a2567f84144ba958f2b72c51fbc29ac6eac",
+      "size_bytes": 715021
+    },
+    {
+      "path": "cases/C05_RETRO_1200KM_I120_AUG_48H/python_two_body_states.csv",
+      "sha256": "0b9aaece2e4e855df9c4ef42a313346f30a0b57ba8d5526cec8f127d1a1f38c7",
+      "size_bytes": 672062
+    },
+    {
+      "path": "cases/C05_RETRO_1200KM_I120_AUG_48H/python_vs_gmat_closed_baseline_cartesian.csv",
+      "sha256": "dc36dafefdefc21e062d156de7766233af31bb81246746b4e25cc9d1137ead07",
+      "size_bytes": 671691
+    },
+    {
+      "path": "cases/C05_RETRO_1200KM_I120_AUG_48H/python_vs_gmat_closed_baseline_rtn.csv",
+      "sha256": "955cd8e7bd8cee132957ae25ea5c81b410d625d9ffe00eff849d0cf499f1dc54",
+      "size_bytes": 577061
+    },
+    {
+      "path": "cases/C05_RETRO_1200KM_I120_AUG_48H/python_vs_gmat_full_eop_candidate_cartesian.csv",
+      "sha256": "3c9c84f370efc9b19a220a35729886ce6fa9b517438ccbd8f94f8a9ae3929310",
+      "size_bytes": 764654
+    },
+    {
+      "path": "cases/C05_RETRO_1200KM_I120_AUG_48H/python_vs_gmat_full_eop_candidate_rtn.csv",
+      "sha256": "bec76b1fa2073e62c41dc89274ead060ae567011f9cf13200c57dc62c117ed87",
+      "size_bytes": 641518
+    },
+    {
+      "path": "cases/C05_RETRO_1200KM_I120_AUG_48H/python_vs_gmat_two_body_cartesian.csv",
+      "sha256": "71aa5ad11a7529f724cef443e839554af397fca1b2c56c7bee2ae9a9271ec6f3",
+      "size_bytes": 742383
+    },
+    {
+      "path": "cases/C05_RETRO_1200KM_I120_AUG_48H/python_vs_gmat_two_body_rtn.csv",
+      "sha256": "8cd3b7b1fea231a77dc11dcac5f40484e0f5cef9879cf976cc93e1d368c15ccc",
+      "size_bytes": 617247
+    },
+    {
+      "path": "cases/C06_LONG_550KM_I45_SEP_72H/case_validation_summary.json",
+      "sha256": "4a55a1f18d7cb78cf29e80d1d0c13d17a8237b8b46a3158f3bf77bbc2d26b69b",
+      "size_bytes": 8353
+    },
+    {
+      "path": "cases/C06_LONG_550KM_I45_SEP_72H/gmat_j2_states.csv",
+      "sha256": "48d6bba0988f7d36528b2a4a999be9c8d89b1b00af51ede853c7049d649c52a6",
+      "size_bytes": 951760
+    },
+    {
+      "path": "cases/C06_LONG_550KM_I45_SEP_72H/gmat_two_body_states.csv",
+      "sha256": "b98273d4a1fe40deee86090bb90a7fac04458339012dd8e0f05af3dda82e4019",
+      "size_bytes": 977694
+    },
+    {
+      "path": "cases/C06_LONG_550KM_I45_SEP_72H/python_closed_baseline_states.csv",
+      "sha256": "5cdff461035c00d5c37d3292aa2f782ed6939f31c82b83a976d0c07737466c64",
+      "size_bytes": 1038948
+    },
+    {
+      "path": "cases/C06_LONG_550KM_I45_SEP_72H/python_full_eop_candidate_states.csv",
+      "sha256": "04394747fc67791cfd44bb5d2d26e983cc42d49ab3228eed37d01d6c347fd54b",
+      "size_bytes": 1073266
+    },
+    {
+      "path": "cases/C06_LONG_550KM_I45_SEP_72H/python_two_body_states.csv",
+      "sha256": "55a7b96998c38525b48347781464a1b662b97aee00d3bb134161ccec4a90d2c9",
+      "size_bytes": 1008768
+    },
+    {
+      "path": "cases/C06_LONG_550KM_I45_SEP_72H/python_vs_gmat_closed_baseline_cartesian.csv",
+      "sha256": "3bbd1b45e413a4ad0733c24a959695e8ec50cfd80b7b709b1db9f5c112eaa90a",
+      "size_bytes": 995326
+    },
+    {
+      "path": "cases/C06_LONG_550KM_I45_SEP_72H/python_vs_gmat_closed_baseline_rtn.csv",
+      "sha256": "90068ee3f09ab26ab1699b93e63fcb813b1964fe3cb28b16888701a254d8e8d8",
+      "size_bytes": 861868
+    },
+    {
+      "path": "cases/C06_LONG_550KM_I45_SEP_72H/python_vs_gmat_full_eop_candidate_cartesian.csv",
+      "sha256": "1e05fa7968e501a37ca095337a05f4acdbfd0f6a9d5e201cc778ee1fe6931b15",
+      "size_bytes": 1142905
+    },
+    {
+      "path": "cases/C06_LONG_550KM_I45_SEP_72H/python_vs_gmat_full_eop_candidate_rtn.csv",
+      "sha256": "af0778e881a5652ef071d93258813e756500109857e8d3f6aebfc03eb65c9b80",
+      "size_bytes": 960754
+    },
+    {
+      "path": "cases/C06_LONG_550KM_I45_SEP_72H/python_vs_gmat_two_body_cartesian.csv",
+      "sha256": "acb6bf4babb8612d3ef98c2808f8ae74b943644b13829e113cfe6ed3df2bf486",
+      "size_bytes": 1103802
+    },
+    {
+      "path": "cases/C06_LONG_550KM_I45_SEP_72H/python_vs_gmat_two_body_rtn.csv",
+      "sha256": "d00fdba8915c405aa6bbe11b373c9a9c6b05ddf54af86de445cc79a2a155b161",
+      "size_bytes": 923291
+    },
+    {
+      "path": "figures/independent_candidate_position.pdf",
+      "sha256": "3dd5023bb7532874a67e75e9c0d6a14655946baf0e28eeb29fb0c6abe9a968b6",
+      "size_bytes": 17927
+    },
+    {
+      "path": "figures/independent_candidate_position.png",
+      "sha256": "fd56f831398a3c154e81273af672ef66ad2f6b8906f2c8dcab0d16fb655b03ea",
+      "size_bytes": 52567
+    },
+    {
+      "path": "GMAT_EOP_1C2_INDEPENDENT_REPORT.html",
+      "sha256": "0b99d67ceaeea7f83335f8d3ba12636776739cb6a336d652eb79a137070ff64b",
+      "size_bytes": 2086
+    },
+    {
+      "path": "gmat_eop_1c2_matrix_summary.csv",
+      "sha256": "b3003cec708ccd48777e2ea1815993390fe9a2bde1a031ddf43bdc10492d7c51",
+      "size_bytes": 2796
+    },
+    {
+      "path": "gmat_eop_1c2_matrix_summary.json",
+      "sha256": "3e1e6deedf70bcdae9d2065abc4f1c4f8b53a8da9d3433e7a7a2fb11ab68485a",
+      "size_bytes": 8004
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "research_core_version": "1C.2",
+  "case_id": "C06_LONG_550KM_I45_SEP_72H",
+  "status": "passed_with_warnings",
+  "models": {
+    "two_body": {
+      "reference_model": "gmat_two_body",
+      "comparison_model": "numerical_two_body",
+      "frame": "EarthMJ2000Eq",
+      "position_difference_m": {
+        "initial": 9.094947017729282e-10,
+        "final": 3.035904239401594e-05,
+        "mean": 0.002414991838832509,
+        "mean_absolute": 0.002414991838832509,
+        "rms": 0.002956973796635724,
+        "median": 0.0036025141155206428,
+        "standard_deviation": 0.001706314288858492,
+        "maximum_absolute": 0.003678571464724671,
+        "percentile_95_absolute": 0.0036588283124091986,
+        "time_of_maximum_seconds": 255600.0
+      },
+      "velocity_difference_mm_s": {
+        "initial": 9.155133597044475e-10,
+        "final": 3.286339687105261e-05,
+        "mean": 0.0026441043515157713,
+        "mean_absolute": 0.0026441043515157713,
+        "rms": 0.003237701340734739,
+        "median": 0.0039195036313328145,
+        "standard_deviation": 0.0018685347602040716,
+        "maximum_absolute": 0.004064220002205481,
+        "percentile_95_absolute": 0.004038427765568098,
+        "time_of_maximum_seconds": 255600.0
+      }
+    },
+    "closed_baseline": {
+      "reference_model": "gmat_j2",
+      "comparison_model": "numerical_j2_iau1976_1980",
+      "frame": "EarthMJ2000Eq",
+      "position_difference_m": {
+        "initial": 9.094947017729282e-10,
+        "final": 7.334926738981759,
+        "mean": 4.25608678111796,
+        "mean_absolute": 4.25608678111796,
+        "rms": 4.731204027142102,
+        "median": 4.396940041877799,
+        "standard_deviation": 2.0664019110614973,
+        "maximum_absolute": 7.33815475995802,
+        "percentile_95_absolute": 7.184619348984265,
+        "time_of_maximum_seconds": 257280.0
+      },
+      "velocity_difference_mm_s": {
+        "initial": 9.155133597044475e-10,
+        "final": 7.994164106577077,
+        "mean": 4.65826705472391,
+        "mean_absolute": 4.65826705472391,
+        "rms": 5.178237657208482,
+        "median": 4.830711024593588,
+        "standard_deviation": 2.2615687655708863,
+        "maximum_absolute": 8.05052391399292,
+        "percentile_95_absolute": 7.869952752266203,
+        "time_of_maximum_seconds": 210180.0
+      }
+    },
+    "full_eop_candidate": {
+      "reference_model": "gmat_j2",
+      "comparison_model": "numerical_j2_gmat_r2026a_eop_full",
+      "frame": "EarthMJ2000Eq",
+      "position_difference_m": {
+        "initial": 9.094947017729282e-10,
+        "final": 0.0020272139143378046,
+        "mean": 0.00208214240853014,
+        "mean_absolute": 0.00208214240853014,
+        "rms": 0.002352749290884526,
+        "median": 0.002050858551641728,
+        "standard_deviation": 0.0010954963333384307,
+        "maximum_absolute": 0.005012335551033215,
+        "percentile_95_absolute": 0.004012907013051971,
+        "time_of_maximum_seconds": 50580.0
+      },
+      "velocity_difference_mm_s": {
+        "initial": 9.155133597044475e-10,
+        "final": 0.002204607399093353,
+        "mean": 0.0022790650250471044,
+        "mean_absolute": 0.0022790650250471044,
+        "rms": 0.0025754021465932385,
+        "median": 0.002243123323366406,
+        "standard_deviation": 0.0011993993614656058,
+        "maximum_absolute": 0.00548306823838491,
+        "percentile_95_absolute": 0.004391856439396956,
+        "time_of_maximum_seconds": 50580.0
+      }
+    }
+  },
+  "checks": [
+    {
+      "validation_id": "1C2-001",
+      "name": "Two-body initial position",
+      "measured_value": 9.094947017729282e-10,
+      "criterion": "<= 0.001 m",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-002",
+      "name": "Two-body initial velocity",
+      "measured_value": 9.155133597044475e-10,
+      "criterion": "<= 0.001 mm/s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-003",
+      "name": "J2 initial position",
+      "measured_value": 9.094947017729282e-10,
+      "criterion": "<= 0.001 m",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-004",
+      "name": "J2 initial velocity",
+      "measured_value": 9.155133597044475e-10,
+      "criterion": "<= 0.001 mm/s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-005",
+      "name": "Output duration",
+      "measured_value": 259200.0,
+      "criterion": "abs(final-259200.0) <= 1e-6 s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-006",
+      "name": "Output step",
+      "measured_value": 0.0,
+      "criterion": "<= 1e-6 s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-007",
+      "name": "Two-body raw epoch grid",
+      "measured_value": 7.544003892689943e-07,
+      "criterion": "<= 1e-6 s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-008",
+      "name": "J2 raw epoch grid",
+      "measured_value": 7.544003892689943e-07,
+      "criterion": "<= 1e-6 s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-009",
+      "name": "Two-body maximum position",
+      "measured_value": 0.003678571464724671,
+      "criterion": "<= 0.1 m",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-010",
+      "name": "Two-body maximum velocity",
+      "measured_value": 0.004064220002205481,
+      "criterion": "<= 0.1 mm/s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-011",
+      "name": "Full-EOP candidate maximum position",
+      "measured_value": 0.005012335551033215,
+      "criterion": "<= 0.5 m",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-012",
+      "name": "Full-EOP candidate maximum velocity",
+      "measured_value": 0.00548306823838491,
+      "criterion": "<= 0.5 mm/s",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-013",
+      "name": "Frozen EOP checksum",
+      "measured_value": "52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3",
+      "criterion": "== 52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3",
+      "status": "passed"
+    },
+    {
+      "validation_id": "1C2-014",
+      "name": "EOP interval remains inside tagged coverage",
+      "measured_value": "exact_source_row;exact_source_row",
+      "criterion": "neither endpoint is clamped",
+      "status": "passed"
+    }
+  ],
+  "failed_check_count": 0,
+  "time_grid": {
+    "two_body": {
+      "maximum_absolute_raw_time_residual_seconds": 7.544003892689943e-07,
+      "final_raw_time_residual_seconds": 0.0,
+      "synchronization_tolerance_seconds": 1e-06,
+      "configured_step_seconds": 60.0,
+      "configured_duration_seconds": 259200.0
+    },
+    "j2": {
+      "maximum_absolute_raw_time_residual_seconds": 7.544003892689943e-07,
+      "final_raw_time_residual_seconds": 6.286136340349913e-07,
+      "synchronization_tolerance_seconds": 1e-06,
+      "configured_step_seconds": 60.0,
+      "configured_duration_seconds": 259200.0
+    }
+  },
+  "eop": {
+    "source_sha256": "52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3",
+    "start_sample": {
+      "mjd_utc": 61293.0,
+      "x_arcsec": 0.233148,
+      "y_arcsec": 0.331159,
+      "ut1_utc_seconds": 0.0923348,
+      "lod_seconds": 0.0001898,
+      "coverage_status": "exact_source_row",
+      "uncertainty_status": "placeholder_uncertainty_in_tagged_file",
+      "left_source_mjd": 61293.0,
+      "right_source_mjd": 61293.0
+    },
+    "end_sample": {
+      "mjd_utc": 61296.0,
+      "x_arcsec": 0.230586,
+      "y_arcsec": 0.327643,
+      "ut1_utc_seconds": 0.0915605,
+      "lod_seconds": 0.0001333,
+      "coverage_status": "exact_source_row",
+      "uncertainty_status": "placeholder_uncertainty_in_tagged_file",
+      "left_source_mjd": 61296.0,
+      "right_source_mjd": 61296.0
+    }
+  },
+  "source_files": {
+    "configuration": "data/reference/gmat_1c2/cases/C06_LONG_550KM_I45_SEP_72H.json",
+    "configuration_sha256": "8b91abd8272b5fec3b01d1cc35e95b35d6ee9221acdd17d818a80f4f61ae7072",
+    "gmat_two_body": "data/reference/gmat_1c2/output/C06_LONG_550KM_I45_SEP_72H_TWO_BODY.e",
+    "gmat_two_body_sha256": "813d152516d6c3cb2f5cf01622471234eb7b441e57cf5cb9435363b5be9979be",
+    "gmat_j2": "data/reference/gmat_1c2/output/C06_LONG_550KM_I45_SEP_72H_J2.e",
+    "gmat_j2_sha256": "a16a91b152b9e1a33d23f89c3a5989824d110d4029998eb7b6f37c3651666fe3"
+  }
+}

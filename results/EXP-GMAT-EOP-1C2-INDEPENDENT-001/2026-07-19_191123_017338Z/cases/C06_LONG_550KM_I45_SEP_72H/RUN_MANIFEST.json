@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "path": "case_validation_summary.json",
+      "sha256": "4a55a1f18d7cb78cf29e80d1d0c13d17a8237b8b46a3158f3bf77bbc2d26b69b",
+      "size_bytes": 8353
+    },
+    {
+      "path": "gmat_j2_states.csv",
+      "sha256": "48d6bba0988f7d36528b2a4a999be9c8d89b1b00af51ede853c7049d649c52a6",
+      "size_bytes": 951760
+    },
+    {
+      "path": "gmat_two_body_states.csv",
+      "sha256": "b98273d4a1fe40deee86090bb90a7fac04458339012dd8e0f05af3dda82e4019",
+      "size_bytes": 977694
+    },
+    {
+      "path": "python_closed_baseline_states.csv",
+      "sha256": "5cdff461035c00d5c37d3292aa2f782ed6939f31c82b83a976d0c07737466c64",
+      "size_bytes": 1038948
+    },
+    {
+      "path": "python_full_eop_candidate_states.csv",
+      "sha256": "04394747fc67791cfd44bb5d2d26e983cc42d49ab3228eed37d01d6c347fd54b",
+      "size_bytes": 1073266
+    },
+    {
+      "path": "python_two_body_states.csv",
+      "sha256": "55a7b96998c38525b48347781464a1b662b97aee00d3bb134161ccec4a90d2c9",
+      "size_bytes": 1008768
+    },
+    {
+      "path": "python_vs_gmat_closed_baseline_cartesian.csv",
+      "sha256": "3bbd1b45e413a4ad0733c24a959695e8ec50cfd80b7b709b1db9f5c112eaa90a",
+      "size_bytes": 995326
+    },
+    {
+      "path": "python_vs_gmat_closed_baseline_rtn.csv",
+      "sha256": "90068ee3f09ab26ab1699b93e63fcb813b1964fe3cb28b16888701a254d8e8d8",
+      "size_bytes": 861868
+    },
+    {
+      "path": "python_vs_gmat_full_eop_candidate_cartesian.csv",
+      "sha256": "1e05fa7968e501a37ca095337a05f4acdbfd0f6a9d5e201cc778ee1fe6931b15",
+      "size_bytes": 1142905
+    },
+    {
+      "path": "python_vs_gmat_full_eop_candidate_rtn.csv",
+      "sha256": "af0778e881a5652ef071d93258813e756500109857e8d3f6aebfc03eb65c9b80",
+      "size_bytes": 960754
+    },
+    {
+      "path": "python_vs_gmat_two_body_cartesian.csv",
+      "sha256": "acb6bf4babb8612d3ef98c2808f8ae74b943644b13829e113cfe6ed3df2bf486",
+      "size_bytes": 1103802
+    },
+    {
+      "path": "python_vs_gmat_two_body_rtn.csv",
+      "sha256": "d00fdba8915c405aa6bbe11b373c9a9c6b05ddf54af86de445cc79a2a155b161",
+      "size_bytes": 923291
+    }
+  ]
+}
