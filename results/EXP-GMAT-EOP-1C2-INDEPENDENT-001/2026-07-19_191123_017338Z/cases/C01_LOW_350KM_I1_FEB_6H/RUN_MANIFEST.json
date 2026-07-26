@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "path": "case_validation_summary.json",
+      "sha256": "14603c6960aeb315595c13f96bab70fe8b35c4a62d774c797ca7f9c8367d3780",
+      "size_bytes": 8527
+    },
+    {
+      "path": "gmat_j2_states.csv",
+      "sha256": "a249245b3038a0b74dd30ac1def84912a6c3d2e5bbfa36a6b47f9ad24f3c72c6",
+      "size_bytes": 79785
+    },
+    {
+      "path": "gmat_two_body_states.csv",
+      "sha256": "3a61964ead5d2217b86d5ffa874b2e158f5517c38ab6211e0a0fdb2a44ef468b",
+      "size_bytes": 81965
+    },
+    {
+      "path": "python_closed_baseline_states.csv",
+      "sha256": "37ca7cede9647f7872144df5bc3e14cee96fcc19cc1a730a230e01cac5c5d57e",
+      "size_bytes": 87095
+    },
+    {
+      "path": "python_full_eop_candidate_states.csv",
+      "sha256": "b81b7b2654760b409b056c79874b1300b72e2ba42b53b36058df8a3660b34a1e",
+      "size_bytes": 90002
+    },
+    {
+      "path": "python_two_body_states.csv",
+      "sha256": "09dccb199371bca215c96446698523ee67369c6505488a4fb3e88f5758fad5d7",
+      "size_bytes": 84606
+    },
+    {
+      "path": "python_vs_gmat_closed_baseline_cartesian.csv",
+      "sha256": "78b6cc28ffb2c87c183ad1d174dfe1670f7afc72d2c080f525af41cb3f2f7749",
+      "size_bytes": 89254
+    },
+    {
+      "path": "python_vs_gmat_closed_baseline_rtn.csv",
+      "sha256": "0405c1017e784b6934529ef3077be6de0e0c2ea8bc78da04e6639b4a22e6987c",
+      "size_bytes": 75324
+    },
+    {
+      "path": "python_vs_gmat_full_eop_candidate_cartesian.csv",
+      "sha256": "a8974b64fc4220e0211f0f1a6630fdce010fee7f2b18434a39cdc2a4e5d227b9",
+      "size_bytes": 96018
+    },
+    {
+      "path": "python_vs_gmat_full_eop_candidate_rtn.csv",
+      "sha256": "7e63c66c1274507f83c1d51e520dd063040128d9b833436fca65fa9da206c3e7",
+      "size_bytes": 80205
+    },
+    {
+      "path": "python_vs_gmat_two_body_cartesian.csv",
+      "sha256": "f1d1a9f431c5c8951eddf3f76c43b8ed2c5342acd21e0ab8f052c9d78c5ca391",
+      "size_bytes": 93248
+    },
+    {
+      "path": "python_vs_gmat_two_body_rtn.csv",
+      "sha256": "df317a9d3ec876d165e4af726dac52f8d3bbfa2742444c635a9fbd292c71b1a5",
+      "size_bytes": 77481
+    }
+  ]
+}

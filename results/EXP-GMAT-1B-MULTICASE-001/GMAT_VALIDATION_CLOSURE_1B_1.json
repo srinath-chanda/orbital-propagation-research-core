@@ -1,0 +1,88 @@
+{
+  "research_core_version": "1B.1",
+  "matrix_schema_version": "1B.0",
+  "matrix_id": "EXP-GMAT-1B-MULTICASE-001",
+  "status": "passed_with_warnings",
+  "completed_case_count": 10,
+  "completed_check_count": 120,
+  "failed_case_count": 0,
+  "failed_check_count": 0,
+  "incomplete_case_count": 0,
+  "thresholds_preregistered": true,
+  "thresholds_relaxed": false,
+  "raw_gmat_ephemeris_count": 20,
+  "factors_covered": [
+    "baseline_control",
+    "altitude",
+    "inclination",
+    "epoch",
+    "duration"
+  ],
+  "factor_ranges": {
+    "altitude_km": [
+      400.0,
+      1000.0
+    ],
+    "inclination_deg": [
+      5.0,
+      98.0
+    ],
+    "epoch_utc": [
+      "2026-01-01T00:00:00Z",
+      "2026-04-01T00:00:00Z",
+      "2026-07-01T00:00:00Z",
+      "2026-10-01T00:00:00Z"
+    ],
+    "duration_hours": [
+      6.0,
+      72.0
+    ]
+  },
+  "validation_extrema": {
+    "maximum_two_body_position_difference_m": 0.0037072110651300795,
+    "maximum_two_body_velocity_difference_mm_s": 0.004198408582609,
+    "maximum_24_hour_pole_aware_position_difference_m": 4.181925201505197,
+    "maximum_24_hour_pole_aware_velocity_difference_mm_s": 4.710905153952956,
+    "maximum_matrix_pole_aware_position_difference_m": 9.576983256086432,
+    "maximum_matrix_pole_aware_velocity_difference_mm_s": 10.825427804204875,
+    "maximum_matrix_case_id": "B10_DURATION_72H_400KM_I51P6_JAN"
+  },
+  "preregistered_j2_gates": {
+    "6_hours": {
+      "maximum_position_difference_m": 5.0,
+      "maximum_velocity_difference_mm_s": 5.0
+    },
+    "24_hours": {
+      "maximum_position_difference_m": 20.0,
+      "maximum_velocity_difference_mm_s": 20.0
+    },
+    "72_hours": {
+      "maximum_position_difference_m": 100.0,
+      "maximum_velocity_difference_mm_s": 50.0
+    }
+  },
+  "evidence": {
+    "user_results_archive_name": "RESEARCH_CORE_1B_GMAT_RESULTS.zip",
+    "user_results_archive_sha256": "cc8608ad6b7a0e8353a7b1a8948cbed3009dce81b6356cf106accf094f8abe3a",
+    "package_manifest": "data/reference/gmat_1b/GMAT_1B_RESULTS_PACKAGE_MANIFEST.json",
+    "package_manifest_sha256": "19e27b75a08c3dee41b343b7ac8a19b38b560559cb47685a82bd966126fee25d",
+    "matrix_specification": "configs/gmat_1b_multicase_matrix.json",
+    "matrix_specification_sha256": "a193b477ef615032cad3d5220f2a1fe0345b3be6b82d89a50e0684aec5d6a346",
+    "preparation_manifest": "data/reference/gmat_1b/GMAT_1B_MATRIX_MANIFEST.json",
+    "preparation_manifest_sha256": "45654f2d83b86b4d4e4a229c6cc7127ec17d9f87245da86dc5c5e0ded17549fb",
+    "aggregate_summary": "results/EXP-GMAT-1B-MULTICASE-001/2026-07-19_123533_125158Z/gmat_1b_matrix_summary.json",
+    "aggregate_summary_sha256": "5c66e50c19ef9df4727a9496285243203fe3993eb18d5116a9873da0d2cc3d29",
+    "aggregate_report": "results/EXP-GMAT-1B-MULTICASE-001/2026-07-19_123533_125158Z/GMAT_1B_MATRIX_REPORT.html",
+    "aggregate_report_sha256": "26b3a8fa691c4399fb99c98965d7c211cb27ef93aae2372958dd71274ce2011b"
+  },
+  "claim": "Pole-aware degree-2/order-0 propagation passed the preregistered Research Core 1B GMAT R2026a matrix across the recorded altitude, inclination, epoch, and duration cases.",
+  "limitations": [
+    "This is independent software-model agreement, not measured-orbit truth.",
+    "Polar motion, the exact GMAT EOP realization, and subdaily orientation terms remain omitted.",
+    "The matrix samples selected cases rather than the continuous orbital parameter space.",
+    "Drag, SRP, third bodies, tides, relativity, and higher-degree gravity are outside this validation claim.",
+    "The software is research-only and is not flight qualified."
+  ],
+  "next_stage": "Research Core 1C Earth-orientation refinement and residual attribution",
+  "public_release_note": "Only release metadata and generated-script path portability changed. Validation summaries and raw ephemerides are unchanged."
+}

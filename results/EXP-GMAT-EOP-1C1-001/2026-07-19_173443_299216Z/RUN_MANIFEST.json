@@ -1,0 +1,39 @@
+{
+  "files": [
+    {
+      "path": "GMAT_EOP_DIAGNOSTIC_REPORT.html",
+      "sha256": "4325cc152bd3166f3cc3c23661c54bff8387bb582ff82b8b2c9a5d4b87c77e09",
+      "size_bytes": 4067
+    },
+    {
+      "path": "figures/gmat_eop_case_values.pdf",
+      "sha256": "3453c5bfba8ec116b0bfe759c9538e26fb12a04754245e982915d7a0bce16d37",
+      "size_bytes": 17445
+    },
+    {
+      "path": "figures/gmat_eop_case_values.png",
+      "sha256": "886fd1f22aff7ba66af127f4eadabacb84300d035a66eabc33849f49645af0ac",
+      "size_bytes": 61268
+    },
+    {
+      "path": "figures/gmat_eop_position_residual.pdf",
+      "sha256": "f63827718bdd463c24571737ff97d42554985c73b6cba280cb02432b50c03ba6",
+      "size_bytes": 20467
+    },
+    {
+      "path": "figures/gmat_eop_position_residual.png",
+      "sha256": "e1de4fc45a9f22a4059d54fde0c3566a73718b031b6179c1827340acaf681a91",
+      "size_bytes": 166916
+    },
+    {
+      "path": "gmat_eop_case_model_summary.csv",
+      "sha256": "ea9c670859727b9aa03388658e0dd47835d5a61c124646d5805a10195a79c961",
+      "size_bytes": 18334
+    },
+    {
+      "path": "gmat_eop_diagnostic_summary.json",
+      "sha256": "35ce48a8a895f6b5d92ace2aeea25557b6426fd8f96e37e6e9f2755f800bd63e",
+      "size_bytes": 78598
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "1D.0",
+  "experiment_id": "EXP-GMAT-GRAVITY-1D0-001",
+  "status": "passed_with_warnings",
+  "decision": "advance_to_1d1_short_arc_validation",
+  "sample_count": 25,
+  "model_count": 6,
+  "gravity_file_sha256": "bf182b1208e33be3716c8292a3947c1f87d4041ad6663a0c9ae621f65cafc20d",
+  "eop_file_sha256": "52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3",
+  "thresholds": {
+    "maximum_vector_difference_km_s2": 2e-09,
+    "maximum_relative_difference": 3e-07
+  },
+  "models": [
+    {
+      "alias": "G00",
+      "label": "point_mass",
+      "degree": 0,
+      "order": 0,
+      "maximum_difference_km_s2": 5.753426884836168e-18,
+      "rms_difference_km_s2": 3.1915531012628268e-18,
+      "maximum_relative_difference": 6.618221327362881e-16,
+      "passed": true
+    },
+    {
+      "alias": "G20",
+      "label": "j2_baseline",
+      "degree": 2,
+      "order": 0,
+      "maximum_difference_km_s2": 7.204847710556568e-18,
+      "rms_difference_km_s2": 3.394730323185696e-18,
+      "maximum_relative_difference": 8.283105860092348e-16,
+      "passed": true
+    },
+    {
+      "alias": "G40",
+      "label": "zonal_through_degree_4",
+      "degree": 4,
+      "order": 0,
+      "maximum_difference_km_s2": 6.548437517301135e-18,
+      "rms_difference_km_s2": 3.470535218611714e-18,
+      "maximum_relative_difference": 7.535638230363491e-16,
+      "passed": true
+    },
+    {
+      "alias": "G44",
+      "label": "degree_and_order_4",
+      "degree": 4,
+      "order": 4,
+      "maximum_difference_km_s2": 1.0728672184036493e-17,
+      "rms_difference_km_s2": 5.595628228865626e-18,
+      "maximum_relative_difference": 1.233448340743389e-15,
+      "passed": true
+    },
+    {
+      "alias": "G88",
+      "label": "degree_and_order_8",
+      "degree": 8,
+      "order": 8,
+      "maximum_difference_km_s2": 1.6773977697994674e-17,
+      "rms_difference_km_s2": 7.225686913685877e-18,
+      "maximum_relative_difference": 1.928491133569232e-15,
+      "passed": true
+    },
+    {
+      "alias": "G2020",
+      "label": "degree_and_order_20",
+      "degree": 20,
+      "order": 20,
+      "maximum_difference_km_s2": 1.3718719244972236e-17,
+      "rms_difference_km_s2": 9.053388400846364e-18,
+      "maximum_relative_difference": 1.5803114258587707e-15,
+      "passed": true
+    }
+  ],
+  "scientific_scope": [
+    "This is a shared-state acceleration implementation comparison, not a propagated short-arc or full-arc validation.",
+    "The frozen JGM2 file is copied read-only from the user's GMAT R2026a installation and checksum-recorded.",
+    "The independently validated full GMAT R2026a EOP rotation is reused for tesseral gravity.",
+    "Tides, drag, third bodies, solar radiation pressure, and relativity are disabled.",
+    "The preregistered thresholds must not be loosened merely to obtain a pass.",
+    "This is software-model agreement, not measured-orbit truth or flight qualification."
+  ]
+}

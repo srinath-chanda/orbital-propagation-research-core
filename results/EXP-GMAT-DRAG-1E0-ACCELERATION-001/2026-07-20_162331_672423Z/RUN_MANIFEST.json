@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "path": "AREA_X2_python_vs_gmat_drag.csv",
+      "size_bytes": 7913,
+      "sha256": "23ffe8a7d783a53c9d536e1e02b262b705af9d347d10357d3a26b7f4ede609f8"
+    },
+    {
+      "path": "CD_HALF_python_vs_gmat_drag.csv",
+      "size_bytes": 7837,
+      "sha256": "6e58c938ccf884385c1eccb3f72dddd4df764a703c2b709e86f1ff629ceb76dd"
+    },
+    {
+      "path": "drag_acceleration_summary.json",
+      "size_bytes": 16351,
+      "sha256": "6989f58c53284d3a16f8627307fcf76a9b6b8b5975a385b8d82bb4552da41812"
+    },
+    {
+      "path": "GMAT_DRAG_ACCELERATION_1E0_REPORT.html",
+      "size_bytes": 1666,
+      "sha256": "7ccbd1e63eaf6e99f37a831d534a331c1d0584f4d5dff2338a286540d485283a"
+    },
+    {
+      "path": "MASS_HALF_python_vs_gmat_drag.csv",
+      "size_bytes": 7913,
+      "sha256": "23ffe8a7d783a53c9d536e1e02b262b705af9d347d10357d3a26b7f4ede609f8"
+    },
+    {
+      "path": "NOMINAL_python_vs_gmat_drag.csv",
+      "size_bytes": 7976,
+      "sha256": "df0e225dacaa34a3b5ef11106253ffa3d85ec6418df563223dc9b87be57189cc"
+    }
+  ]
+}

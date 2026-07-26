@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "path": "gmat_1b_matrix_summary.csv",
+      "sha256": "6f063387a7bbbbab6eacb1e4dea2d4215f936bf78790291c5aae754895c76270",
+      "size_bytes": 4381
+    },
+    {
+      "path": "gmat_1b_matrix_summary.json",
+      "sha256": "5c66e50c19ef9df4727a9496285243203fe3993eb18d5116a9873da0d2cc3d29",
+      "size_bytes": 10012
+    },
+    {
+      "path": "GMAT_1B_MATRIX_REPORT.html",
+      "sha256": "26b3a8fa691c4399fb99c98965d7c211cb27ef93aae2372958dd71274ce2011b",
+      "size_bytes": 2824
+    }
+  ]
+}

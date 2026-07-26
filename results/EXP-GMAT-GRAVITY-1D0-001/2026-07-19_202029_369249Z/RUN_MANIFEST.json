@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "path": "gravity_ladder_summary.json",
+      "size_bytes": 2938,
+      "sha256": "8d7adc242e82c55af78062fd7ca32d8c216e5998dbb180e7a46b7415ec42c19d"
+    },
+    {
+      "path": "gravity_ladder_differences.csv",
+      "size_bytes": 3951,
+      "sha256": "ff30f9f2805c8d8347dd977e4b3b7e2f72a70007ee34454e757f4f434c370d9c"
+    },
+    {
+      "path": "GMAT_GRAVITY_LADDER_1D0_REPORT.html",
+      "size_bytes": 1538,
+      "sha256": "6addca2ca1b4c132af2951b35ffd6623291ccd4c24a2f746972674d704bff45f"
+    }
+  ]
+}

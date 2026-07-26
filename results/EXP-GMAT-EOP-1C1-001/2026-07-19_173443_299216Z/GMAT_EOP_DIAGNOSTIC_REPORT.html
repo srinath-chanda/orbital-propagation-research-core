@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Research Core 1C.1 GMAT EOP Diagnostic</title>
+<style>body{font-family:Arial,sans-serif;margin:2rem;color:#172033;line-height:1.45}
+table{border-collapse:collapse;width:100%;margin:1rem 0}th,td{border:1px solid #ccd3df;
+padding:.45rem;text-align:right}th:first-child,td:first-child{text-align:left}
+th{background:#edf2f8}code{background:#f1f3f7;padding:.1rem .25rem}</style>
+</head><body><h1>Research Core 1C.1 GMAT R2026a EOP/Polar-Motion Diagnostic</h1>
+<p><strong>Experiment:</strong> EXP-GMAT-EOP-1C1-001<br>
+<strong>Status:</strong> diagnostic completed with warnings<br>
+<strong>Decision:</strong> candidate_identified_requires_independent_validation<br>
+<strong>Recommended candidate:</strong> gmat_r2026a_eop_full</p>
+<h2>Model comparison</h2><table><thead><tr><th>Model</th>
+<th>Median position m</th><th>Worst position m</th>
+<th>Median velocity mm/s</th><th>Worst velocity mm/s</th>
+<th>Median position ratio</th><th>Rule passed</th></tr></thead>
+<tbody><tr><td>iau1976_1980</td><td>3.03197126</td><td>9.57699793</td><td>3.32738413</td><td>10.8254444</td><td>1.000000</td><td>no</td></tr><tr><td>gmat_r2026a_eop_x_only</td><td>2.88053724</td><td>10.0369666</td><td>2.95622241</td><td>11.3521402</td><td>0.950054</td><td>no</td></tr><tr><td>gmat_r2026a_eop_y_only</td><td>0.328878334</td><td>2.33127306</td><td>0.369628642</td><td>2.63621747</td><td>0.108470</td><td>no</td></tr><tr><td>gmat_r2026a_eop_full</td><td>0.0051026125</td><td>0.00667339822</td><td>0.0057822286</td><td>0.00755087646</td><td>0.001683</td><td>yes</td></tr></tbody></table>
+<h2>Frozen EOP evidence</h2>
+<p>Source rows: 23633; MJD 37665 to
+61297; SHA-256 <code>52c95d6871066e892463328424ca34f5e9cedde92c747465a40f7cd0ecd86ed3</code>.</p>
+<table><thead><tr><th>Case</th><th>Start x arcsec</th><th>Start y arcsec</th>
+<th>Start coverage</th><th>End coverage</th></tr></thead>
+<tbody><tr><td>B01_CONTROL_400KM_I51P6_JAN_24H</td><td>0.110512</td><td>0.331193</td><td>exact_source_row</td><td>exact_source_row</td></tr><tr><td>B02_ALTITUDE_700KM_I51P6_JAN_24H</td><td>0.110512</td><td>0.331193</td><td>exact_source_row</td><td>exact_source_row</td></tr><tr><td>B03_ALTITUDE_1000KM_I51P6_JAN_24H</td><td>0.110512</td><td>0.331193</td><td>exact_source_row</td><td>exact_source_row</td></tr><tr><td>B04_INCLINATION_5DEG_400KM_JAN_24H</td><td>0.110512</td><td>0.331193</td><td>exact_source_row</td><td>exact_source_row</td></tr><tr><td>B05_INCLINATION_98DEG_400KM_JAN_24H</td><td>0.110512</td><td>0.331193</td><td>exact_source_row</td><td>exact_source_row</td></tr><tr><td>B06_EPOCH_APR_400KM_I51P6_24H</td><td>0.112243</td><td>0.411322</td><td>exact_source_row</td><td>exact_source_row</td></tr><tr><td>B07_EPOCH_JUL_400KM_I51P6_24H</td><td>0.215921</td><td>0.421097</td><td>exact_source_row</td><td>exact_source_row</td></tr><tr><td>B08_EPOCH_OCT_400KM_I51P6_24H</td><td>0.229781</td><td>0.326522</td><td>clamped_after_source_range</td><td>clamped_after_source_range</td></tr><tr><td>B09_DURATION_6H_400KM_I51P6_JAN</td><td>0.110512</td><td>0.331193</td><td>exact_source_row</td><td>interpolated_between_source_rows</td></tr><tr><td>B10_DURATION_72H_400KM_I51P6_JAN</td><td>0.110512</td><td>0.331193</td><td>exact_source_row</td><td>exact_source_row</td></tr></tbody></table>
+<h2>Interpretation</h2>
+<p>The full x/y EOP polar-motion realization is compared with the closed 1B
+baseline and x-only/y-only ablations. The exact file and boundary behavior are
+frozen to reproduce GMAT R2026a. The October case is beyond the tagged file and
+therefore uses GMAT's documented endpoint-clamping behavior.</p>
+<p>A candidate passing this diagnostic still requires a new independent GMAT
+matrix before it can replace the closed 1B baseline. This is software-model
+agreement, not measured-orbit truth or flight qualification.</p>
+<img src="figures/gmat_eop_position_residual.png" style="max-width:100%" alt="Residual comparison">
+<img src="figures/gmat_eop_case_values.png" style="max-width:100%" alt="EOP case values">
+</body></html>

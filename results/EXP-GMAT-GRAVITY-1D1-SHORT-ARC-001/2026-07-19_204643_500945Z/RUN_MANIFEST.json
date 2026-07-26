@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "path": "G2020_python_states.csv",
+      "size_bytes": 42911,
+      "sha256": "d7cd39346d56c1c3e6472e51f497192f9cecd31bd2512d61998dc3314e284d6a"
+    },
+    {
+      "path": "G2020_python_vs_gmat.csv",
+      "size_bytes": 46118,
+      "sha256": "fc8baf0f165f2c42a0f55c434ec4032d0dbfc48e1259c4a2552a3fa8c24996d3"
+    },
+    {
+      "path": "G20_python_states.csv",
+      "size_bytes": 42571,
+      "sha256": "b9d91399a24e7ed032ca85ad08daf6c5635a706de2e133c026d8a65158549c24"
+    },
+    {
+      "path": "G20_python_vs_gmat.csv",
+      "size_bytes": 45339,
+      "sha256": "70f0ad5e7ccb67662dc363fc0caa6a6de27371e87dcf891f9beb41109b2c012d"
+    },
+    {
+      "path": "G44_python_states.csv",
+      "size_bytes": 42566,
+      "sha256": "5601a1d29a521b41853590f61d1b5e0e019e82fc32a03b98d9425948ccfc1409"
+    },
+    {
+      "path": "G44_python_vs_gmat.csv",
+      "size_bytes": 45314,
+      "sha256": "238eb5b8edd6aea9554ec4b9c0ec3d49a42e41371aee86683b07e35500f51cbb"
+    },
+    {
+      "path": "G88_python_states.csv",
+      "size_bytes": 42542,
+      "sha256": "bb62ac493ddae146e1318cc19a321ffba5e2593c88ed4e0f211b0ec79ec718dc"
+    },
+    {
+      "path": "G88_python_vs_gmat.csv",
+      "size_bytes": 45330,
+      "sha256": "7d0f56087ad05360cb5775a975c25584f341eb5d600a3661a68113703c504c9f"
+    },
+    {
+      "path": "GMAT_GRAVITY_SHORT_ARC_1D1_REPORT.html",
+      "size_bytes": 1256,
+      "sha256": "b20f344373abfe288ab4275a6b8a2d448164d34ad1bd2e96677cb539b72d20fb"
+    },
+    {
+      "path": "gravity_short_arc_model_summary.csv",
+      "size_bytes": 905,
+      "sha256": "a27363decbfb493359387f1133995d5e266d22a05d8f8114c40d420a9114edd9"
+    },
+    {
+      "path": "gravity_short_arc_summary.json",
+      "size_bytes": 9072,
+      "sha256": "4d636b996dd779d767f696fb7857f8b23d87a741a1dc3c41cc3b6826b0c36b2b"
+    }
+  ]
+}

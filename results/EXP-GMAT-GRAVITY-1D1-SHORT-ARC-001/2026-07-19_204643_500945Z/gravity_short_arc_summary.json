@@ -1,0 +1,250 @@
+{
+  "schema_version": "1D.1",
+  "experiment_id": "EXP-GMAT-GRAVITY-1D1-SHORT-ARC-001",
+  "status": "passed_with_warnings",
+  "decision": "advance_to_1d2_multicase_full_arc_validation",
+  "prerequisite_closure_id": "CLOSURE-GMAT-GRAVITY-1D0-001",
+  "model_count": 4,
+  "passed_model_count": 4,
+  "failed_model_count": 0,
+  "check_count": 16,
+  "passed_check_count": 16,
+  "duration_seconds": 1800.0,
+  "output_step_seconds": 10.0,
+  "thresholds": {
+    "initial_position_difference_m": 0.001,
+    "initial_velocity_difference_mm_s": 0.001,
+    "maximum_position_difference_m": 0.05,
+    "maximum_velocity_difference_mm_s": 0.05
+  },
+  "models": [
+    {
+      "model_id": "G20",
+      "label": "j2_validated_control",
+      "degree": 2,
+      "order": 0,
+      "status": "passed",
+      "source_ephemeris": "data/reference/gmat_1d1/output/G20_SHORT_ARC.e",
+      "source_ephemeris_sha256": "807050fc1b09bfe93dae42d4f69e80e890096585c260fe600bfe41706e6928a8",
+      "sample_count": 181,
+      "grid_diagnostics": {
+        "maximum_absolute_raw_time_residual_seconds": 7.59027898311615e-07,
+        "final_raw_time_residual_seconds": 5.238689482212067e-07,
+        "synchronization_tolerance_seconds": 5e-06,
+        "configured_step_seconds": 10.0,
+        "configured_duration_seconds": 1800.0
+      },
+      "initial_position_difference_m": 6.431098710768743e-10,
+      "initial_velocity_difference_mm_s": 0.0,
+      "maximum_position_difference_m": 0.004385537727484636,
+      "maximum_velocity_difference_mm_s": 0.004964144399675215,
+      "final_position_difference_m": 0.004039271549941358,
+      "final_velocity_difference_mm_s": 0.00457271056458636,
+      "python_runtime_seconds": 2.3500064000254497,
+      "python_function_evaluations": 2741,
+      "checks": [
+        {
+          "check_id": "1D1-G20-initial_position",
+          "measured_value": 6.431098710768743e-10,
+          "limit": 0.001,
+          "unit": "m",
+          "status": "passed"
+        },
+        {
+          "check_id": "1D1-G20-initial_velocity",
+          "measured_value": 0.0,
+          "limit": 0.001,
+          "unit": "mm/s",
+          "status": "passed"
+        },
+        {
+          "check_id": "1D1-G20-maximum_position",
+          "measured_value": 0.004385537727484636,
+          "limit": 0.05,
+          "unit": "m",
+          "status": "passed"
+        },
+        {
+          "check_id": "1D1-G20-maximum_velocity",
+          "measured_value": 0.004964144399675215,
+          "limit": 0.05,
+          "unit": "mm/s",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "model_id": "G44",
+      "label": "degree_and_order_4",
+      "degree": 4,
+      "order": 4,
+      "status": "passed",
+      "source_ephemeris": "data/reference/gmat_1d1/output/G44_SHORT_ARC.e",
+      "source_ephemeris_sha256": "da525cb317166c072127aad12555c39f6fce115a1d60951a6faae26f11b6eeed",
+      "sample_count": 181,
+      "grid_diagnostics": {
+        "maximum_absolute_raw_time_residual_seconds": 7.59027898311615e-07,
+        "final_raw_time_residual_seconds": 2.0954803403583355e-07,
+        "synchronization_tolerance_seconds": 5e-06,
+        "configured_step_seconds": 10.0,
+        "configured_duration_seconds": 1800.0
+      },
+      "initial_position_difference_m": 6.431098710768743e-10,
+      "initial_velocity_difference_mm_s": 0.0,
+      "maximum_position_difference_m": 0.004811435353626179,
+      "maximum_velocity_difference_mm_s": 0.005445707358420124,
+      "final_position_difference_m": 0.00023293345587415077,
+      "final_velocity_difference_mm_s": 0.00026423674580335283,
+      "python_runtime_seconds": 2.803712699969765,
+      "python_function_evaluations": 2741,
+      "checks": [
+        {
+          "check_id": "1D1-G44-initial_position",
+          "measured_value": 6.431098710768743e-10,
+          "limit": 0.001,
+          "unit": "m",
+          "status": "passed"
+        },
+        {
+          "check_id": "1D1-G44-initial_velocity",
+          "measured_value": 0.0,
+          "limit": 0.001,
+          "unit": "mm/s",
+          "status": "passed"
+        },
+        {
+          "check_id": "1D1-G44-maximum_position",
+          "measured_value": 0.004811435353626179,
+          "limit": 0.05,
+          "unit": "m",
+          "status": "passed"
+        },
+        {
+          "check_id": "1D1-G44-maximum_velocity",
+          "measured_value": 0.005445707358420124,
+          "limit": 0.05,
+          "unit": "mm/s",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "model_id": "G88",
+      "label": "degree_and_order_8",
+      "degree": 8,
+      "order": 8,
+      "status": "passed",
+      "source_ephemeris": "data/reference/gmat_1d1/output/G88_SHORT_ARC.e",
+      "source_ephemeris_sha256": "612275c3b543904fb59011d33a8a4b5a28bc2b35b480c6f69092755c41bfba4c",
+      "sample_count": 181,
+      "grid_diagnostics": {
+        "maximum_absolute_raw_time_residual_seconds": 7.59027898311615e-07,
+        "final_raw_time_residual_seconds": 2.0954803403583355e-07,
+        "synchronization_tolerance_seconds": 5e-06,
+        "configured_step_seconds": 10.0,
+        "configured_duration_seconds": 1800.0
+      },
+      "initial_position_difference_m": 6.431098710768743e-10,
+      "initial_velocity_difference_mm_s": 0.0,
+      "maximum_position_difference_m": 0.004666784089989701,
+      "maximum_velocity_difference_mm_s": 0.0052826998191242685,
+      "final_position_difference_m": 0.0017355754370398208,
+      "final_velocity_difference_mm_s": 0.0019654924908527453,
+      "python_runtime_seconds": 5.353801999997813,
+      "python_function_evaluations": 2741,
+      "checks": [
+        {
+          "check_id": "1D1-G88-initial_position",
+          "measured_value": 6.431098710768743e-10,
+          "limit": 0.001,
+          "unit": "m",
+          "status": "passed"
+        },
+        {
+          "check_id": "1D1-G88-initial_velocity",
+          "measured_value": 0.0,
+          "limit": 0.001,
+          "unit": "mm/s",
+          "status": "passed"
+        },
+        {
+          "check_id": "1D1-G88-maximum_position",
+          "measured_value": 0.004666784089989701,
+          "limit": 0.05,
+          "unit": "m",
+          "status": "passed"
+        },
+        {
+          "check_id": "1D1-G88-maximum_velocity",
+          "measured_value": 0.0052826998191242685,
+          "limit": 0.05,
+          "unit": "mm/s",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "model_id": "G2020",
+      "label": "degree_and_order_20",
+      "degree": 20,
+      "order": 20,
+      "status": "passed",
+      "source_ephemeris": "data/reference/gmat_1d1/output/G2020_SHORT_ARC.e",
+      "source_ephemeris_sha256": "9c5b07be25e6c7fef1e90caee271faa043754d6e08e6a707bcc9a532d61e011b",
+      "sample_count": 181,
+      "grid_diagnostics": {
+        "maximum_absolute_raw_time_residual_seconds": 7.59027898311615e-07,
+        "final_raw_time_residual_seconds": 5.238689482212067e-07,
+        "synchronization_tolerance_seconds": 5e-06,
+        "configured_step_seconds": 10.0,
+        "configured_duration_seconds": 1800.0
+      },
+      "initial_position_difference_m": 6.431098710768743e-10,
+      "initial_velocity_difference_mm_s": 0.0,
+      "maximum_position_difference_m": 0.004607209133728708,
+      "maximum_velocity_difference_mm_s": 0.0052137996755939825,
+      "final_position_difference_m": 0.0023648404158300943,
+      "final_velocity_difference_mm_s": 0.002676769495258209,
+      "python_runtime_seconds": 14.170404299977235,
+      "python_function_evaluations": 2741,
+      "checks": [
+        {
+          "check_id": "1D1-G2020-initial_position",
+          "measured_value": 6.431098710768743e-10,
+          "limit": 0.001,
+          "unit": "m",
+          "status": "passed"
+        },
+        {
+          "check_id": "1D1-G2020-initial_velocity",
+          "measured_value": 0.0,
+          "limit": 0.001,
+          "unit": "mm/s",
+          "status": "passed"
+        },
+        {
+          "check_id": "1D1-G2020-maximum_position",
+          "measured_value": 0.004607209133728708,
+          "limit": 0.05,
+          "unit": "m",
+          "status": "passed"
+        },
+        {
+          "check_id": "1D1-G2020-maximum_velocity",
+          "measured_value": 0.0052137996755939825,
+          "limit": 0.05,
+          "unit": "mm/s",
+          "status": "passed"
+        }
+      ]
+    }
+  ],
+  "scientific_scope": [
+    "This 30-minute short-arc matrix follows the independently passed 1D.0 shared-state acceleration gate.",
+    "All GMAT and Python models use the same frozen normalized JGM2 coefficients and full validated R2026a EOP realization.",
+    "GMAT STK-TimePosVel states are accepted only on the preregistered 10-second grid tolerance; state vectors are never interpolated by Research Core.",
+    "Tides, drag, third bodies, solar radiation pressure, and relativity are disabled.",
+    "Thresholds must not be loosened after inspecting GMAT outputs merely to obtain a pass.",
+    "A pass authorizes a separate multi-case full-arc gate; it is not measured-orbit truth or flight qualification."
+  ]
+}

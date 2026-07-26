@@ -1,0 +1,534 @@
+{
+  "schema_version": "1E.0",
+  "experiment_id": "EXP-GMAT-DRAG-1E0-ACCELERATION-001",
+  "status": "passed_with_warnings",
+  "decision": "advance_to_1e1_drag_short_arc_validation",
+  "prerequisite_closure_id": "CLOSURE-GMAT-GRAVITY-1D2-001",
+  "scenario_count": 4,
+  "passed_scenario_count": 4,
+  "failed_scenario_count": 0,
+  "check_count": 25,
+  "passed_check_count": 25,
+  "failed_check_count": 0,
+  "atmosphere_file_sha256": "75762f679f82e089a4a6eadaa1251c797a2151aab5311b36b2ae96cffefda85e",
+  "thresholds": {
+    "maximum_drag_vector_difference_km_s2": 5e-12,
+    "maximum_drag_relative_difference": 0.002,
+    "maximum_inferred_density_relative_difference": 0.002,
+    "maximum_direction_cosine": -0.99999,
+    "maximum_ballistic_scaling_relative_difference": 0.001,
+    "maximum_shared_position_difference_km": 1e-08,
+    "maximum_shared_velocity_difference_km_s": 1e-11
+  },
+  "scenarios": [
+    {
+      "scenario_id": "NOMINAL",
+      "alias": "DGN",
+      "mass_kg": 500.0,
+      "drag_area_m2": 4.0,
+      "drag_coefficient": 2.2,
+      "expected_acceleration_scale": 1.0,
+      "status": "passed",
+      "source_report": "data/reference/gmat_1e0/output/NOMINAL_DRAG_ACCELERATION_1E0.csv",
+      "source_report_sha256": "57795b715567cc359c43f3feac2c8912ab4ee1f5d4826d09bd574c2bd347c026",
+      "sample_count": 25,
+      "time_grid": {
+        "maximum_absolute_raw_time_residual_seconds": 1.3969840892968932e-06,
+        "final_raw_time_residual_seconds": 1.3969840892968932e-06,
+        "synchronization_tolerance_seconds": 5e-06
+      },
+      "minimum_geodetic_height_km": 396.54868587607507,
+      "maximum_geodetic_height_km": 408.50194798695793,
+      "minimum_density_kg_m3": 3.2212570216956835e-12,
+      "maximum_density_kg_m3": 3.974179363024804e-12,
+      "maximum_drag_difference_km_s2": 1.626792663682568e-17,
+      "maximum_drag_relative_difference": 1.0382042872051918e-08,
+      "maximum_density_relative_difference": 9.179606229479817e-09,
+      "worst_direction_cosine": -0.9999999999999997,
+      "checks": [
+        {
+          "check_id": "1E0-01-drag-vector",
+          "measured_value": 1.626792663682568e-17,
+          "limit": 5e-12,
+          "unit": "km/s^2",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-01-drag-relative",
+          "measured_value": 1.0382042872051918e-08,
+          "limit": 0.002,
+          "unit": "relative",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-01-density",
+          "measured_value": 9.179606229479817e-09,
+          "limit": 0.002,
+          "unit": "relative",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-01-direction",
+          "measured_value": -0.9999999999999997,
+          "limit": -0.99999,
+          "unit": "cosine",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "scenario_id": "AREA_X2",
+      "alias": "DGA2",
+      "mass_kg": 500.0,
+      "drag_area_m2": 8.0,
+      "drag_coefficient": 2.2,
+      "expected_acceleration_scale": 2.0,
+      "status": "passed",
+      "source_report": "data/reference/gmat_1e0/output/AREA_X2_DRAG_ACCELERATION_1E0.csv",
+      "source_report_sha256": "0c555906b84c02bae4a9f1e351faeccec6dc18ae9b09939d79c0deebfdfc072c",
+      "sample_count": 25,
+      "time_grid": {
+        "maximum_absolute_raw_time_residual_seconds": 1.3969840892968932e-06,
+        "final_raw_time_residual_seconds": 1.3969840892968932e-06,
+        "synchronization_tolerance_seconds": 5e-06
+      },
+      "minimum_geodetic_height_km": 396.54868587607507,
+      "maximum_geodetic_height_km": 408.50194798695793,
+      "minimum_density_kg_m3": 3.2212570216956835e-12,
+      "maximum_density_kg_m3": 3.974179363024804e-12,
+      "maximum_drag_difference_km_s2": 3.2127160665659744e-17,
+      "maximum_drag_relative_difference": 1.0072191354440146e-08,
+      "maximum_density_relative_difference": 8.962216898472231e-09,
+      "worst_direction_cosine": -0.9999999999999999,
+      "checks": [
+        {
+          "check_id": "1E0-02-drag-vector",
+          "measured_value": 3.2127160665659744e-17,
+          "limit": 5e-12,
+          "unit": "km/s^2",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-02-drag-relative",
+          "measured_value": 1.0072191354440146e-08,
+          "limit": 0.002,
+          "unit": "relative",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-02-density",
+          "measured_value": 8.962216898472231e-09,
+          "limit": 0.002,
+          "unit": "relative",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-02-direction",
+          "measured_value": -0.9999999999999999,
+          "limit": -0.99999,
+          "unit": "cosine",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "scenario_id": "MASS_HALF",
+      "alias": "DGM2",
+      "mass_kg": 250.0,
+      "drag_area_m2": 4.0,
+      "drag_coefficient": 2.2,
+      "expected_acceleration_scale": 2.0,
+      "status": "passed",
+      "source_report": "data/reference/gmat_1e0/output/MASS_HALF_DRAG_ACCELERATION_1E0.csv",
+      "source_report_sha256": "4d9ddc1d64c43ef3805a9641da770f099710fbc14ad1355f690678e7ac1ab2eb",
+      "sample_count": 25,
+      "time_grid": {
+        "maximum_absolute_raw_time_residual_seconds": 1.3969840892968932e-06,
+        "final_raw_time_residual_seconds": 1.3969840892968932e-06,
+        "synchronization_tolerance_seconds": 5e-06
+      },
+      "minimum_geodetic_height_km": 396.54868587607507,
+      "maximum_geodetic_height_km": 408.50194798695793,
+      "minimum_density_kg_m3": 3.2212570216956835e-12,
+      "maximum_density_kg_m3": 3.974179363024804e-12,
+      "maximum_drag_difference_km_s2": 3.2127160665659744e-17,
+      "maximum_drag_relative_difference": 1.0072191354440146e-08,
+      "maximum_density_relative_difference": 8.962216898472231e-09,
+      "worst_direction_cosine": -0.9999999999999999,
+      "checks": [
+        {
+          "check_id": "1E0-03-drag-vector",
+          "measured_value": 3.2127160665659744e-17,
+          "limit": 5e-12,
+          "unit": "km/s^2",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-03-drag-relative",
+          "measured_value": 1.0072191354440146e-08,
+          "limit": 0.002,
+          "unit": "relative",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-03-density",
+          "measured_value": 8.962216898472231e-09,
+          "limit": 0.002,
+          "unit": "relative",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-03-direction",
+          "measured_value": -0.9999999999999999,
+          "limit": -0.99999,
+          "unit": "cosine",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "scenario_id": "CD_HALF",
+      "alias": "DGC5",
+      "mass_kg": 500.0,
+      "drag_area_m2": 4.0,
+      "drag_coefficient": 1.1,
+      "expected_acceleration_scale": 0.5,
+      "status": "passed",
+      "source_report": "data/reference/gmat_1e0/output/CD_HALF_DRAG_ACCELERATION_1E0.csv",
+      "source_report_sha256": "4d594637cbd2c37d4fa60a02bf5a68d0d9c0c9606fa5c5eb85179c4fb615fe8d",
+      "sample_count": 25,
+      "time_grid": {
+        "maximum_absolute_raw_time_residual_seconds": 1.3969840892968932e-06,
+        "final_raw_time_residual_seconds": 1.3969840892968932e-06,
+        "synchronization_tolerance_seconds": 5e-06
+      },
+      "minimum_geodetic_height_km": 396.54868587607507,
+      "maximum_geodetic_height_km": 408.50194798695793,
+      "minimum_density_kg_m3": 3.2212570216956835e-12,
+      "maximum_density_kg_m3": 3.974179363024804e-12,
+      "maximum_drag_difference_km_s2": 8.597539484980761e-18,
+      "maximum_drag_relative_difference": 1.059324635907898e-08,
+      "maximum_density_relative_difference": 9.750251432241563e-09,
+      "worst_direction_cosine": -0.9999999999999997,
+      "checks": [
+        {
+          "check_id": "1E0-04-drag-vector",
+          "measured_value": 8.597539484980761e-18,
+          "limit": 5e-12,
+          "unit": "km/s^2",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-04-drag-relative",
+          "measured_value": 1.059324635907898e-08,
+          "limit": 0.002,
+          "unit": "relative",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-04-density",
+          "measured_value": 9.750251432241563e-09,
+          "limit": 0.002,
+          "unit": "relative",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-04-direction",
+          "measured_value": -0.9999999999999997,
+          "limit": -0.99999,
+          "unit": "cosine",
+          "status": "passed"
+        }
+      ]
+    }
+  ],
+  "shared_state_checks": [
+    {
+      "scenario_id": "AREA_X2",
+      "maximum_position_difference_km": 0.0,
+      "maximum_velocity_difference_km_s": 0.0,
+      "checks": [
+        {
+          "check_id": "1E0-02-shared-position",
+          "measured_value": 0.0,
+          "limit": 1e-08,
+          "unit": "km",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-02-shared-velocity",
+          "measured_value": 0.0,
+          "limit": 1e-11,
+          "unit": "km/s",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "scenario_id": "MASS_HALF",
+      "maximum_position_difference_km": 0.0,
+      "maximum_velocity_difference_km_s": 0.0,
+      "checks": [
+        {
+          "check_id": "1E0-03-shared-position",
+          "measured_value": 0.0,
+          "limit": 1e-08,
+          "unit": "km",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-03-shared-velocity",
+          "measured_value": 0.0,
+          "limit": 1e-11,
+          "unit": "km/s",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "scenario_id": "CD_HALF",
+      "maximum_position_difference_km": 0.0,
+      "maximum_velocity_difference_km_s": 0.0,
+      "checks": [
+        {
+          "check_id": "1E0-04-shared-position",
+          "measured_value": 0.0,
+          "limit": 1e-08,
+          "unit": "km",
+          "status": "passed"
+        },
+        {
+          "check_id": "1E0-04-shared-velocity",
+          "measured_value": 0.0,
+          "limit": 1e-11,
+          "unit": "km/s",
+          "status": "passed"
+        }
+      ]
+    }
+  ],
+  "ballistic_scaling_checks": [
+    {
+      "scenario_id": "AREA_X2",
+      "expected_scale": 2.0,
+      "maximum_scaling_relative_difference": 7.593477966598681e-10,
+      "check": {
+        "check_id": "1E0-02-ballistic-scaling",
+        "measured_value": 7.593477966598681e-10,
+        "limit": 0.001,
+        "unit": "relative",
+        "status": "passed"
+      }
+    },
+    {
+      "scenario_id": "MASS_HALF",
+      "expected_scale": 2.0,
+      "maximum_scaling_relative_difference": 7.593477966598681e-10,
+      "check": {
+        "check_id": "1E0-03-ballistic-scaling",
+        "measured_value": 7.593477966598681e-10,
+        "limit": 0.001,
+        "unit": "relative",
+        "status": "passed"
+      }
+    },
+    {
+      "scenario_id": "CD_HALF",
+      "expected_scale": 0.5,
+      "maximum_scaling_relative_difference": 1.7242929408608563e-09,
+      "check": {
+        "check_id": "1E0-04-ballistic-scaling",
+        "measured_value": 1.7242929408608563e-09,
+        "limit": 0.001,
+        "unit": "relative",
+        "status": "passed"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "1E0-01-drag-vector",
+      "measured_value": 1.626792663682568e-17,
+      "limit": 5e-12,
+      "unit": "km/s^2",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-01-drag-relative",
+      "measured_value": 1.0382042872051918e-08,
+      "limit": 0.002,
+      "unit": "relative",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-01-density",
+      "measured_value": 9.179606229479817e-09,
+      "limit": 0.002,
+      "unit": "relative",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-01-direction",
+      "measured_value": -0.9999999999999997,
+      "limit": -0.99999,
+      "unit": "cosine",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-02-drag-vector",
+      "measured_value": 3.2127160665659744e-17,
+      "limit": 5e-12,
+      "unit": "km/s^2",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-02-drag-relative",
+      "measured_value": 1.0072191354440146e-08,
+      "limit": 0.002,
+      "unit": "relative",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-02-density",
+      "measured_value": 8.962216898472231e-09,
+      "limit": 0.002,
+      "unit": "relative",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-02-direction",
+      "measured_value": -0.9999999999999999,
+      "limit": -0.99999,
+      "unit": "cosine",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-03-drag-vector",
+      "measured_value": 3.2127160665659744e-17,
+      "limit": 5e-12,
+      "unit": "km/s^2",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-03-drag-relative",
+      "measured_value": 1.0072191354440146e-08,
+      "limit": 0.002,
+      "unit": "relative",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-03-density",
+      "measured_value": 8.962216898472231e-09,
+      "limit": 0.002,
+      "unit": "relative",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-03-direction",
+      "measured_value": -0.9999999999999999,
+      "limit": -0.99999,
+      "unit": "cosine",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-04-drag-vector",
+      "measured_value": 8.597539484980761e-18,
+      "limit": 5e-12,
+      "unit": "km/s^2",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-04-drag-relative",
+      "measured_value": 1.059324635907898e-08,
+      "limit": 0.002,
+      "unit": "relative",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-04-density",
+      "measured_value": 9.750251432241563e-09,
+      "limit": 0.002,
+      "unit": "relative",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-04-direction",
+      "measured_value": -0.9999999999999997,
+      "limit": -0.99999,
+      "unit": "cosine",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-02-shared-position",
+      "measured_value": 0.0,
+      "limit": 1e-08,
+      "unit": "km",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-02-shared-velocity",
+      "measured_value": 0.0,
+      "limit": 1e-11,
+      "unit": "km/s",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-02-ballistic-scaling",
+      "measured_value": 7.593477966598681e-10,
+      "limit": 0.001,
+      "unit": "relative",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-03-shared-position",
+      "measured_value": 0.0,
+      "limit": 1e-08,
+      "unit": "km",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-03-shared-velocity",
+      "measured_value": 0.0,
+      "limit": 1e-11,
+      "unit": "km/s",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-03-ballistic-scaling",
+      "measured_value": 7.593477966598681e-10,
+      "limit": 0.001,
+      "unit": "relative",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-04-shared-position",
+      "measured_value": 0.0,
+      "limit": 1e-08,
+      "unit": "km",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-04-shared-velocity",
+      "measured_value": 0.0,
+      "limit": 1e-11,
+      "unit": "km/s",
+      "status": "passed"
+    },
+    {
+      "check_id": "1E0-04-ballistic-scaling",
+      "measured_value": 1.7242929408608563e-09,
+      "limit": 0.001,
+      "unit": "relative",
+      "status": "passed"
+    }
+  ],
+  "scientific_scope": [
+    "This is a shared-state acceleration implementation comparison, not a propagated drag validation.",
+    "The deterministic GMAT exponential table is used to isolate software agreement; it is not a real-date atmosphere forecast.",
+    "Atmospheric winds beyond rigid Earth co-rotation are not included.",
+    "Spacecraft mass, spherical drag area, drag coefficient, and density scale factor are constant.",
+    "The validated 20x20 JGM2 gravity and full GMAT R2026a EOP realization are reused without change.",
+    "The preregistered thresholds must not be loosened merely to obtain a pass.",
+    "This is independent software-model agreement, not measured-orbit truth or flight qualification."
+  ]
+}
