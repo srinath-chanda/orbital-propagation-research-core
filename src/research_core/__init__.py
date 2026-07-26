@@ -1,0 +1,6 @@
+"""Orbital Propagation Research Core."""
+
+RESEARCH_CORE_VERSION = "0.1.0"
+BUILD_MARKER = "PAPER1-RELEASE-0.1.0"
+
+__all__ = ["RESEARCH_CORE_VERSION", "BUILD_MARKER"]
