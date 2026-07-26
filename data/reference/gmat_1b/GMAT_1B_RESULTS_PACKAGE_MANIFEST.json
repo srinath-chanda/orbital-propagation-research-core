@@ -1,0 +1,307 @@
+{
+  "matrix_id": "EXP-GMAT-1B-MULTICASE-001",
+  "created_at_utc": "2026-07-19T15:20:16.705691Z",
+  "files": [
+    {
+      "path": "configs/gmat_1b_multicase_matrix.json",
+      "sha256": "a193b477ef615032cad3d5220f2a1fe0345b3be6b82d89a50e0684aec5d6a346",
+      "size_bytes": 3523
+    },
+    {
+      "path": "data/reference/gmat_1b/cases/B01_CONTROL_400KM_I51P6_JAN_24H.json",
+      "sha256": "a973a3d65c5c663446103e3cc829b875c6353e0989f1c27715fd99ba776ffdc9",
+      "size_bytes": 10995
+    },
+    {
+      "path": "data/reference/gmat_1b/cases/B02_ALTITUDE_700KM_I51P6_JAN_24H.json",
+      "sha256": "1f091ea066c5e3c57a993c46dcf714fa97c7fd575616b4c1c6901c3cc253a6d7",
+      "size_bytes": 10991
+    },
+    {
+      "path": "data/reference/gmat_1b/cases/B03_ALTITUDE_1000KM_I51P6_JAN_24H.json",
+      "sha256": "c453e80ddcbd41d302da152c6aae89abdebe1d4f383388ae34e8070a7ac8210b",
+      "size_bytes": 10995
+    },
+    {
+      "path": "data/reference/gmat_1b/cases/B04_INCLINATION_5DEG_400KM_JAN_24H.json",
+      "sha256": "ae4098f418c138ab82afc2fe4ca610fe468616f50136efe9bb3a0fcfe24db30d",
+      "size_bytes": 11001
+    },
+    {
+      "path": "data/reference/gmat_1b/cases/B05_INCLINATION_98DEG_400KM_JAN_24H.json",
+      "sha256": "a4e75f0057ca1e80a027ce7191904e54138d34533259e6c6d1caf2119db7b817",
+      "size_bytes": 11006
+    },
+    {
+      "path": "data/reference/gmat_1b/cases/B06_EPOCH_APR_400KM_I51P6_24H.json",
+      "sha256": "1aeb0b6ac8b76b75627adf7d84609129eafd0ebe0836629b63766c4ec93b0ac1",
+      "size_bytes": 10976
+    },
+    {
+      "path": "data/reference/gmat_1b/cases/B07_EPOCH_JUL_400KM_I51P6_24H.json",
+      "sha256": "cf69a981cd1c96e160556551c8224524c2505da8f993f924c27357086b7da193",
+      "size_bytes": 10976
+    },
+    {
+      "path": "data/reference/gmat_1b/cases/B08_EPOCH_OCT_400KM_I51P6_24H.json",
+      "sha256": "0b004c97aaf776939f501f662af4799124abad76d4d651d7726cc7616fe6224d",
+      "size_bytes": 10976
+    },
+    {
+      "path": "data/reference/gmat_1b/cases/B09_DURATION_6H_400KM_I51P6_JAN.json",
+      "sha256": "0df99d382b41cd043fa4166a0a557150e63b23c664f79db6777ba091eadcdfd2",
+      "size_bytes": 10984
+    },
+    {
+      "path": "data/reference/gmat_1b/cases/B10_DURATION_72H_400KM_I51P6_JAN.json",
+      "sha256": "8f48473a44253630aa48c44537c81bd37608e5a9522cd1af7e2ea025aa866900",
+      "size_bytes": 10993
+    },
+    {
+      "path": "data/reference/gmat_1b/GMAT_1B_MATRIX_MANIFEST.json",
+      "sha256": "45654f2d83b86b4d4e4a229c6cc7127ec17d9f87245da86dc5c5e0ded17549fb",
+      "size_bytes": 15565
+    },
+    {
+      "path": "data/reference/gmat_1b/output/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B01_CONTROL_400KM_I51P6_JAN_24H_J2.e",
+      "sha256": "0328e6bacadba27dde0c685fd7e7d15c42f47a383819dcb28872af49739e779f",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B01_CONTROL_400KM_I51P6_JAN_24H_TWO_BODY.e",
+      "sha256": "93e7efae69f07d3e234bd6834a2a229640432485be519b43761022b3409d5e52",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B02_ALTITUDE_700KM_I51P6_JAN_24H_J2.e",
+      "sha256": "399f63482bac24a8b298028987ede2f519667f9cb8f78ec0db935cb01a79b130",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B02_ALTITUDE_700KM_I51P6_JAN_24H_TWO_BODY.e",
+      "sha256": "8a4436903b76d09a5a518a9e2afa7eef31958e78b8b83c1c234f1dcd32642c08",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B03_ALTITUDE_1000KM_I51P6_JAN_24H_J2.e",
+      "sha256": "a729ce2f5e4946d469ee4fe0957b228159e4387a41823435a3fd30d8f5c6f474",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B03_ALTITUDE_1000KM_I51P6_JAN_24H_TWO_BODY.e",
+      "sha256": "7c37fb4a04e9675a2efff0a8c2b7ee407e7ba16f037786df28d0b517854afd0b",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B04_INCLINATION_5DEG_400KM_JAN_24H_J2.e",
+      "sha256": "f1ff793fd25b2f1af95e865cc56a13c955366bf3e27ad1a9f96a662b98d9efbd",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B04_INCLINATION_5DEG_400KM_JAN_24H_TWO_BODY.e",
+      "sha256": "ea52d9365c61e0956300e97c2950152cd7ef63ab47fdcf2d4a2ea58ade161394",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B05_INCLINATION_98DEG_400KM_JAN_24H_J2.e",
+      "sha256": "a3a46ff05714cadaab817f9ac0e4d32b2f81ca9c07eca89c95b539a05a56b8df",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B05_INCLINATION_98DEG_400KM_JAN_24H_TWO_BODY.e",
+      "sha256": "01afa79a0e6aa3699fb7610749f2e4781a0d78d93bd760915051918f5599e87b",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B06_EPOCH_APR_400KM_I51P6_24H_J2.e",
+      "sha256": "d6c792f8ccbb0b3cc2d5cf76bdcf751cd4fd13607d4856946182538456100c1a",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B06_EPOCH_APR_400KM_I51P6_24H_TWO_BODY.e",
+      "sha256": "5947f5c8206b4b0ee19394180e18c2b248542d3f5592ea305fd52358fef72917",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B07_EPOCH_JUL_400KM_I51P6_24H_J2.e",
+      "sha256": "e6b5d2a836295c5fb051c5fb061649199a0f4e08a74c4d85febf37c378a9fb5c",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B07_EPOCH_JUL_400KM_I51P6_24H_TWO_BODY.e",
+      "sha256": "745bafe3efc8dc6ba8a553721102f8923a2e840ad53d91cdec30806c22913d52",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B08_EPOCH_OCT_400KM_I51P6_24H_J2.e",
+      "sha256": "5578bda7063306a34d270a503505e6e08621e17cece27ae23bd551a0abffa5ef",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B08_EPOCH_OCT_400KM_I51P6_24H_TWO_BODY.e",
+      "sha256": "6e9b98f05f2690d3573d0f0d66e289980e1c9f0bbb051d3cdeb7f31b28f8a90e",
+      "size_bytes": 240987
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B09_DURATION_6H_400KM_I51P6_JAN_J2.e",
+      "sha256": "1df312fbbf3bec6e223d5a16a4999ebc561ee87131f8a96121b94f39151efb36",
+      "size_bytes": 60626
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B09_DURATION_6H_400KM_I51P6_JAN_TWO_BODY.e",
+      "sha256": "82817ed2ed17256ef4ac8e3f9b13721efaa68cc7188b29d56dcd6a3aac5c805e",
+      "size_bytes": 60626
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B10_DURATION_72H_400KM_I51P6_JAN_J2.e",
+      "sha256": "68b550d198e633af1cd9f1cbb402d45cc5de696b0e94f416b5549d4896e3d148",
+      "size_bytes": 721947
+    },
+    {
+      "path": "data/reference/gmat_1b/output/B10_DURATION_72H_400KM_I51P6_JAN_TWO_BODY.e",
+      "sha256": "672ddc55116cc497bd8b47bef9353fdcc8f2375a23fbbcfac39e351362dec463",
+      "size_bytes": 721947
+    },
+    {
+      "path": "data/reference/gmat_1b/README.md",
+      "sha256": "f58aeeabb43f9a4660eb22c3181a595d4177f39e72ba7769173352d5e9960f67",
+      "size_bytes": 852
+    },
+    {
+      "path": "data/reference/gmat_1b/RUN_ORDER_1B.txt",
+      "sha256": "2bde86ac10c375372c538bbf3b6ff38e57c9f203dda3be9052f9218d7be6c6a3",
+      "size_bytes": 859
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B01_CONTROL_400KM_I51P6_JAN_24H_J2.script",
+      "sha256": "f82cbbf71a6122cb7196ef5bc3aa394d9e7e0761bc136ebcb213255a3d066324",
+      "size_bytes": 2317
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B01_CONTROL_400KM_I51P6_JAN_24H_TWO_BODY.script",
+      "sha256": "9c2ec45e7fbe9a98f787cd6ea6cce41ee09d60dc34dc1dce95a77760afcbf1ba",
+      "size_bytes": 2328
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B02_ALTITUDE_700KM_I51P6_JAN_24H_J2.script",
+      "sha256": "ea8490fb622f08e97685a7877306681c2a3a5ad055d1a3e5c632977efd5ae2da",
+      "size_bytes": 2319
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B02_ALTITUDE_700KM_I51P6_JAN_24H_TWO_BODY.script",
+      "sha256": "d02963c19ce227caa22487c81b8afca5b3d5270ffad5eced60457137200942e4",
+      "size_bytes": 2330
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B03_ALTITUDE_1000KM_I51P6_JAN_24H_J2.script",
+      "sha256": "00ad85b713986169896c56b8c1254fe396a0358b8fbb771b8063838066473075",
+      "size_bytes": 2321
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B03_ALTITUDE_1000KM_I51P6_JAN_24H_TWO_BODY.script",
+      "sha256": "f6cc05a93cd74f0e1de727dc972e75b21189b2de8b7a1c374117b3ac6fb50a6e",
+      "size_bytes": 2332
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B04_INCLINATION_5DEG_400KM_JAN_24H_J2.script",
+      "sha256": "5722e2c1f07790c00873b86cc9f046ce65e84bf9571705072e229ae397a07da5",
+      "size_bytes": 2322
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B04_INCLINATION_5DEG_400KM_JAN_24H_TWO_BODY.script",
+      "sha256": "c245ba0a8de483a0fd734fd8fe50a7aeb0d0b64f4102c984bafa92a3568f3e34",
+      "size_bytes": 2333
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B05_INCLINATION_98DEG_400KM_JAN_24H_J2.script",
+      "sha256": "b00d1f96ee5b4d75c9b0caa5550f7b571e0f2af990da46b4f0a47806fd6dbde0",
+      "size_bytes": 2326
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B05_INCLINATION_98DEG_400KM_JAN_24H_TWO_BODY.script",
+      "sha256": "f4321e144281f8acbbab9de3cd512e73f3c27cf293906eb8876bd4356e340c65",
+      "size_bytes": 2337
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B06_EPOCH_APR_400KM_I51P6_24H_J2.script",
+      "sha256": "3e5fe0996eea5b61d7c305539e78054d71d7973fb7073445761e293ff5d325ac",
+      "size_bytes": 2313
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B06_EPOCH_APR_400KM_I51P6_24H_TWO_BODY.script",
+      "sha256": "fce8da59289dcbb23bda21d4e67b4c208417e10de9d497d26931c044592934e7",
+      "size_bytes": 2324
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B07_EPOCH_JUL_400KM_I51P6_24H_J2.script",
+      "sha256": "a65ba4de39751d977435f69e484a31818c5ba58dc9dee3372a4c3ce9fcaafe91",
+      "size_bytes": 2313
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B07_EPOCH_JUL_400KM_I51P6_24H_TWO_BODY.script",
+      "sha256": "f53200c06df47e6b0c14fb5e1c45dc21cffee46aea8e2489965724aeacf56282",
+      "size_bytes": 2324
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B08_EPOCH_OCT_400KM_I51P6_24H_J2.script",
+      "sha256": "fabe3ef06c60d9afe504653f34d19d2d587b293d7599dbb1849ad3f987ddb48e",
+      "size_bytes": 2313
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B08_EPOCH_OCT_400KM_I51P6_24H_TWO_BODY.script",
+      "sha256": "600c901cffcd55678b9f29ea228325e17e659dc3597dd86821f87dcfe75f46cd",
+      "size_bytes": 2324
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B09_DURATION_6H_400KM_I51P6_JAN_J2.script",
+      "sha256": "292aa5c41b9745a9786f75efb367dd14bcaa72fd3d89e6779d9b4551d30361eb",
+      "size_bytes": 2317
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B09_DURATION_6H_400KM_I51P6_JAN_TWO_BODY.script",
+      "sha256": "2b159de972fa42d5146c85aab3c2512b9fb5827896488cdde7b60d7b00633bfb",
+      "size_bytes": 2328
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B10_DURATION_72H_400KM_I51P6_JAN_J2.script",
+      "sha256": "5b504e38c0825a5ae05fe896f2c72d44ec970ead4ebaf5bf6fc6ed096071488a",
+      "size_bytes": 2320
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/B10_DURATION_72H_400KM_I51P6_JAN_TWO_BODY.script",
+      "sha256": "40ff004683a73e0a7d580f955fcf445291f96da16ce317519d4fcfa440a34ebc",
+      "size_bytes": 2331
+    },
+    {
+      "path": "data/reference/gmat_1b/scripts/RUN_ALL_CASES_1B.script",
+      "sha256": "d752df9c6ba62364144e235c1f170bf6e48ec9bb0c4dcd593bf9aa8c2cac05a0",
+      "size_bytes": 35515
+    },
+    {
+      "path": "results/EXP-GMAT-1B-MULTICASE-001/2026-07-19_123533_125158Z/GMAT_1B_MATRIX_REPORT.html",
+      "sha256": "26b3a8fa691c4399fb99c98965d7c211cb27ef93aae2372958dd71274ce2011b",
+      "size_bytes": 2824
+    },
+    {
+      "path": "results/EXP-GMAT-1B-MULTICASE-001/2026-07-19_123533_125158Z/gmat_1b_matrix_summary.csv",
+      "sha256": "6f063387a7bbbbab6eacb1e4dea2d4215f936bf78790291c5aae754895c76270",
+      "size_bytes": 4381
+    },
+    {
+      "path": "results/EXP-GMAT-1B-MULTICASE-001/2026-07-19_123533_125158Z/gmat_1b_matrix_summary.json",
+      "sha256": "5c66e50c19ef9df4727a9496285243203fe3993eb18d5116a9873da0d2cc3d29",
+      "size_bytes": 10012
+    },
+    {
+      "path": "results/EXP-GMAT-1B-MULTICASE-001/2026-07-19_123533_125158Z/RUN_MANIFEST.json",
+      "sha256": "fad062dea92ad7e3ec1ddc1ede9221ee6f1e4731f14aa5a4e85678644f278105",
+      "size_bytes": 520
+    }
+  ],
+  "public_release_note": "Generated GMAT file paths were normalized to repository-relative paths. Numerical outputs are byte-identical to the closed validation evidence."
+}
