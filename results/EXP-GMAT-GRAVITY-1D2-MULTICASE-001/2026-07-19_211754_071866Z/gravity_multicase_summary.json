@@ -1,0 +1,1529 @@
+{
+  "schema_version": "1D.2",
+  "experiment_id": "EXP-GMAT-GRAVITY-1D2-MULTICASE-001",
+  "status": "passed_with_warnings",
+  "decision": "close_higher_order_gravity_validation_and_advance_to_drag",
+  "prerequisite_closure_id": "CLOSURE-GMAT-GRAVITY-1D1-001",
+  "case_count": 6,
+  "passed_case_count": 6,
+  "failed_case_count": 0,
+  "model_run_count": 24,
+  "passed_model_run_count": 24,
+  "failed_model_run_count": 0,
+  "check_count": 96,
+  "passed_check_count": 96,
+  "failed_check_count": 0,
+  "output_step_seconds": 60.0,
+  "threshold_policy": {
+    "status": "preregistered_before_first_1d2_gmat_run",
+    "initial_position_difference_m": 0.001,
+    "initial_velocity_difference_mm_s": 0.001,
+    "duration_tiers": [
+      {
+        "maximum_duration_hours": 6.0,
+        "maximum_position_difference_m": 0.5,
+        "maximum_velocity_difference_mm_s": 0.5
+      },
+      {
+        "maximum_duration_hours": 12.0,
+        "maximum_position_difference_m": 1.0,
+        "maximum_velocity_difference_mm_s": 1.0
+      },
+      {
+        "maximum_duration_hours": 24.0,
+        "maximum_position_difference_m": 2.0,
+        "maximum_velocity_difference_mm_s": 2.0
+      },
+      {
+        "maximum_duration_hours": 36.0,
+        "maximum_position_difference_m": 3.0,
+        "maximum_velocity_difference_mm_s": 3.0
+      },
+      {
+        "maximum_duration_hours": 48.0,
+        "maximum_position_difference_m": 4.0,
+        "maximum_velocity_difference_mm_s": 4.0
+      },
+      {
+        "maximum_duration_hours": 72.0,
+        "maximum_position_difference_m": 6.0,
+        "maximum_velocity_difference_mm_s": 6.0
+      }
+    ],
+    "rule": "These limits are frozen before any 1D.2 GMAT ephemeris is generated and must never be loosened to obtain a pass."
+  },
+  "cases": [
+    {
+      "case_id": "D01_LOW_350KM_I1_FEB_6H",
+      "factor": "low_inclination_short_duration",
+      "epoch_utc": "2026-02-11T03:17:00Z",
+      "altitude_km": 350.0,
+      "eccentricity": 0.003,
+      "inclination_deg": 1.0,
+      "raan_deg": 11.0,
+      "argument_of_perigee_deg": 47.0,
+      "true_anomaly_deg": 123.0,
+      "duration_hours": 6.0,
+      "status": "passed",
+      "model_count": 4,
+      "passed_model_count": 4,
+      "failed_model_count": 0,
+      "check_count": 16,
+      "passed_check_count": 16,
+      "maximum_position_limit_m": 0.5,
+      "maximum_velocity_limit_mm_s": 0.5,
+      "maximum_position_difference_m": 0.003195166479086872,
+      "maximum_velocity_difference_mm_s": 0.008118651513328308,
+      "models": [
+        {
+          "model_id": "G20",
+          "label": "j2_validated_control",
+          "degree": 2,
+          "order": 0,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D01_LOW_350KM_I1_FEB_6H_G20.e",
+          "source_ephemeris_sha256": "651479a6887e28e13106d6951662b580522c3a77a2781fb5173748f165cf4753",
+          "sample_count": 361,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 2.0955121726728976e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 21600.0
+          },
+          "initial_position_difference_m": 1.464821375527116e-11,
+          "initial_velocity_difference_mm_s": 4.1191555942998253e-10,
+          "maximum_position_difference_m": 0.0031081859790330277,
+          "maximum_velocity_difference_mm_s": 0.0035709110459564626,
+          "final_position_difference_m": 0.0006875046629956966,
+          "final_velocity_difference_mm_s": 0.0007874296244248322,
+          "python_runtime_seconds": 4.533013699983712,
+          "python_function_evaluations": 5453,
+          "checks": [
+            {
+              "check_id": "1D2-01-01-initial_position",
+              "measured_value": 1.464821375527116e-11,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-01-01-initial_velocity",
+              "measured_value": 4.1191555942998253e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-01-01-maximum_position",
+              "measured_value": 0.0031081859790330277,
+              "limit": 0.5,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-01-01-maximum_velocity",
+              "measured_value": 0.0035709110459564626,
+              "limit": 0.5,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G44",
+          "label": "degree_and_order_4",
+          "degree": 4,
+          "order": 4,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D01_LOW_350KM_I1_FEB_6H_G44.e",
+          "source_ephemeris_sha256": "821574c2a26ca616d3e178eb1c595d0f958d2b07d5bcad1e3bd57348023bf360",
+          "sample_count": 361,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 6.286390998866409e-07,
+            "final_raw_time_residual_seconds": -6.286390998866409e-07,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 21600.0
+          },
+          "initial_position_difference_m": 1.464821375527116e-11,
+          "initial_velocity_difference_mm_s": 4.1191555942998253e-10,
+          "maximum_position_difference_m": 0.0030308980943857134,
+          "maximum_velocity_difference_mm_s": 0.003463904617266164,
+          "final_position_difference_m": 0.0023129527618276175,
+          "final_velocity_difference_mm_s": 0.0026489357958432206,
+          "python_runtime_seconds": 4.975768599950243,
+          "python_function_evaluations": 5453,
+          "checks": [
+            {
+              "check_id": "1D2-01-02-initial_position",
+              "measured_value": 1.464821375527116e-11,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-01-02-initial_velocity",
+              "measured_value": 4.1191555942998253e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-01-02-maximum_position",
+              "measured_value": 0.0030308980943857134,
+              "limit": 0.5,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-01-02-maximum_velocity",
+              "measured_value": 0.003463904617266164,
+              "limit": 0.5,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G88",
+          "label": "degree_and_order_8",
+          "degree": 8,
+          "order": 8,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D01_LOW_350KM_I1_FEB_6H_G88.e",
+          "source_ephemeris_sha256": "6958c0c925ec951543b8271b8b8958e0a71d45efe7ab0bbb646570b267db4987",
+          "sample_count": 361,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 6.286390998866409e-07,
+            "final_raw_time_residual_seconds": -6.286390998866409e-07,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 21600.0
+          },
+          "initial_position_difference_m": 1.464821375527116e-11,
+          "initial_velocity_difference_mm_s": 4.1191555942998253e-10,
+          "maximum_position_difference_m": 0.0030532492538044463,
+          "maximum_velocity_difference_mm_s": 0.003516119453548982,
+          "final_position_difference_m": 0.0025852965246286348,
+          "final_velocity_difference_mm_s": 0.00296092194232345,
+          "python_runtime_seconds": 6.921679300023243,
+          "python_function_evaluations": 5453,
+          "checks": [
+            {
+              "check_id": "1D2-01-03-initial_position",
+              "measured_value": 1.464821375527116e-11,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-01-03-initial_velocity",
+              "measured_value": 4.1191555942998253e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-01-03-maximum_position",
+              "measured_value": 0.0030532492538044463,
+              "limit": 0.5,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-01-03-maximum_velocity",
+              "measured_value": 0.003516119453548982,
+              "limit": 0.5,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G2020",
+          "label": "degree_and_order_20",
+          "degree": 20,
+          "order": 20,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D01_LOW_350KM_I1_FEB_6H_G2020.e",
+          "source_ephemeris_sha256": "690ae05121cf5d218c9bd4936a1831b741d533d545d4a92002f38cd707ebaa2a",
+          "sample_count": 361,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 6.286390998866409e-07,
+            "final_raw_time_residual_seconds": -6.286390998866409e-07,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 21600.0
+          },
+          "initial_position_difference_m": 1.464821375527116e-11,
+          "initial_velocity_difference_mm_s": 4.1191555942998253e-10,
+          "maximum_position_difference_m": 0.003195166479086872,
+          "maximum_velocity_difference_mm_s": 0.008118651513328308,
+          "final_position_difference_m": 0.0021185832999002707,
+          "final_velocity_difference_mm_s": 0.0024264316702112187,
+          "python_runtime_seconds": 27.50045799999498,
+          "python_function_evaluations": 5453,
+          "checks": [
+            {
+              "check_id": "1D2-01-04-initial_position",
+              "measured_value": 1.464821375527116e-11,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-01-04-initial_velocity",
+              "measured_value": 4.1191555942998253e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-01-04-maximum_position",
+              "measured_value": 0.003195166479086872,
+              "limit": 0.5,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-01-04-maximum_velocity",
+              "measured_value": 0.008118651513328308,
+              "limit": 0.5,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "D02_MID_500KM_I28P5_MAR_12H",
+      "factor": "mid_inclination_phase",
+      "epoch_utc": "2026-03-23T14:45:00Z",
+      "altitude_km": 500.0,
+      "eccentricity": 0.007,
+      "inclination_deg": 28.5,
+      "raan_deg": 73.0,
+      "argument_of_perigee_deg": 10.0,
+      "true_anomaly_deg": 250.0,
+      "duration_hours": 12.0,
+      "status": "passed",
+      "model_count": 4,
+      "passed_model_count": 4,
+      "failed_model_count": 0,
+      "check_count": 16,
+      "passed_check_count": 16,
+      "maximum_position_limit_m": 1.0,
+      "maximum_velocity_limit_mm_s": 1.0,
+      "maximum_position_difference_m": 0.008206467702805684,
+      "maximum_velocity_difference_mm_s": 0.015062629407465881,
+      "models": [
+        {
+          "model_id": "G20",
+          "label": "j2_validated_control",
+          "degree": 2,
+          "order": 0,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D02_MID_500KM_I28P5_MAR_12H_G20.e",
+          "source_ephemeris_sha256": "20ae42e2d2b9e2866a463aebb052b8e1d6e1f092d7cbf71c8265bf385d7c9fa2",
+          "sample_count": 721,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 2.374908945057541e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 43200.0
+          },
+          "initial_position_difference_m": 4.547473508864641e-10,
+          "initial_velocity_difference_mm_s": 4.440892098500626e-10,
+          "maximum_position_difference_m": 0.0034050752144964397,
+          "maximum_velocity_difference_mm_s": 0.0037675514096840554,
+          "final_position_difference_m": 0.0021203316039726163,
+          "final_velocity_difference_mm_s": 0.0023442545709803785,
+          "python_runtime_seconds": 16.776605000020936,
+          "python_function_evaluations": 10853,
+          "checks": [
+            {
+              "check_id": "1D2-02-01-initial_position",
+              "measured_value": 4.547473508864641e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-02-01-initial_velocity",
+              "measured_value": 4.440892098500626e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-02-01-maximum_position",
+              "measured_value": 0.0034050752144964397,
+              "limit": 1.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-02-01-maximum_velocity",
+              "measured_value": 0.0037675514096840554,
+              "limit": 1.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G44",
+          "label": "degree_and_order_4",
+          "degree": 4,
+          "order": 4,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D02_MID_500KM_I28P5_MAR_12H_G44.e",
+          "source_ephemeris_sha256": "65fbe5884b8246e05f5b1859677d8c801e1bd2fd48fa3aa82ada59ca9274fee0",
+          "sample_count": 721,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 2.374908945057541e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 43200.0
+          },
+          "initial_position_difference_m": 4.547473508864641e-10,
+          "initial_velocity_difference_mm_s": 4.440892098500626e-10,
+          "maximum_position_difference_m": 0.0037493090502077418,
+          "maximum_velocity_difference_mm_s": 0.004184991542767054,
+          "final_position_difference_m": 0.00044618401601048793,
+          "final_velocity_difference_mm_s": 0.0004934454641734765,
+          "python_runtime_seconds": 19.497297600028105,
+          "python_function_evaluations": 10853,
+          "checks": [
+            {
+              "check_id": "1D2-02-02-initial_position",
+              "measured_value": 4.547473508864641e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-02-02-initial_velocity",
+              "measured_value": 4.440892098500626e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-02-02-maximum_position",
+              "measured_value": 0.0037493090502077418,
+              "limit": 1.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-02-02-maximum_velocity",
+              "measured_value": 0.004184991542767054,
+              "limit": 1.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G88",
+          "label": "degree_and_order_8",
+          "degree": 8,
+          "order": 8,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D02_MID_500KM_I28P5_MAR_12H_G88.e",
+          "source_ephemeris_sha256": "ec3125f21eeba86c51684af55b8a7f571cb9ffb2341ce9c81205280451eb013e",
+          "sample_count": 721,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 2.374908945057541e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 43200.0
+          },
+          "initial_position_difference_m": 4.547473508864641e-10,
+          "initial_velocity_difference_mm_s": 4.440892098500626e-10,
+          "maximum_position_difference_m": 0.003517235197266785,
+          "maximum_velocity_difference_mm_s": 0.003932487348923517,
+          "final_position_difference_m": 0.0024497642805240624,
+          "final_velocity_difference_mm_s": 0.0027090651432339695,
+          "python_runtime_seconds": 25.894599200051744,
+          "python_function_evaluations": 10853,
+          "checks": [
+            {
+              "check_id": "1D2-02-03-initial_position",
+              "measured_value": 4.547473508864641e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-02-03-initial_velocity",
+              "measured_value": 4.440892098500626e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-02-03-maximum_position",
+              "measured_value": 0.003517235197266785,
+              "limit": 1.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-02-03-maximum_velocity",
+              "measured_value": 0.003932487348923517,
+              "limit": 1.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G2020",
+          "label": "degree_and_order_20",
+          "degree": 20,
+          "order": 20,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D02_MID_500KM_I28P5_MAR_12H_G2020.e",
+          "source_ephemeris_sha256": "29c5a48ed5a673994ddf4c9d6c865f87a39df25841b82e7feebe64f8a7059d26",
+          "sample_count": 721,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 2.374908945057541e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 43200.0
+          },
+          "initial_position_difference_m": 4.547473508864641e-10,
+          "initial_velocity_difference_mm_s": 4.440892098500626e-10,
+          "maximum_position_difference_m": 0.008206467702805684,
+          "maximum_velocity_difference_mm_s": 0.015062629407465881,
+          "final_position_difference_m": 0.0032979010575816753,
+          "final_velocity_difference_mm_s": 0.003646320664386739,
+          "python_runtime_seconds": 56.16279329999816,
+          "python_function_evaluations": 10853,
+          "checks": [
+            {
+              "check_id": "1D2-02-04-initial_position",
+              "measured_value": 4.547473508864641e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-02-04-initial_velocity",
+              "measured_value": 4.440892098500626e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-02-04-maximum_position",
+              "measured_value": 0.008206467702805684,
+              "limit": 1.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-02-04-maximum_velocity",
+              "measured_value": 0.015062629407465881,
+              "limit": 1.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "D03_CRITICAL_700KM_I63P4_MAY_24H",
+      "factor": "critical_inclination",
+      "epoch_utc": "2026-05-09T21:08:00Z",
+      "altitude_km": 700.0,
+      "eccentricity": 0.012,
+      "inclination_deg": 63.4,
+      "raan_deg": 219.0,
+      "argument_of_perigee_deg": 88.0,
+      "true_anomaly_deg": 41.0,
+      "duration_hours": 24.0,
+      "status": "passed",
+      "model_count": 4,
+      "passed_model_count": 4,
+      "failed_model_count": 0,
+      "check_count": 16,
+      "passed_check_count": 16,
+      "maximum_position_limit_m": 2.0,
+      "maximum_velocity_limit_mm_s": 2.0,
+      "maximum_position_difference_m": 0.006135253519717441,
+      "maximum_velocity_difference_mm_s": 0.015350871513830201,
+      "models": [
+        {
+          "model_id": "G20",
+          "label": "j2_validated_control",
+          "degree": 2,
+          "order": 0,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D03_CRITICAL_700KM_I63P4_MAY_24H_G20.e",
+          "source_ephemeris_sha256": "af241d8b704733f654909b01ac0d1050ee01c00a9d3c47c30d357c04e9abf2ff",
+          "sample_count": 1441,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 7.613634807057679e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 86400.0
+          },
+          "initial_position_difference_m": 9.094947017729282e-10,
+          "initial_velocity_difference_mm_s": 4.440892098500626e-10,
+          "maximum_position_difference_m": 0.00504381867945136,
+          "maximum_velocity_difference_mm_s": 0.005350633386881376,
+          "final_position_difference_m": 1.5317613191869876e-05,
+          "final_velocity_difference_mm_s": 1.198533589673673e-05,
+          "python_runtime_seconds": 31.49035710003227,
+          "python_function_evaluations": 21653,
+          "checks": [
+            {
+              "check_id": "1D2-03-01-initial_position",
+              "measured_value": 9.094947017729282e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-03-01-initial_velocity",
+              "measured_value": 4.440892098500626e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-03-01-maximum_position",
+              "measured_value": 0.00504381867945136,
+              "limit": 2.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-03-01-maximum_velocity",
+              "measured_value": 0.005350633386881376,
+              "limit": 2.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G44",
+          "label": "degree_and_order_4",
+          "degree": 4,
+          "order": 4,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D03_CRITICAL_700KM_I63P4_MAY_24H_G44.e",
+          "source_ephemeris_sha256": "c0ef0c3840378054a350390c8ce30dba5c3025cb016ee127b5ddaf3c029487f4",
+          "sample_count": 1441,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 7.613634807057679e-07,
+            "final_raw_time_residual_seconds": 6.28642737865448e-07,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 86400.0
+          },
+          "initial_position_difference_m": 9.094947017729282e-10,
+          "initial_velocity_difference_mm_s": 4.440892098500626e-10,
+          "maximum_position_difference_m": 0.004988875599685763,
+          "maximum_velocity_difference_mm_s": 0.005260767648149275,
+          "final_position_difference_m": 0.00170012641806672,
+          "final_velocity_difference_mm_s": 0.001791725578326386,
+          "python_runtime_seconds": 35.95822029997362,
+          "python_function_evaluations": 21653,
+          "checks": [
+            {
+              "check_id": "1D2-03-02-initial_position",
+              "measured_value": 9.094947017729282e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-03-02-initial_velocity",
+              "measured_value": 4.440892098500626e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-03-02-maximum_position",
+              "measured_value": 0.004988875599685763,
+              "limit": 2.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-03-02-maximum_velocity",
+              "measured_value": 0.005260767648149275,
+              "limit": 2.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G88",
+          "label": "degree_and_order_8",
+          "degree": 8,
+          "order": 8,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D03_CRITICAL_700KM_I63P4_MAY_24H_G88.e",
+          "source_ephemeris_sha256": "e864f53290fda7f9dcb33486344b374b3822e23f7694268ed82cea04f8a5f344",
+          "sample_count": 1441,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 7.613634807057679e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 86400.0
+          },
+          "initial_position_difference_m": 9.094947017729282e-10,
+          "initial_velocity_difference_mm_s": 4.440892098500626e-10,
+          "maximum_position_difference_m": 0.0050326771223037315,
+          "maximum_velocity_difference_mm_s": 0.0054075624050378334,
+          "final_position_difference_m": 0.0017983265806589999,
+          "final_velocity_difference_mm_s": 0.0018954444716403427,
+          "python_runtime_seconds": 47.181043300020974,
+          "python_function_evaluations": 21653,
+          "checks": [
+            {
+              "check_id": "1D2-03-03-initial_position",
+              "measured_value": 9.094947017729282e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-03-03-initial_velocity",
+              "measured_value": 4.440892098500626e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-03-03-maximum_position",
+              "measured_value": 0.0050326771223037315,
+              "limit": 2.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-03-03-maximum_velocity",
+              "measured_value": 0.0054075624050378334,
+              "limit": 2.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G2020",
+          "label": "degree_and_order_20",
+          "degree": 20,
+          "order": 20,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D03_CRITICAL_700KM_I63P4_MAY_24H_G2020.e",
+          "source_ephemeris_sha256": "22ddff963573a75cf277ee587738471d32b281d23241ff82da7744f1ffb7ac4c",
+          "sample_count": 1441,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 9.42964106798172e-07,
+            "final_raw_time_residual_seconds": 9.42964106798172e-07,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 86400.0
+          },
+          "initial_position_difference_m": 9.094947017729282e-10,
+          "initial_velocity_difference_mm_s": 4.440892098500626e-10,
+          "maximum_position_difference_m": 0.006135253519717441,
+          "maximum_velocity_difference_mm_s": 0.015350871513830201,
+          "final_position_difference_m": 0.004736935143800548,
+          "final_velocity_difference_mm_s": 0.004992164751625781,
+          "python_runtime_seconds": 109.93769659998361,
+          "python_function_evaluations": 21653,
+          "checks": [
+            {
+              "check_id": "1D2-03-04-initial_position",
+              "measured_value": 9.094947017729282e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-03-04-initial_velocity",
+              "measured_value": 4.440892098500626e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-03-04-maximum_position",
+              "measured_value": 0.006135253519717441,
+              "limit": 2.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-03-04-maximum_velocity",
+              "measured_value": 0.015350871513830201,
+              "limit": 2.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "D04_SSO_900KM_I97P6_JUN_36H",
+      "factor": "near_sun_synchronous",
+      "epoch_utc": "2026-06-17T06:30:00Z",
+      "altitude_km": 900.0,
+      "eccentricity": 0.005,
+      "inclination_deg": 97.6,
+      "raan_deg": 142.0,
+      "argument_of_perigee_deg": 205.0,
+      "true_anomaly_deg": 37.0,
+      "duration_hours": 36.0,
+      "status": "passed",
+      "model_count": 4,
+      "passed_model_count": 4,
+      "failed_model_count": 0,
+      "check_count": 16,
+      "passed_check_count": 16,
+      "maximum_position_limit_m": 3.0,
+      "maximum_velocity_limit_mm_s": 3.0,
+      "maximum_position_difference_m": 0.003718730521469719,
+      "maximum_velocity_difference_mm_s": 0.003936146876594379,
+      "models": [
+        {
+          "model_id": "G20",
+          "label": "j2_validated_control",
+          "degree": 2,
+          "order": 0,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D04_SSO_900KM_I97P6_JUN_36H_G20.e",
+          "source_ephemeris_sha256": "ab168887bf03997605d15806243ace6ea303653f41355f2da282d6f539fddfd7",
+          "sample_count": 2161,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 2.375018084421754e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 129600.0
+          },
+          "initial_position_difference_m": 4.547473508864641e-10,
+          "initial_velocity_difference_mm_s": 1.0877919644084147e-09,
+          "maximum_position_difference_m": 0.003463552533799426,
+          "maximum_velocity_difference_mm_s": 0.003517697091281155,
+          "final_position_difference_m": 0.002404939434480128,
+          "final_velocity_difference_mm_s": 0.0024544987037138466,
+          "python_runtime_seconds": 50.17239029996563,
+          "python_function_evaluations": 32453,
+          "checks": [
+            {
+              "check_id": "1D2-04-01-initial_position",
+              "measured_value": 4.547473508864641e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-04-01-initial_velocity",
+              "measured_value": 1.0877919644084147e-09,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-04-01-maximum_position",
+              "measured_value": 0.003463552533799426,
+              "limit": 3.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-04-01-maximum_velocity",
+              "measured_value": 0.003517697091281155,
+              "limit": 3.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G44",
+          "label": "degree_and_order_4",
+          "degree": 4,
+          "order": 4,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D04_SSO_900KM_I97P6_JUN_36H_G44.e",
+          "source_ephemeris_sha256": "5c647148aa0977a8a266e81c7a23aeb019e42f5ecc65f31c5405441da9c18d22",
+          "sample_count": 2161,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 2.375018084421754e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 129600.0
+          },
+          "initial_position_difference_m": 4.547473508864641e-10,
+          "initial_velocity_difference_mm_s": 1.0877919644084147e-09,
+          "maximum_position_difference_m": 0.0033472387846972297,
+          "maximum_velocity_difference_mm_s": 0.003398982203130803,
+          "final_position_difference_m": 0.0032661301729266555,
+          "final_velocity_difference_mm_s": 0.0033344136331000295,
+          "python_runtime_seconds": 57.45853399997577,
+          "python_function_evaluations": 32453,
+          "checks": [
+            {
+              "check_id": "1D2-04-02-initial_position",
+              "measured_value": 4.547473508864641e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-04-02-initial_velocity",
+              "measured_value": 1.0877919644084147e-09,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-04-02-maximum_position",
+              "measured_value": 0.0033472387846972297,
+              "limit": 3.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-04-02-maximum_velocity",
+              "measured_value": 0.003398982203130803,
+              "limit": 3.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G88",
+          "label": "degree_and_order_8",
+          "degree": 8,
+          "order": 8,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D04_SSO_900KM_I97P6_JUN_36H_G88.e",
+          "source_ephemeris_sha256": "435b2616eb45103dea830f9b60f8e261f7291f48959cdfa9699d656a8fa94453",
+          "sample_count": 2161,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 2.375018084421754e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 129600.0
+          },
+          "initial_position_difference_m": 4.547473508864641e-10,
+          "initial_velocity_difference_mm_s": 1.0877919644084147e-09,
+          "maximum_position_difference_m": 0.003436646838317624,
+          "maximum_velocity_difference_mm_s": 0.003491446759300108,
+          "final_position_difference_m": 0.0005140471245999116,
+          "final_velocity_difference_mm_s": 0.00052130503037796,
+          "python_runtime_seconds": 69.0055202000076,
+          "python_function_evaluations": 32453,
+          "checks": [
+            {
+              "check_id": "1D2-04-03-initial_position",
+              "measured_value": 4.547473508864641e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-04-03-initial_velocity",
+              "measured_value": 1.0877919644084147e-09,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-04-03-maximum_position",
+              "measured_value": 0.003436646838317624,
+              "limit": 3.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-04-03-maximum_velocity",
+              "measured_value": 0.003491446759300108,
+              "limit": 3.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G2020",
+          "label": "degree_and_order_20",
+          "degree": 20,
+          "order": 20,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D04_SSO_900KM_I97P6_JUN_36H_G2020.e",
+          "source_ephemeris_sha256": "9602e7b76cdee7ba368dd82192c3080371d527e694a25d134946e9cc0ab94c9a",
+          "sample_count": 2161,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 3.1430681701749563e-07,
+            "final_raw_time_residual_seconds": 3.1430681701749563e-07,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 129600.0
+          },
+          "initial_position_difference_m": 4.547473508864641e-10,
+          "initial_velocity_difference_mm_s": 1.0877919644084147e-09,
+          "maximum_position_difference_m": 0.003718730521469719,
+          "maximum_velocity_difference_mm_s": 0.003936146876594379,
+          "final_position_difference_m": 0.0014300938324348798,
+          "final_velocity_difference_mm_s": 0.0014591864280841312,
+          "python_runtime_seconds": 171.5568572000484,
+          "python_function_evaluations": 32453,
+          "checks": [
+            {
+              "check_id": "1D2-04-04-initial_position",
+              "measured_value": 4.547473508864641e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-04-04-initial_velocity",
+              "measured_value": 1.0877919644084147e-09,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-04-04-maximum_position",
+              "measured_value": 0.003718730521469719,
+              "limit": 3.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-04-04-maximum_velocity",
+              "measured_value": 0.003936146876594379,
+              "limit": 3.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "D05_RETRO_1200KM_I120_AUG_48H",
+      "factor": "retrograde_high_altitude",
+      "epoch_utc": "2026-08-04T18:52:00Z",
+      "altitude_km": 1200.0,
+      "eccentricity": 0.02,
+      "inclination_deg": 120.0,
+      "raan_deg": 301.0,
+      "argument_of_perigee_deg": 133.0,
+      "true_anomaly_deg": 315.0,
+      "duration_hours": 48.0,
+      "status": "passed",
+      "model_count": 4,
+      "passed_model_count": 4,
+      "failed_model_count": 0,
+      "check_count": 16,
+      "passed_check_count": 16,
+      "maximum_position_limit_m": 4.0,
+      "maximum_velocity_limit_mm_s": 4.0,
+      "maximum_position_difference_m": 0.004296790072085499,
+      "maximum_velocity_difference_mm_s": 0.004348425544705474,
+      "models": [
+        {
+          "model_id": "G20",
+          "label": "j2_validated_control",
+          "degree": 2,
+          "order": 0,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D05_RETRO_1200KM_I120_AUG_48H_G20.e",
+          "source_ephemeris_sha256": "f79b3eac5d85806ab25ad81fe015fecc3c20b4c1d87fdd8e5461005d8383c8ed",
+          "sample_count": 2881,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 6.286136340349913e-07,
+            "final_raw_time_residual_seconds": -6.286136340349913e-07,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 172800.0
+          },
+          "initial_position_difference_m": 4.547473508864641e-10,
+          "initial_velocity_difference_mm_s": 4.847302891456678e-10,
+          "maximum_position_difference_m": 0.00429459127501183,
+          "maximum_velocity_difference_mm_s": 0.004068423053529579,
+          "final_position_difference_m": 0.0028079305763118703,
+          "final_velocity_difference_mm_s": 0.002711391559925222,
+          "python_runtime_seconds": 67.68148389999988,
+          "python_function_evaluations": 43253,
+          "checks": [
+            {
+              "check_id": "1D2-05-01-initial_position",
+              "measured_value": 4.547473508864641e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-05-01-initial_velocity",
+              "measured_value": 4.847302891456678e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-05-01-maximum_position",
+              "measured_value": 0.00429459127501183,
+              "limit": 4.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-05-01-maximum_velocity",
+              "measured_value": 0.004068423053529579,
+              "limit": 4.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G44",
+          "label": "degree_and_order_4",
+          "degree": 4,
+          "order": 4,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D05_RETRO_1200KM_I120_AUG_48H_G44.e",
+          "source_ephemeris_sha256": "c5f92a451ecd548aa409b321b33a8e705493624e5bad67186ee788d03fc41c71",
+          "sample_count": 2881,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 2.9339571483433247e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 172800.0
+          },
+          "initial_position_difference_m": 4.547473508864641e-10,
+          "initial_velocity_difference_mm_s": 4.847302891456678e-10,
+          "maximum_position_difference_m": 0.0041605366264179265,
+          "maximum_velocity_difference_mm_s": 0.0040595134340609355,
+          "final_position_difference_m": 0.0033133172720364408,
+          "final_velocity_difference_mm_s": 0.0032012812037098093,
+          "python_runtime_seconds": 76.28619620000245,
+          "python_function_evaluations": 43253,
+          "checks": [
+            {
+              "check_id": "1D2-05-02-initial_position",
+              "measured_value": 4.547473508864641e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-05-02-initial_velocity",
+              "measured_value": 4.847302891456678e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-05-02-maximum_position",
+              "measured_value": 0.0041605366264179265,
+              "limit": 4.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-05-02-maximum_velocity",
+              "measured_value": 0.0040595134340609355,
+              "limit": 4.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G88",
+          "label": "degree_and_order_8",
+          "degree": 8,
+          "order": 8,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D05_RETRO_1200KM_I120_AUG_48H_G88.e",
+          "source_ephemeris_sha256": "6c24cc27476752e97e404839abea37c36e587d942a059d827b3843ac0f500df1",
+          "sample_count": 2881,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 2.9339571483433247e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 172800.0
+          },
+          "initial_position_difference_m": 4.547473508864641e-10,
+          "initial_velocity_difference_mm_s": 4.847302891456678e-10,
+          "maximum_position_difference_m": 0.004166494472129651,
+          "maximum_velocity_difference_mm_s": 0.0039174563878396915,
+          "final_position_difference_m": 0.0005906624819354369,
+          "final_velocity_difference_mm_s": 0.0005696482538398641,
+          "python_runtime_seconds": 89.55201709998073,
+          "python_function_evaluations": 43253,
+          "checks": [
+            {
+              "check_id": "1D2-05-03-initial_position",
+              "measured_value": 4.547473508864641e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-05-03-initial_velocity",
+              "measured_value": 4.847302891456678e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-05-03-maximum_position",
+              "measured_value": 0.004166494472129651,
+              "limit": 4.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-05-03-maximum_velocity",
+              "measured_value": 0.0039174563878396915,
+              "limit": 4.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G2020",
+          "label": "degree_and_order_20",
+          "degree": 20,
+          "order": 20,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D05_RETRO_1200KM_I120_AUG_48H_G2020.e",
+          "source_ephemeris_sha256": "ae4795f9ceca8c289a44c56177872a8d1ee0aeadf6388cd4c30108418be92d7c",
+          "sample_count": 2881,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 6.286136340349913e-07,
+            "final_raw_time_residual_seconds": -6.286136340349913e-07,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 172800.0
+          },
+          "initial_position_difference_m": 4.547473508864641e-10,
+          "initial_velocity_difference_mm_s": 4.847302891456678e-10,
+          "maximum_position_difference_m": 0.004296790072085499,
+          "maximum_velocity_difference_mm_s": 0.004348425544705474,
+          "final_position_difference_m": 0.0013700445112669938,
+          "final_velocity_difference_mm_s": 0.001322041517946737,
+          "python_runtime_seconds": 215.96612299996195,
+          "python_function_evaluations": 43253,
+          "checks": [
+            {
+              "check_id": "1D2-05-04-initial_position",
+              "measured_value": 4.547473508864641e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-05-04-initial_velocity",
+              "measured_value": 4.847302891456678e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-05-04-maximum_position",
+              "measured_value": 0.004296790072085499,
+              "limit": 4.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-05-04-maximum_velocity",
+              "measured_value": 0.004348425544705474,
+              "limit": 4.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "D06_LONG_550KM_I45_SEP_72H",
+      "factor": "long_duration_boundary",
+      "epoch_utc": "2026-09-10T00:00:00Z",
+      "altitude_km": 550.0,
+      "eccentricity": 0.009,
+      "inclination_deg": 45.0,
+      "raan_deg": 257.0,
+      "argument_of_perigee_deg": 276.0,
+      "true_anomaly_deg": 166.0,
+      "duration_hours": 72.0,
+      "status": "passed",
+      "model_count": 4,
+      "passed_model_count": 4,
+      "failed_model_count": 0,
+      "check_count": 16,
+      "passed_check_count": 16,
+      "maximum_position_limit_m": 6.0,
+      "maximum_velocity_limit_mm_s": 6.0,
+      "maximum_position_difference_m": 0.005050549145468206,
+      "maximum_velocity_difference_mm_s": 0.006367224878497965,
+      "models": [
+        {
+          "model_id": "G20",
+          "label": "j2_validated_control",
+          "degree": 2,
+          "order": 0,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D06_LONG_550KM_I45_SEP_72H_G20.e",
+          "source_ephemeris_sha256": "a16a91b152b9e1a33d23f89c3a5989824d110d4029998eb7b6f37c3651666fe3",
+          "sample_count": 4321,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 7.544003892689943e-07,
+            "final_raw_time_residual_seconds": 6.286136340349913e-07,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 259200.0
+          },
+          "initial_position_difference_m": 9.094947017729282e-10,
+          "initial_velocity_difference_mm_s": 9.155133597044475e-10,
+          "maximum_position_difference_m": 0.00501310454794493,
+          "maximum_velocity_difference_mm_s": 0.005483825980172758,
+          "final_position_difference_m": 0.0020168315872920975,
+          "final_velocity_difference_mm_s": 0.002193366283629015,
+          "python_runtime_seconds": 96.9401835000026,
+          "python_function_evaluations": 64853,
+          "checks": [
+            {
+              "check_id": "1D2-06-01-initial_position",
+              "measured_value": 9.094947017729282e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-06-01-initial_velocity",
+              "measured_value": 9.155133597044475e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-06-01-maximum_position",
+              "measured_value": 0.00501310454794493,
+              "limit": 6.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-06-01-maximum_velocity",
+              "measured_value": 0.005483825980172758,
+              "limit": 6.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G44",
+          "label": "degree_and_order_4",
+          "degree": 4,
+          "order": 4,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D06_LONG_550KM_I45_SEP_72H_G44.e",
+          "source_ephemeris_sha256": "2362dbc176cae38ce096b5d1a3a83f4c4e6984a67a786fbb7f3b0ee409976500",
+          "sample_count": 4321,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 7.544003892689943e-07,
+            "final_raw_time_residual_seconds": 6.286136340349913e-07,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 259200.0
+          },
+          "initial_position_difference_m": 9.094947017729282e-10,
+          "initial_velocity_difference_mm_s": 9.155133597044475e-10,
+          "maximum_position_difference_m": 0.005050549145468206,
+          "maximum_velocity_difference_mm_s": 0.005575465595355414,
+          "final_position_difference_m": 0.0014915026788230592,
+          "final_velocity_difference_mm_s": 0.001622138199890055,
+          "python_runtime_seconds": 105.68600859999424,
+          "python_function_evaluations": 64853,
+          "checks": [
+            {
+              "check_id": "1D2-06-02-initial_position",
+              "measured_value": 9.094947017729282e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-06-02-initial_velocity",
+              "measured_value": 9.155133597044475e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-06-02-maximum_position",
+              "measured_value": 0.005050549145468206,
+              "limit": 6.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-06-02-maximum_velocity",
+              "measured_value": 0.005575465595355414,
+              "limit": 6.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G88",
+          "label": "degree_and_order_8",
+          "degree": 8,
+          "order": 8,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D06_LONG_550KM_I45_SEP_72H_G88.e",
+          "source_ephemeris_sha256": "89b213c5242f00078f366c4e755ab69e06760d2189492fc34a337e4cddc7c578",
+          "sample_count": 4321,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 7.544003892689943e-07,
+            "final_raw_time_residual_seconds": 6.286136340349913e-07,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 259200.0
+          },
+          "initial_position_difference_m": 9.094947017729282e-10,
+          "initial_velocity_difference_mm_s": 9.155133597044475e-10,
+          "maximum_position_difference_m": 0.004995946040416377,
+          "maximum_velocity_difference_mm_s": 0.005427051037158042,
+          "final_position_difference_m": 0.002279376060118884,
+          "final_velocity_difference_mm_s": 0.0024774429781761194,
+          "python_runtime_seconds": 136.16260660003172,
+          "python_function_evaluations": 64853,
+          "checks": [
+            {
+              "check_id": "1D2-06-03-initial_position",
+              "measured_value": 9.094947017729282e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-06-03-initial_velocity",
+              "measured_value": 9.155133597044475e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-06-03-maximum_position",
+              "measured_value": 0.004995946040416377,
+              "limit": 6.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-06-03-maximum_velocity",
+              "measured_value": 0.005427051037158042,
+              "limit": 6.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        },
+        {
+          "model_id": "G2020",
+          "label": "degree_and_order_20",
+          "degree": 20,
+          "order": 20,
+          "status": "passed",
+          "source_ephemeris": "data/reference/gmat_1d2/output/D06_LONG_550KM_I45_SEP_72H_G2020.e",
+          "source_ephemeris_sha256": "6fda15078504b26c5446694aabc37191a66007af9fb62ba8a814f9b2b9b79b08",
+          "sample_count": 4321,
+          "grid_diagnostics": {
+            "maximum_absolute_raw_time_residual_seconds": 2.7940041036345065e-07,
+            "final_raw_time_residual_seconds": 0.0,
+            "synchronization_tolerance_seconds": 5e-06,
+            "configured_step_seconds": 60.0,
+            "configured_duration_seconds": 259200.0
+          },
+          "initial_position_difference_m": 9.094947017729282e-10,
+          "initial_velocity_difference_mm_s": 9.155133597044475e-10,
+          "maximum_position_difference_m": 0.004786502523501719,
+          "maximum_velocity_difference_mm_s": 0.006367224878497965,
+          "final_position_difference_m": 0.0016937054075094346,
+          "final_velocity_difference_mm_s": 0.0018429151568366117,
+          "python_runtime_seconds": 312.3017354999902,
+          "python_function_evaluations": 64853,
+          "checks": [
+            {
+              "check_id": "1D2-06-04-initial_position",
+              "measured_value": 9.094947017729282e-10,
+              "limit": 0.001,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-06-04-initial_velocity",
+              "measured_value": 9.155133597044475e-10,
+              "limit": 0.001,
+              "unit": "mm/s",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-06-04-maximum_position",
+              "measured_value": 0.004786502523501719,
+              "limit": 6.0,
+              "unit": "m",
+              "status": "passed"
+            },
+            {
+              "check_id": "1D2-06-04-maximum_velocity",
+              "measured_value": 0.006367224878497965,
+              "limit": 6.0,
+              "unit": "mm/s",
+              "status": "passed"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scientific_scope": [
+    "This matrix is authorized only by the independently passed and checksum-gated 1D.1 short-arc result.",
+    "All GMAT and Python models use the same frozen normalized JGM2 coefficients and validated full GMAT R2026a EOP realization.",
+    "GMAT STK-TimePosVel states are accepted only on the preregistered 60-second grid tolerance; state vectors are never interpolated by Research Core.",
+    "Tides, drag, third bodies, solar radiation pressure, and relativity are disabled.",
+    "The thresholds must not be changed after inspecting any 1D.2 GMAT output.",
+    "A pass closes controlled higher-order gravity software-model validation; it is not measured-orbit truth or flight qualification."
+  ]
+}

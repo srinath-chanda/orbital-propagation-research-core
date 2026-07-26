@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Research Core 1C Earth-Orientation Diagnostic</title>
+<style>body{font-family:Arial,sans-serif;margin:2rem;color:#172033}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccd3df;
+padding:.45rem;text-align:right}th:first-child,td:first-child,
+th:nth-child(2),td:nth-child(2){text-align:left}th{background:#edf2f8}</style>
+</head><body><h1>Research Core 1C Earth-Orientation Diagnostic</h1>
+<p><strong>Experiment:</strong> EXP-EARTH-ORIENTATION-1C-001</p>
+<p><strong>Status:</strong> diagnostic completed</p>
+<p><strong>Decision:</strong> baseline_retained_no_candidate_met_preregistered_rule</p>
+<p><strong>Recommended model:</strong> iau1976_1980</p>
+<table><thead><tr><th>Model</th><th>Role</th><th>Median position m</th>
+<th>Worst position m</th><th>Median velocity mm/s</th><th>Worst velocity mm/s</th>
+<th>Median position ratio</th><th>Rule passed</th></tr></thead>
+<tbody><tr><td>j2000_fixed</td><td>ablation_static_axis</td><td>3133.39</td><td>9460.57</td><td>3624.46</td><td>10599.7</td><td>1033.4514</td><td>no</td></tr><tr><td>iau1976_precession</td><td>ablation_precession_without_nutation</td><td>107.27</td><td>332.183</td><td>116.285</td><td>376.049</td><td>35.3797</td><td>no</td></tr><tr><td>iau1976_1980</td><td>closed_1b_validation_baseline</td><td>3.03197</td><td>9.577</td><td>3.32738</td><td>10.8254</td><td>1.0000</td><td>no</td></tr><tr><td>iau2000a</td><td>exploratory_modern_orientation_candidate</td><td>2.77753</td><td>8.59519</td><td>3.08117</td><td>9.70742</td><td>0.9161</td><td>no</td></tr><tr><td>iau2006_2000a</td><td>exploratory_modern_orientation_candidate</td><td>2.77591</td><td>8.5878</td><td>3.08125</td><td>9.699</td><td>0.9155</td><td>no</td></tr></tbody></table>
+<h2>Interpretation</h2><p>Alternative models are evaluated on the same evidence
+used for diagnosis. A selected candidate would require a new independent
+validation run before replacing the closed 1B baseline.</p>
+<p>Fixed and precession-only models are ablations, not replacement candidates.
+Polar motion and observed EOP corrections are not included in this diagnostic.</p>
+<img src="figures/orientation_model_position_residual.png" style="max-width:100%" alt="Residual comparison">
+<img src="figures/orientation_model_pole_separation.png" style="max-width:100%" alt="Pole separation">
+</body></html>

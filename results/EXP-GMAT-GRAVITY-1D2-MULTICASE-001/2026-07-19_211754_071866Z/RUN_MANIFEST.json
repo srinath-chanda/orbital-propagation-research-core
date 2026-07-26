@@ -1,0 +1,259 @@
+{
+  "files": [
+    {
+      "path": "D01_LOW_350KM_I1_FEB_6H/G2020_python_states.csv",
+      "size_bytes": 86368,
+      "sha256": "f09c64d52fcc2c3772a2d3c5cf1ded554cec2287976eabc73a3ab3eaa8814e18"
+    },
+    {
+      "path": "D01_LOW_350KM_I1_FEB_6H/G2020_python_vs_gmat.csv",
+      "size_bytes": 102216,
+      "sha256": "af38cf4bb9c63484d081583740aebfbde0b5371be8d14845f552cae2d2952432"
+    },
+    {
+      "path": "D01_LOW_350KM_I1_FEB_6H/G20_python_states.csv",
+      "size_bytes": 85678,
+      "sha256": "2a592f3f3a6aea38fa5199a35186de2f62e5058391fd18cb1c133dd52dfaa760"
+    },
+    {
+      "path": "D01_LOW_350KM_I1_FEB_6H/G20_python_vs_gmat.csv",
+      "size_bytes": 100778,
+      "sha256": "48d68aab2c2c99dbefeb3292d881b0b30f94cbce7a6944644bf7d85f6e4d0037"
+    },
+    {
+      "path": "D01_LOW_350KM_I1_FEB_6H/G44_python_states.csv",
+      "size_bytes": 85687,
+      "sha256": "97ebcbc557b43f9088e2158b3a7ec1389f71448b1375a19901ee4855d49cfc39"
+    },
+    {
+      "path": "D01_LOW_350KM_I1_FEB_6H/G44_python_vs_gmat.csv",
+      "size_bytes": 101028,
+      "sha256": "f8c353d9659344f7dc8ef78570e29a65ac023a2fd80cea3a51f1cd44e5df5cb1"
+    },
+    {
+      "path": "D01_LOW_350KM_I1_FEB_6H/G88_python_states.csv",
+      "size_bytes": 85724,
+      "sha256": "8d659e05d8f8bafa114390c1d1eeaf584cf5343dbc0243536d4d69bca758ccf5"
+    },
+    {
+      "path": "D01_LOW_350KM_I1_FEB_6H/G88_python_vs_gmat.csv",
+      "size_bytes": 100769,
+      "sha256": "4c94dc77f7b6f6465aba0c2d7a1d5df8d51e7321f026b5bd87de4f9da5a4b09f"
+    },
+    {
+      "path": "D02_MID_500KM_I28P5_MAR_12H/G2020_python_states.csv",
+      "size_bytes": 171692,
+      "sha256": "65e0cd384fcdb47c822e45874915b4d0a507ffbc98c0c09420e8f716236605c9"
+    },
+    {
+      "path": "D02_MID_500KM_I28P5_MAR_12H/G2020_python_vs_gmat.csv",
+      "size_bytes": 206789,
+      "sha256": "f00be739958a21bd87602c787ed883c6eaf58f0feb06fad8241f9f54059d2bac"
+    },
+    {
+      "path": "D02_MID_500KM_I28P5_MAR_12H/G20_python_states.csv",
+      "size_bytes": 170268,
+      "sha256": "105615363b03c53836b81650696415f0ebebe786471d7fff1f2935715fd6fc75"
+    },
+    {
+      "path": "D02_MID_500KM_I28P5_MAR_12H/G20_python_vs_gmat.csv",
+      "size_bytes": 204151,
+      "sha256": "48b5d0f170008181beadae18f72b369366c45582960f256798b77d54805b1b18"
+    },
+    {
+      "path": "D02_MID_500KM_I28P5_MAR_12H/G44_python_states.csv",
+      "size_bytes": 170229,
+      "sha256": "626e4fd1f75a9ccf8bd93e3a2f35a0f51f52c2c72892db13a68d1e88604200a8"
+    },
+    {
+      "path": "D02_MID_500KM_I28P5_MAR_12H/G44_python_vs_gmat.csv",
+      "size_bytes": 204145,
+      "sha256": "5097899de4f3491b100a934d177b038019af24de640087432cc0e599efedf5ad"
+    },
+    {
+      "path": "D02_MID_500KM_I28P5_MAR_12H/G88_python_states.csv",
+      "size_bytes": 170293,
+      "sha256": "e3dda0d85eae190750c18f285480f03ff67861b9dd5ea287ac009cf4772e3230"
+    },
+    {
+      "path": "D02_MID_500KM_I28P5_MAR_12H/G88_python_vs_gmat.csv",
+      "size_bytes": 203942,
+      "sha256": "50cce8c43b401bfb7c810f95616fb81e1955d43895d1d87659abca590986e047"
+    },
+    {
+      "path": "D03_CRITICAL_700KM_I63P4_MAY_24H/G2020_python_states.csv",
+      "size_bytes": 342683,
+      "sha256": "bc4d3d94d03ae71592badeeaaa504bf4095155a823a5f70e3f36c0a91a23b3a2"
+    },
+    {
+      "path": "D03_CRITICAL_700KM_I63P4_MAY_24H/G2020_python_vs_gmat.csv",
+      "size_bytes": 419408,
+      "sha256": "aa5bf091ea812247179f1854a24ab9e41a448096aa3e232504d4bdc92d9ecb57"
+    },
+    {
+      "path": "D03_CRITICAL_700KM_I63P4_MAY_24H/G20_python_states.csv",
+      "size_bytes": 339934,
+      "sha256": "06af9bd37aa48c1556585a3430e8464fa6da8d79bb973886dcc8efdf117950af"
+    },
+    {
+      "path": "D03_CRITICAL_700KM_I63P4_MAY_24H/G20_python_vs_gmat.csv",
+      "size_bytes": 411766,
+      "sha256": "e4ce99615323787a53f9d0f31c630d96f465d1e19b0eb1a444afe8ed8d6fd98a"
+    },
+    {
+      "path": "D03_CRITICAL_700KM_I63P4_MAY_24H/G44_python_states.csv",
+      "size_bytes": 339827,
+      "sha256": "1e62100add05aafd2a0d38a9c36e7eff272b686e2c5c67132d18e6fdca62fb6f"
+    },
+    {
+      "path": "D03_CRITICAL_700KM_I63P4_MAY_24H/G44_python_vs_gmat.csv",
+      "size_bytes": 411785,
+      "sha256": "1ceea73c5f2ddfbf092b72a9c710569ccf54d0af296803a11c76ccd5c7696dee"
+    },
+    {
+      "path": "D03_CRITICAL_700KM_I63P4_MAY_24H/G88_python_states.csv",
+      "size_bytes": 339798,
+      "sha256": "e0e67c3925549b0de3603f0d5b191cb8ace3cfd40530fa2f09c2fcaae3799567"
+    },
+    {
+      "path": "D03_CRITICAL_700KM_I63P4_MAY_24H/G88_python_vs_gmat.csv",
+      "size_bytes": 411685,
+      "sha256": "7c0679e97324aa98570af1fe9892de1c7f74203faefb7a4a0fbec0bba7b6023e"
+    },
+    {
+      "path": "D04_SSO_900KM_I97P6_JUN_36H/G2020_python_states.csv",
+      "size_bytes": 514755,
+      "sha256": "c0e437e07550e1f26a3a82a7e104303a79929abc25fc19b051cb102b07260df0"
+    },
+    {
+      "path": "D04_SSO_900KM_I97P6_JUN_36H/G2020_python_vs_gmat.csv",
+      "size_bytes": 620810,
+      "sha256": "bbfb6794992c5b02d7abe3c2ad905416dad5d253f8be369b3bac057a5c54e364"
+    },
+    {
+      "path": "D04_SSO_900KM_I97P6_JUN_36H/G20_python_states.csv",
+      "size_bytes": 510330,
+      "sha256": "84542cad129b8c1ab0d76bbb5fdb9279386af07a21434f15e2ed616407d6de12"
+    },
+    {
+      "path": "D04_SSO_900KM_I97P6_JUN_36H/G20_python_vs_gmat.csv",
+      "size_bytes": 612370,
+      "sha256": "95a09372fa2e6bd91f1b123048e897c5a5be902efff2fbac9a792924451630d0"
+    },
+    {
+      "path": "D04_SSO_900KM_I97P6_JUN_36H/G44_python_states.csv",
+      "size_bytes": 510187,
+      "sha256": "766a06a0c6f96d5ff26636f6f21e69f2211e41c1fb1c594355e7a76276fbc154"
+    },
+    {
+      "path": "D04_SSO_900KM_I97P6_JUN_36H/G44_python_vs_gmat.csv",
+      "size_bytes": 611913,
+      "sha256": "96b72af8ef30de0e56e2e33bc9b1844ca69f84c6536e2778dc576d781a942a49"
+    },
+    {
+      "path": "D04_SSO_900KM_I97P6_JUN_36H/G88_python_states.csv",
+      "size_bytes": 510220,
+      "sha256": "1ddd0c10b8a9618db0860d8ea77d67d1da9294691947dfaf8b47d2d4805ce80e"
+    },
+    {
+      "path": "D04_SSO_900KM_I97P6_JUN_36H/G88_python_vs_gmat.csv",
+      "size_bytes": 612307,
+      "sha256": "d0daccd08eeec368959687c2b3dbc624a55f40e08974497f956bb5c5a0b59f9b"
+    },
+    {
+      "path": "D05_RETRO_1200KM_I120_AUG_48H/G2020_python_states.csv",
+      "size_bytes": 686350,
+      "sha256": "2be36b33aaccabf5e740ba1728920d6cc1c75c757bf71c3bc76c0c6d55839689"
+    },
+    {
+      "path": "D05_RETRO_1200KM_I120_AUG_48H/G2020_python_vs_gmat.csv",
+      "size_bytes": 830991,
+      "sha256": "6104bc89d1f4c9f7f1123e1a0db0bd107fca6419290c211e269ea45662e72e4b"
+    },
+    {
+      "path": "D05_RETRO_1200KM_I120_AUG_48H/G20_python_states.csv",
+      "size_bytes": 680513,
+      "sha256": "13b98d55dfe0128c79ba4570e5a27e640dae582b7d7ef4c8f575130b75a41894"
+    },
+    {
+      "path": "D05_RETRO_1200KM_I120_AUG_48H/G20_python_vs_gmat.csv",
+      "size_bytes": 819288,
+      "sha256": "476865127ab5bd351fdd730e528dac8ceafb5ef747a6e7c27c97d81f9110eb07"
+    },
+    {
+      "path": "D05_RETRO_1200KM_I120_AUG_48H/G44_python_states.csv",
+      "size_bytes": 680445,
+      "sha256": "d7932b75f6fcd7f1c03febbcfdc81dd199fc186cd388a38c50ac59ccb0cbcdfe"
+    },
+    {
+      "path": "D05_RETRO_1200KM_I120_AUG_48H/G44_python_vs_gmat.csv",
+      "size_bytes": 819396,
+      "sha256": "f5dfb3f9cba7e448d2aea99f7681c8cd83019b32cfb076e4602ed637cb15cdc6"
+    },
+    {
+      "path": "D05_RETRO_1200KM_I120_AUG_48H/G88_python_states.csv",
+      "size_bytes": 680503,
+      "sha256": "3b3c35e192e77c0b45f2fe3e58a5ba08b7302718eb42ada15665b10d4097017e"
+    },
+    {
+      "path": "D05_RETRO_1200KM_I120_AUG_48H/G88_python_vs_gmat.csv",
+      "size_bytes": 819371,
+      "sha256": "793da84b7a016cd413660347e306e03c2723d1b3f6732150a1abca56ce39127f"
+    },
+    {
+      "path": "D06_LONG_550KM_I45_SEP_72H/G2020_python_states.csv",
+      "size_bytes": 1030143,
+      "sha256": "68ccfda508230346e75658ddfb2b31adb542303d81fc66ff959bf58da3e6314e"
+    },
+    {
+      "path": "D06_LONG_550KM_I45_SEP_72H/G2020_python_vs_gmat.csv",
+      "size_bytes": 1233463,
+      "sha256": "3056ce6b8edd5d42b740bf186c5422ab020af66df3ff7e1b680a1cf0d3f9fee9"
+    },
+    {
+      "path": "D06_LONG_550KM_I45_SEP_72H/G20_python_states.csv",
+      "size_bytes": 1021605,
+      "sha256": "91325c22bafa980a8b8ee50243ccdfbf493ff6eb6636a1e62df2b6416e3f23c4"
+    },
+    {
+      "path": "D06_LONG_550KM_I45_SEP_72H/G20_python_vs_gmat.csv",
+      "size_bytes": 1212168,
+      "sha256": "c2b0e9496a4c7d172e47dcc85ef6fba1387bf76902a8ac7815d016e82846ae35"
+    },
+    {
+      "path": "D06_LONG_550KM_I45_SEP_72H/G44_python_states.csv",
+      "size_bytes": 1021516,
+      "sha256": "e535e2c7cc1f19b62d65e4adc60a6a3174095fef6ce183c1b61cab95e8e4add2"
+    },
+    {
+      "path": "D06_LONG_550KM_I45_SEP_72H/G44_python_vs_gmat.csv",
+      "size_bytes": 1213035,
+      "sha256": "158c9f2f97a0d5cdc9d3984392118472a9214de0c7523b09187311bfa0034a72"
+    },
+    {
+      "path": "D06_LONG_550KM_I45_SEP_72H/G88_python_states.csv",
+      "size_bytes": 1021508,
+      "sha256": "a1a39f9e98fb0d5067899aeb1dc48d1962a48752d78241dc44637143289e8354"
+    },
+    {
+      "path": "D06_LONG_550KM_I45_SEP_72H/G88_python_vs_gmat.csv",
+      "size_bytes": 1212555,
+      "sha256": "9ecc36ebce44ef2465d35a148e21a047ea1e0ce6b3519d6fc6cd0bb3b2907951"
+    },
+    {
+      "path": "GMAT_GRAVITY_MULTICASE_1D2_REPORT.html",
+      "size_bytes": 1718,
+      "sha256": "c7feed0ab42e63ac95099de6f3a6b9cafbdd424b98395debeb3ab7076bc2459a"
+    },
+    {
+      "path": "gravity_multicase_model_summary.csv",
+      "size_bytes": 5320,
+      "sha256": "2d2cee6d62cd443e5b76b4f89f56babc5d42001be72bc25a3599fb192fb0a703"
+    },
+    {
+      "path": "gravity_multicase_summary.json",
+      "size_bytes": 59840,
+      "sha256": "e00649be613ca25b20fad16833094ac88e08066d6657df9f03c068edda125aaf"
+    }
+  ]
+}

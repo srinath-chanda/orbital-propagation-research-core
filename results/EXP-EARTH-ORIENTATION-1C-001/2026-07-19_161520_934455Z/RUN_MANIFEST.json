@@ -1,0 +1,39 @@
+{
+  "files": [
+    {
+      "path": "earth_orientation_case_model_summary.csv",
+      "sha256": "7d4268fcf2fb4a716d6566aa42fe21484d6f8eef02b01deac3a2e51955e33be0",
+      "size_bytes": 20200
+    },
+    {
+      "path": "EARTH_ORIENTATION_DIAGNOSTIC_REPORT.html",
+      "sha256": "dd634dbe27f28019134b203ce6c44c63edcdd590d87051a822082d1f71dc36fd",
+      "size_bytes": 2395
+    },
+    {
+      "path": "earth_orientation_diagnostic_summary.json",
+      "sha256": "32fd7ef01110b5d19a01408bc43597176c47eb2fa0e66dcb1078b96aca38621c",
+      "size_bytes": 77613
+    },
+    {
+      "path": "figures/orientation_model_pole_separation.pdf",
+      "sha256": "d9228013bbb5d58eb025f8e9b5a1f7f3accc38d904db6b87373fea360fd12624",
+      "size_bytes": 15634
+    },
+    {
+      "path": "figures/orientation_model_pole_separation.png",
+      "sha256": "14082199e3c81f2cfca472b53d7d964e941936666b97ea1c4c598be64b96733a",
+      "size_bytes": 60327
+    },
+    {
+      "path": "figures/orientation_model_position_residual.pdf",
+      "sha256": "a5d997b45215c0babc5237ec432d80974bc280adb64f2e66aa7e520782e220c8",
+      "size_bytes": 22246
+    },
+    {
+      "path": "figures/orientation_model_position_residual.png",
+      "sha256": "f6caeba2f429b88408fa007865540ce9223295b6bf0af6e51d264b9a16b7d1f9",
+      "size_bytes": 152101
+    }
+  ]
+}
