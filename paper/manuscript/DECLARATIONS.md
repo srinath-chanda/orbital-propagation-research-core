@@ -28,8 +28,4 @@ Archived version DOI: https://doi.org/10.5281/zenodo.21611669
 
 ## Artificial-intelligence assistance
 
-Artificial-intelligence-assisted tools supported code generation, test design,
-documentation structure, and language editing. The author defined the research
-objective, selected the physical scope, executed the Python and General Mission
-Analysis Tool workflows, reviewed the outputs, resolved validation issues, and
-remains responsible for every scientific claim and submitted statement.
+AI-assisted tools supported code generation. The author defined the research questions and physical scope, configured and ran the Python and GMAT workflows, checked the outputs, resolved validation issues, and wrote the manuscript and supporting documentation. The author is responsible for all scientific statements and submitted material.
