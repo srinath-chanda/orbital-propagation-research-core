@@ -1,0 +1,5 @@
+RESEARCH CORE 1D.1 GMAT RUN ORDER
+
+Preferred: run scripts/RUN_GRAVITY_SHORT_ARCS_1D1.script once.
+Fallback only if the master does not interpret: run G20, G44, G88, then G2020.
+Expected untouched ephemerides: 4. Do not rerun after successful creation.
