@@ -1,0 +1,11 @@
+metric,value
+production_status,passed_with_warnings
+completed_experiments,11
+expected_experiments,11
+failed_experiments,0
+primary_model_runs,43
+executed_model_runs,47
+convergence_candidates_evaluated,36
+convergence_candidates_passing,36
+balanced_integrator_case,DOP853_rtol1e-11_atol1e-13_maxstep60s
+paper1_scope,paper1_models_frozen_no_additional_force_models
